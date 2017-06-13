@@ -27,7 +27,8 @@ class PyDMTQ(object):
                    51:"game.getLineTopRank",
                    33:"game.getResourceList",
                    39:"game.getSongList",
-                   55:"game.getSongUrl"
+                   55:"game.getSongUrl",
+                   9:"user.loginV2"
 
     }
     #Functions are named as MethodName.replace(".","_") for dynamic method dispatching
@@ -58,35 +59,9 @@ class PyDMTQ(object):
         self.guid=foo['value']['extra_infos']['result']['guid']
         self.secretkey=foo['value']['extra_infos']['result']['SECRET_KEY']
         self.secretkeyver=foo['value']['extra_infos']['result']['SECRET_VER']#This is temporary.
-        #Now perform actual DMTQ Login
-        DMTHTTPBody=[
-        	{
-        		"id": 9,
-        		"method": "user.loginV2",
-        		"params": [
-        			self.access_token,
-        			self.nickname,
-        			self.profileimageurl,
-        			"1.0.11",
-        			"iOS"
-        		]
-        	}
-        ]
-        DMTHTTPBody=json.dumps(DMTHTTPBody)
-        DMTHTTPHeader={
-        	                "Api-Token" : "",
-        	                "Fp" : self.CalculateFp(DMTHTTPBody),
-        	                "Nce" : self.CalculateNce(),
-        	                "Secret-Key" : "",
-        	                "Secret-Ver" : "1",
-        	                "X-Unity-Version" : "5.5.2f1"
-        }
-        foo2=json.loads(requests.post("https://dmqglb.mb.pmang.com/DMQ/rpc",data=DMTHTTPBody, headers=DMTHTTPHeader).content)
-        self.apitoken=foo2[0]['result']['API_TOKEN']
-        self.secretkey=str(foo2[0]['result']['SECRET_KEY'])
-        self.secretkeyver=str(foo2[0]['result']['SECRET_VER'])
-        self.guid=str(foo2[0]['result']['guid'])
-        print("Logged in with API Token:"+self.apitoken)
+        self.apitoken=""
+        self.secretkey=""
+        self.secretkeyver="1"
     def CalculateFp(self, PostData):
         h = MD5.new()
         h.update(bytearray(str(self.secretkey + PostData)))
@@ -111,6 +86,13 @@ class PyDMTQ(object):
         return requests.post("https://dmqglb.mb.pmang.com/DMQ/rpc",data=HTTPBody, headers=HTTPHeader)
     def CalculateNce(self, size=32, chars=string.ascii_lowercase + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))
+    def user_loginV2(self):
+        foo2=json.loads(self.APIPost(9,[self.access_token,self.nickname,self.profileimageurl,"1.0.11","iOS"]).content)
+        self.apitoken=foo2[0]['result']['API_TOKEN']
+        self.secretkey=str(foo2[0]['result']['SECRET_KEY'])
+        self.secretkeyver=str(foo2[0]['result']['SECRET_VER'])
+        self.guid=str(foo2[0]['result']['guid'])
+        print("Logged in with API Token:"+self.apitoken)
     def game_getPatternUrl(self,PatternId,EarphoneMode=True,DeviceType="P"):
         EM=""
         if EarphoneMode==True:
@@ -175,4 +157,5 @@ class PyDMTQ(object):
 
 if __name__ == '__main__':
     x=PyDMTQ("403799106@qq.com","zhs960919")
+    x.user_loginV2()
     print x.game_getUserAsset()
