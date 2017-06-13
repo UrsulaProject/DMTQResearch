@@ -1,0 +1,6 @@
+{
+  "id": 39,
+  "method": "game.getSongList",
+  "params": [
+  ]
+}

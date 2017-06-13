@@ -1,0 +1,12 @@
+[
+	{
+		"id": 55,
+		"method": "game.getSongUrl",
+		"params": [
+			103052,
+			2,
+			"IOS",
+			"1.0.0"
+		]
+	}
+]
