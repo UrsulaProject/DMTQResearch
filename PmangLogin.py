@@ -1,7 +1,15 @@
-import requests,json
+import requests,json,string,random
 from urllib import urlencode
+from Crypto.Hash import MD5
 USERNAME="403799106@qq.com"
 PASSWORD="zhs960919"
+
+def CalculateFp(SecretKey,PostData):
+	h = MD5.new()
+	h.update(bytearray(SecretKey+PostData))
+	return h.hexdigest()
+def CalculateNce(size=32, chars=string.ascii_lowercase + string.digits):
+	return ''.join(random.choice(chars) for _ in range(size))
 HTTPHeaders = {"User-Agent":"PmangPlus SDK 1.8 170414 (iPhone OS,9.3.3,iPad5,3,Apple,(null),(null))",
 	           "X-PmangPlus-Platform":'iOS',
 	           'fp':'7d76eec1ad9f17fd812e118a6cca0e6cfdfa8ea8',
@@ -22,10 +30,11 @@ Body={'app_id':'576',
 'udid':'BAA24753-294C-4529-9B1D-19730245E6A4'}
 
 foo=json.loads(requests.post("https://pmangplus.com/accounts/3/login",params=Body, headers=HTTPHeaders).content)
-
+print foo
 access_token=foo['value']['access_token']
 NickName=foo['value']['member']['nickname']
 ProfileImageURL=foo['value']['member']['profile_img_url']
+GUID=foo['value']['extra_infos']['result']['guid']
 DMTHTTPHeader={
 	                "Api-Token" : "",
 	                "Fp" : "71278e4607fbc7d83ca2e82c83490f08",
@@ -49,26 +58,26 @@ DMTHTTPBody=[
 ]
 foo2=json.loads(requests.post("https://dmqglb.mb.pmang.com/DMQ/rpc",data=json.dumps(DMTHTTPBody), headers=DMTHTTPHeader).content)
 REAL_API_TOKEN=foo2[0]['result']['API_TOKEN']
-
+SECRET_KEY=str(foo2[0]['result']['SECRET_KEY'])
 PatternURLBody=[
 	{
 		"id": 56,
 		"method": "game.getPatternUrl",
 		"params": [
-			103052,
+			GUID,
 			3,
 			"",
 			"P"
 		]
 	}
 ]
-print REAL_API_TOKEN
 PatternURLHeader={
-	                "Api-Token":REAL_API_TOKEN,
-	                "Fp":"98b853f6c672dfe2481c20928ef286cf",
-	                "Nce":"c1cc42a9008ce609dd13c8e33fa1b033",
-	                "Secret-Key":"DMQGLBlive4",
+	                "Api-Token":str(REAL_API_TOKEN),
+	                "Fp":str(CalculateFp(SECRET_KEY,json.dumps(PatternURLBody))),
+	                "Nce":str(CalculateNce()),
+	                "Secret-Key":SECRET_KEY,
 	                "Secret-Ver":"1",
 	                "X-Unity-Version":"5.5.2f1"
 }
+print PatternURLHeader
 print requests.post("https://dmqglb.mb.pmang.com/DMQ/rpc",data=json.dumps(PatternURLBody), headers=PatternURLHeader).content

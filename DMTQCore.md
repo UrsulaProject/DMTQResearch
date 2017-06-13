@@ -1,4 +1,13 @@
 接下来开始DMTQ本身的登陆过程。dmtq所有的API Endpoint都为`https://dmqglb.mb.pmang.com/DMQ/rpc`
+需要操作都需要计算Nce和Fp并存放在请求头部
+Fp:
+
+```
+MD5.ToHexString(MD5.GenHash(SecretKey + postData));;
+```
+
+Nce为随机32位hex表示的字符串
+
 参数结构与下文的类似
 向这里POST JSON:
 ```
@@ -14,6 +23,7 @@ HTTP Header:
 	                "X-Unity-Version" = "5.5.2f1";
 ```
 即可获得:
+其中SECRET_KEY guid API_TOKEN 都很重要
 ```
 [
 	{
@@ -32,11 +42,8 @@ HTTP Header:
 	}
 ]
 ```
-猜测Nce为Nonce,随机数填充。Fp未知。
-后续所有操作都需要计算Nce和Fp
-
 # 谱面下载
-BODY 
+BODY
 
 ```
 [{"id":56,"method":"game.getPatternUrl","params":[103052,3,"","P"]}]
@@ -55,4 +62,3 @@ Header
 	                "X-Unity-Version" = "5.5.2f1";
 
 ```
-
