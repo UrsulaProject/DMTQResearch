@@ -4,6 +4,7 @@ import string
 import random
 import sys
 import os
+from urlparse import urlparse
 from urllib import urlencode
 from Crypto.Hash import MD5
 
@@ -146,9 +147,26 @@ class PyDMTQ(object):
                     PEMF=open(PEMFPath,"w")
                     PEMF.write(PatternEM)
                     PEMF.close()
+    def saveAllSongData(self,RootPath=os.path.dirname(os.path.abspath(__file__))):
+        if not os.path.exists(RootPath):
+            os.makedirs(RootPath)
+        for SongInfo in self.game_getSongList()["songs"]:
+            SongID=SongInfo["song_id"]
+            URLList=list()
+            URLList.extend(self.game_getSongUrl(SongID,"ANDROID","1.0.0")["amazon"])
+            URLList.extend(self.game_getSongUrl(SongID,"IOS","1.0.0")["amazon"])
+            for url in URLList:
+                print ("Saving :"+url)
+                SavePath=RootPath+urlparse(url).path
+                if not os.path.exists(os.path.dirname(os.path.abspath(SavePath))):
+                    os.makedirs(os.path.dirname(os.path.abspath(SavePath)))
+                Data=requests.get(url)
+                f=open(SavePath,"w")
+                f.write(Data)
+                f.close
 
 
 
 if __name__ == '__main__':
     x=PyDMTQ("403799106@qq.com","zhs960919")
-    x.saveAllPatterns()
+    x.saveAllSongData()
