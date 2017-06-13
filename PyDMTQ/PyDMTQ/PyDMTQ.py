@@ -25,7 +25,8 @@ class PyDMTQ(object):
                    2:"board.getNoticeList",
                    51:"game.getLineTopRank",
                    33:"game.getResourceList",
-                   39:"game.getSongList"
+                   39:"game.getSongList",
+                   55:"game.getSongUrl"
 
     }
     #Functions are named as MethodName.replace(".","_") for dynamic method dispatching
@@ -117,31 +118,37 @@ class PyDMTQ(object):
         return json.loads(self.APIPost(56,[self.guid,PatternId,EM,DeviceType]).content)[0]["result"]
     def game_getSongList(self):
         return json.loads(self.APIPost(39,[]).content)[0]["result"]
+    def game_getSongUrl(self,SongID,ClientOS,Version):
+        '''
+            ClientOS: IOS or ANDROID
+            Version: 1.0.0
+        '''
+        return json.loads(self.APIPost(55,[self.guid,SongID,ClientOS,Version]).content)[0]["result"]
+    def saveAllPatterns(self,RootPath=os.path.join(os.path.dirname(os.path.abspath(__file__)),"Patterns")):
+        if not os.path.exists(RootPath):
+            os.makedirs(RootPath)
+        for item in self.game_getSongList()["songs"]:
+            SongID=item["song_id"]
+            for P in item["song_patterns"]:
+                PID=P["pattern_id"]
+                ContainerPath=os.path.join(RootPath,str(SongID))
+                if not os.path.exists(ContainerPath):
+                    os.makedirs(ContainerPath)
+                PFPath=os.path.join(ContainerPath,str(PID))
+                PEMFPath=os.path.join(ContainerPath,str(PID)+"_EARPHONE")
+                if os.path.exists(PFPath)==False:
+                    PF=open(PFPath,"w")
+                    Pattern=requests.get(self.game_getPatternUrl(PID,EarphoneMode=False)).content
+                    PF.write(Pattern)
+                    PF.close()
+                if os.path.exists(PEMFPath)==False:
+                    PatternEM=requests.get(self.game_getPatternUrl(PID)).content
+                    PEMF=open(PEMFPath,"w")
+                    PEMF.write(PatternEM)
+                    PEMF.close()
+
 
 
 if __name__ == '__main__':
-    RootPath=os.path.dirname(os.path.abspath(__file__))
-    RootPath=os.path.join(RootPath,"Patterns")
-    if not os.path.exists(RootPath):
-        os.makedirs(RootPath)
     x=PyDMTQ("403799106@qq.com","zhs960919")
-    SL=x.game_getSongList()["songs"]
-    for item in SL:
-        SongID=item["song_id"]
-        for P in item["song_patterns"]:
-            PID=P["pattern_id"]
-            ContainerPath=os.path.join(RootPath,str(SongID))
-            if not os.path.exists(ContainerPath):
-                os.makedirs(ContainerPath)
-            PFPath=os.path.join(ContainerPath,str(PID))
-            PEMFPath=os.path.join(ContainerPath,str(PID)+"_EARPHONE")
-            if os.path.exists(PFPath)==False:
-                PF=open(PFPath,"w")
-                Pattern=requests.get(x.game_getPatternUrl(PID,EarphoneMode=False)).content
-                PF.write(Pattern)
-                PF.close()
-            if os.path.exists(PEMFPath)==False:
-                PatternEM=requests.get(x.game_getPatternUrl(PID)).content
-                PEMF=open(PEMFPath,"w")
-                PEMF.write(PatternEM)
-                PEMF.close()
+    x.saveAllPatterns()
