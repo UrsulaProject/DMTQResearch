@@ -7,6 +7,11 @@ from Crypto.Hash import MD5
 
 
 class PyDMTQ(object):
+    #This is MethodID/MethodName Table
+    IDMethodTable={56:"game.getPatternUrl"
+
+    }
+    #Functions are named as MethodName.replace(".","") for dynamic method dispatching
     def __init__(self, email, password):
         #PMang Login
         HTTPHeaders = {"User-Agent": "PmangPlus SDK 1.8 170414 (iPhone OS,9.3.3,iPad5,3,Apple,(null),(null))",
@@ -67,11 +72,34 @@ class PyDMTQ(object):
         h = MD5.new()
         h.update(bytearray(str(self.secretkey + PostData)))
         return h.hexdigest()
-
+    def APIPost(self,id,Params):
+        HTTPBody=[
+        	{
+        		"id": id,
+        		"method": PyDMTQ.IDMethodTable[id],
+        		"params": Params
+        	}
+        ]
+        HTTPBody=json.dumps(HTTPBody)
+        HTTPHeader={
+        	                "Api-Token" :self.apitoken,
+        	                "Fp" : self.CalculateFp(HTTPBody),
+        	                "Nce" : self.CalculateNce(),
+        	                "Secret-Key" : self.secretkey,
+        	                "Secret-Ver" : self.secretkeyver,
+        	                "X-Unity-Version" : "5.5.2f1"
+        }
+        return requests.post("https://dmqglb.mb.pmang.com/DMQ/rpc",data=HTTPBody, headers=HTTPHeader)
     def CalculateNce(self, size=32, chars=string.ascii_lowercase + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))
+    def game_getPatternUrl(self,PatternId,EarphoneMode=True,DeviceType="P"):
+        EM=""
+        if EarphoneMode==True:
+            EM="e"
 
+        return self.APIPost(56,[self.guid,PatternId,EM,DeviceType]).content
 
 
 if __name__ == '__main__':
-    PyDMTQ("403799106@qq.com","zhs960919")
+    x=PyDMTQ("403799106@qq.com","zhs960919")
+    print x.game_getPatternUrl(3)
