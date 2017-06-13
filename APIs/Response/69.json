@@ -1,0 +1,12 @@
+{
+  "result": {
+    "first_resource_songs": [
+      {
+        "song_id": 1,
+        "name": "oblivion"
+      }
+    ]
+  },
+  "error": null,
+  "id": 69
+}

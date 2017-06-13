@@ -1,0 +1,5 @@
+{
+  "id": 69,
+  "method": "game.getFirstResourceSongList",
+  "params": []
+}

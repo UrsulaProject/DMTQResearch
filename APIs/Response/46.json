@@ -1,0 +1,120 @@
+{
+  "result": {
+    "own_achievements": [
+      {
+        "achievement_id": 7,
+        "reg_date": "20151202114526"
+      },
+      {
+        "achievement_id": 14,
+        "reg_date": "20151202111825"
+      },
+      {
+        "achievement_id": 35,
+        "reg_date": "20150118122600"
+      },
+      {
+        "achievement_id": 6,
+        "reg_date": "20150107214336"
+      },
+      {
+        "achievement_id": 23,
+        "reg_date": "20141116184522"
+      },
+      {
+        "achievement_id": 5,
+        "reg_date": "20141112220614"
+      },
+      {
+        "achievement_id": 15,
+        "reg_date": "20141112215646"
+      },
+      {
+        "achievement_id": 34,
+        "reg_date": "20141018013203"
+      },
+      {
+        "achievement_id": 4,
+        "reg_date": "20140921003115"
+      },
+      {
+        "achievement_id": 33,
+        "reg_date": "20140920014556"
+      },
+      {
+        "achievement_id": 27,
+        "reg_date": "20140917170958"
+      },
+      {
+        "achievement_id": 18,
+        "reg_date": "20140914005625"
+      },
+      {
+        "achievement_id": 17,
+        "reg_date": "20140914005625"
+      },
+      {
+        "achievement_id": 32,
+        "reg_date": "20140913173249"
+      },
+      {
+        "achievement_id": 3,
+        "reg_date": "20140912174910"
+      },
+      {
+        "achievement_id": 24,
+        "reg_date": "20140912132210"
+      },
+      {
+        "achievement_id": 25,
+        "reg_date": "20140904101438"
+      },
+      {
+        "achievement_id": 31,
+        "reg_date": "20140801005603"
+      },
+      {
+        "achievement_id": 2,
+        "reg_date": "20140728165900"
+      },
+      {
+        "achievement_id": 19,
+        "reg_date": "20140728160901"
+      },
+      {
+        "achievement_id": 30,
+        "reg_date": "20140720184130"
+      },
+      {
+        "achievement_id": 1,
+        "reg_date": "20140717234139"
+      },
+      {
+        "achievement_id": 29,
+        "reg_date": "20140717232859"
+      },
+      {
+        "achievement_id": 26,
+        "reg_date": "20140717182930"
+      },
+      {
+        "achievement_id": 13,
+        "reg_date": "20140716001130"
+      },
+      {
+        "achievement_id": 12,
+        "reg_date": "20140527152752"
+      },
+      {
+        "achievement_id": 22,
+        "reg_date": "20140527143844"
+      },
+      {
+        "achievement_id": 11,
+        "reg_date": "20140527143844"
+      }
+    ]
+  },
+  "error": null,
+  "id": 46
+}

@@ -1,0 +1,13 @@
+{
+		"result": {
+			"is_recommend": false,
+			"max_recommend_count": 15,
+			"own_recommend_count": 15,
+			"is_reward": true,
+			"reward_receive_count": 15,
+			"reward_type": "CA",
+			"reward_value": 60
+		},
+		"error": null,
+		"id": 14
+	}

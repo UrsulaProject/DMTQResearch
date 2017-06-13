@@ -1,0 +1,7 @@
+{
+  "id": 14,
+  "method": "user.getOwnRecomInfo",
+  "params": [
+    103052
+  ]
+}

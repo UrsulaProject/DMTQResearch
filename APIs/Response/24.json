@@ -1,0 +1,70 @@
+{
+		"result": [
+			{
+				"item_id": 90001,
+				"own_count": 1,
+				"repeat_count": 9,
+				"using_yn": "Y",
+				"reg_date": "20141113010808",
+				"end_date": ""
+			},
+			{
+				"item_id": 90002,
+				"own_count": 1,
+				"repeat_count": 8,
+				"using_yn": "Y",
+				"reg_date": "20141231151858",
+				"end_date": ""
+			},
+			{
+				"item_id": 90003,
+				"own_count": 1,
+				"repeat_count": 8,
+				"using_yn": "Y",
+				"reg_date": "20160228031209",
+				"end_date": ""
+			},
+			{
+				"item_id": 90005,
+				"own_count": 1,
+				"repeat_count": 8,
+				"using_yn": "Y",
+				"reg_date": "20141112213302",
+				"end_date": ""
+			},
+			{
+				"item_id": 90006,
+				"own_count": 1,
+				"repeat_count": 14,
+				"using_yn": "Y",
+				"reg_date": "20141113011210",
+				"end_date": ""
+			},
+			{
+				"item_id": 90008,
+				"own_count": 1,
+				"repeat_count": 10,
+				"using_yn": "Y",
+				"reg_date": "20150118121938",
+				"end_date": ""
+			},
+			{
+				"item_id": 90009,
+				"own_count": 1,
+				"repeat_count": 10,
+				"using_yn": "Y",
+				"reg_date": "20151007221159",
+				"end_date": ""
+			},
+			{
+				"item_id": 100001,
+				"own_count": 1,
+				"repeat_count": 0,
+				"using_yn": "N",
+				"reg_date": "20140801010031",
+				"end_date": ""
+			}
+		],
+		"error": null,
+		"id": 24
+	}

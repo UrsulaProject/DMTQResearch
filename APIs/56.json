@@ -1,0 +1,10 @@
+{
+  "id": 56,
+  "method": "game.getPatternUrl",
+  "params": [
+    GUID,
+    3,
+    "",
+    "P"
+  ]
+}

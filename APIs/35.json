@@ -1,0 +1,7 @@
+{
+  "id": 35,
+  "method": "game.getUserAsset",
+  "params": [
+    103052
+  ]
+}

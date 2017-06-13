@@ -1,0 +1,113 @@
+{
+  "result": {
+    "period_quest": {
+      "quest_order": 1,
+      "quest_id": 145,
+      "quest_type": "E",
+      "quest_name": "REBOOT! 17주차 퀘스트",
+      "description": "매주 업데이트되는 퀘스트에 도전하세요!",
+      "start_date": "20170611000000",
+      "end_date": "20170617235959",
+      "quest_complete_yn": "N",
+      "own_quest_missions": [
+        {
+          "quest_mission_id": 348,
+          "quest_mission_complete_yn": "N",
+          "play_count": 0,
+          "song_id": 0,
+          "play_special": "",
+          "condition_random_song_yn": "N",
+          "condition_song_id": 0,
+          "condition_signature": 0,
+          "condition_line": 0,
+          "condition_difficulty": 0,
+          "condition_type": "EFFECTOR",
+          "condition_value": 1,
+          "condition_count": 3,
+          "condition_special": "no,no,bd",
+          "description": "조건 1 : Blind 이펙터를 장착한 상태로 3회 클리어"
+        },
+        {
+          "quest_mission_id": 349,
+          "quest_mission_complete_yn": "N",
+          "play_count": 1,
+          "song_id": 0,
+          "play_special": "",
+          "condition_random_song_yn": "N",
+          "condition_song_id": 0,
+          "condition_signature": 0,
+          "condition_line": 0,
+          "condition_difficulty": 0,
+          "condition_type": "ALL_COMBO",
+          "condition_value": 1,
+          "condition_count": 5,
+          "condition_special": "",
+          "description": "조건 2 : ALL COMBO를 5회 달성"
+        },
+        {
+          "quest_mission_id": 350,
+          "quest_mission_complete_yn": "N",
+          "play_count": 0,
+          "song_id": 0,
+          "play_special": "",
+          "condition_random_song_yn": "N",
+          "condition_song_id": 0,
+          "condition_signature": 0,
+          "condition_line": 0,
+          "condition_difficulty": 7,
+          "condition_type": "EXACT",
+          "condition_value": 90,
+          "condition_count": 2,
+          "condition_special": "",
+          "description": "조건 3 : 난이도 7 이상의 패턴을 정확도 90% 이상으로 2회 클리어"
+        }
+      ],
+      "quest_rewards": [
+        {
+          "quest_reward_id": 145,
+          "quest_id": 145,
+          "reward_type": "MP",
+          "reward_value": 2000
+        }
+      ]
+    },
+    "repeat_quest": {
+      "quest_order": 100,
+      "quest_id": 41,
+      "quest_type": "P",
+      "quest_name": "난이도 10 패턴 도전 (반복)",
+      "description": "난이도 10 의 패턴에 도전하세요.",
+      "quest_complete_yn": "N",
+      "own_quest_missions": [
+        {
+          "quest_mission_id": 43,
+          "quest_mission_complete_yn": "N",
+          "play_count": 2,
+          "song_id": 0,
+          "play_special": "",
+          "condition_random_song_yn": "N",
+          "condition_song_id": 0,
+          "condition_signature": 0,
+          "condition_line": 0,
+          "condition_difficulty": 10,
+          "condition_type": "CLEAR",
+          "condition_value": 1,
+          "condition_count": 5,
+          "condition_special": "",
+          "description": "난이도 10의 패턴 5회 클리어"
+        }
+      ],
+      "quest_rewards": [
+        {
+          "quest_reward_id": 41,
+          "quest_id": 41,
+          "reward_type": "MP",
+          "reward_value": 2500
+        }
+      ]
+    },
+    "level_quest": null
+  },
+  "error": null,
+  "id": 49
+}

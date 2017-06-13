@@ -1,0 +1,7 @@
+{
+  "id": 46,
+  "method": "game.getOwnAchievementList",
+  "params": [
+    103052
+  ]
+}
