@@ -1,0 +1,12 @@
+{
+  "id": 51,
+  "method": "game.getLineTopRank",
+  "params": [
+    0,
+    1,
+    20,
+    [
+      103052
+    ]
+  ]
+}

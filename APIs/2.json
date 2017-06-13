@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "method": "board.getNoticeList",
+  "params": [
+    "US",
+    0,
+    4
+  ]
+}

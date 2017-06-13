@@ -1,0 +1,8 @@
+{
+  "id": 33,
+  "method": "game.getResourceList",
+  "params": [
+    "1.0.0",
+    "IOS"
+  ]
+}

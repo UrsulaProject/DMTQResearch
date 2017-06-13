@@ -1,0 +1,1589 @@
+{
+		"result": {
+			"server": "http://dlvynqr5glhj4.cloudfront.net/dmqglb/patch",
+			"resources": [
+				{
+					"resource_id": 1,
+					"url": "/phone/48/ios/r/ver4",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/48/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/48/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/48/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/48/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/51/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/51/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/51/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/51/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/52/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/52/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/52/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/52/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/54/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/54/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/54/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/54/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/55/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/55/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/55/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/55/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e1.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e2.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e3.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e4.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e5.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e6.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e7.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e8.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e9.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e10.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e11.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e12.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e13.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e14.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e15.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e16.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e17.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/d_e18.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/us/table/song_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/57/ios/r/jp/table/song_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/58/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/58/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/58/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/58/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/60/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/60/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/60/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/60/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/61/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/61/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_a0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_b0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e1.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e2.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e3.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e4.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e5.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e6.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e7.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e8.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e9.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e10.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e11.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e12.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e13.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e14.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e15.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e16.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e17.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_e18.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_i0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_m0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk00.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk01.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk02.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk03.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk04.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk05.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk06.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk07.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk08.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_nk09.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_q0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk01.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk02.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk03.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk04.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk05.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk06.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk07.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk08.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk09.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk10.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/59/ios/r/d_sk11.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/60/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/60/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/60/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/60/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/61/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/61/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/62/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/62/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/62/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/63/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/63/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_a0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_b0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e1.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e2.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e3.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e4.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e5.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e6.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e7.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e8.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e9.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e10.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e11.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e12.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e13.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e14.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e15.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e16.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e17.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_e18.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_i0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_m0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk00.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk01.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk02.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk03.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk04.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk05.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk06.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk07.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk08.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_nk09.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk01.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk02.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk03.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk04.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk05.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk06.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk07.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk08.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk09.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk10.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/64/ios/r/d_sk11.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e10.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e11.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e12.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e13.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e14.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e15.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e16.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e17.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e18.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_i0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_m0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk00.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk01.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk02.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk03.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk04.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk05.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk06.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk07.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk08.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_nk09.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_q0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk01.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk02.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk03.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk04.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk05.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk06.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk07.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk08.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk09.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk10.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_sk11.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_a0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_b0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e1.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e2.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e3.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e4.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e5.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e6.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e7.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e8.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/66/ios/r/d_e9.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/67/ios/r/d_e18.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/67/ios/r/d_m0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/67/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/67/ios/r/us/table/song_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/67/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/67/ios/r/jp/table/song_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/us/table/song_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/jp/table/song_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/jp/table/acievement_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/us/table/acievement_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/68/ios/r/d_e18.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/69/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/69/ios/r/us/table/song_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/69/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/69/ios/r/jp/table/song_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/70/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/71/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/72/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/jp/table/category_categoryproduct.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/jp/table/ingameitem_ingameitem.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/jp/table/ingameitem_itemeffect.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/jp/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/jp/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/jp/table/quest_achievement.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/jp/table/song_song.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/jp/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/us/table/category_categoryproduct.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/us/table/ingameitem_ingameitem.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/us/table/ingameitem_itemeffect.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/us/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/us/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/us/table/quest_achievement.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/us/table/song_song.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/73/ios/r/us/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/jp/table/category_categoryproduct.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/jp/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/jp/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/jp/table/song_song.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/jp/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/us/table/category_categoryproduct.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/us/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/us/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/us/table/song_song.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/74/ios/r/us/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/75/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/75/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/76/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/76/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/77/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/77/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/78/ios/r/jp/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/78/ios/r/jp/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/78/ios/r/us/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/78/ios/r/us/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/79/ios/r/jp/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/79/ios/r/us/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/d_e19.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/d_m0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/jp/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/jp/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/jp/table/song_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/us/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/us/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/80/ios/r/us/table/song_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/82/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/82/ios/r/jp/table/song_song.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/82/ios/r/jp/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/82/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/82/ios/r/us/table/song_song.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/82/ios/r/us/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/83/ios/r/jp/table/category_categoryproduct.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/83/ios/r/us/table/category_categoryproduct.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/84/ios/r/jp/table/quest_achievement.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/84/ios/r/us/table/quest_achievement.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/85/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/85/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/86/ios/r/jp/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/86/ios/r/us/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/87/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/87/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/87/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/87/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/88/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/88/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/d_e20.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/d_m0.unity3d",
+					"resource_type": "AT"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/category_categoryproduct.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/item_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/notice_notice.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/song_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/song_song.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/song_songFile.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/category_categoryproduct.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/item_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/notice_notice.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/product_item.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/product_product.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/song_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/song_song.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/song_songFile.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/song_songPattern.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/quest_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/jp/table/quest_mission_desc_jp.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/quest_desc_us.csv",
+					"resource_type": "LA"
+				},
+				{
+					"resource_id": 1,
+					"url": "/phone/89/ios/r/us/table/quest_mission_desc_us.csv",
+					"resource_type": "LA"
+				}
+			]
+		},
+		"error": null,
+		"id": 33
+	}

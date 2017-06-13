@@ -34,7 +34,7 @@ print foo
 access_token=foo['value']['access_token']
 NickName=foo['value']['member']['nickname']
 ProfileImageURL=foo['value']['member']['profile_img_url']
-GUID=foo['value']['extra_infos']['result']['guid']
+GUID=foo['value']['extra_infos']['result']['SECRET_KEY']
 DMTHTTPHeader={
 	                "Api-Token" : "",
 	                "Fp" : "71278e4607fbc7d83ca2e82c83490f08",

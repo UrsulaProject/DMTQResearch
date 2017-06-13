@@ -8,7 +8,7 @@ MD5.ToHexString(MD5.GenHash(SecretKey + postData));;
 
 Nce为随机32位hex表示的字符串
 
-参数结构与下文的类似
+参数结构为一个列表里包含一系列对应请求的字符串，每次请求可包含多个API调用。如下文为一个只请求一次user.loginV2的登陆
 向这里POST JSON:
 ```
 [{"id":9,"method":"user.loginV2","params":[刚才的ACCESS_TOKEN,"Naville","http://img.pmangplus.com/members/128280949/profile_img","1.0.11","iOS"]}]
