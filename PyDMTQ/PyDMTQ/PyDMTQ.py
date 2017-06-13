@@ -2,16 +2,33 @@ import requests
 import json
 import string
 import random
+import sys
+import os
 from urllib import urlencode
 from Crypto.Hash import MD5
 
 
 class PyDMTQ(object):
     #This is MethodID/MethodName Table
-    IDMethodTable={56:"game.getPatternUrl"
+    IDMethodTable={56:"game.getPatternUrl",
+                   69:"game.getFirstResourceSongList",
+                   28:"shop.getUnlockedProductList",
+                   34:"game.getOwnPatternScore",
+                   14:"user.getOwnRecomInfo",
+                   49:"game.getOwnQuestList",
+                   46:"game.getOwnAchievementList",
+                   24:"shop.getOwnItemList",
+                   41:"game.getOwnSongList",
+                   35:"game.getUserAsset",
+                   10:"user.updateInfo",
+                   6:"memo.getMemoList",
+                   2:"board.getNoticeList",
+                   51:"game.getLineTopRank",
+                   33:"game.getResourceList",
+                   39:"game.getSongList"
 
     }
-    #Functions are named as MethodName.replace(".","") for dynamic method dispatching
+    #Functions are named as MethodName.replace(".","_") for dynamic method dispatching
     def __init__(self, email, password):
         #PMang Login
         HTTPHeaders = {"User-Agent": "PmangPlus SDK 1.8 170414 (iPhone OS,9.3.3,iPad5,3,Apple,(null),(null))",
@@ -97,9 +114,34 @@ class PyDMTQ(object):
         if EarphoneMode==True:
             EM="e"
 
-        return self.APIPost(56,[self.guid,PatternId,EM,DeviceType]).content
+        return json.loads(self.APIPost(56,[self.guid,PatternId,EM,DeviceType]).content)[0]["result"]
+    def game_getSongList(self):
+        return json.loads(self.APIPost(39,[]).content)[0]["result"]
 
 
 if __name__ == '__main__':
+    RootPath=os.path.dirname(os.path.abspath(__file__))
+    RootPath=os.path.join(RootPath,"Patterns")
+    if not os.path.exists(RootPath):
+        os.makedirs(RootPath)
     x=PyDMTQ("403799106@qq.com","zhs960919")
-    print x.game_getPatternUrl(3)
+    SL=x.game_getSongList()["songs"]
+    for item in SL:
+        SongID=item["song_id"]
+        for P in item["song_patterns"]:
+            PID=P["pattern_id"]
+            ContainerPath=os.path.join(RootPath,str(SongID))
+            if not os.path.exists(ContainerPath):
+                os.makedirs(ContainerPath)
+            PFPath=os.path.join(ContainerPath,str(PID))
+            PEMFPath=os.path.join(ContainerPath,str(PID)+"_EARPHONE")
+            if os.path.exists(PFPath)==False:
+                PF=open(PFPath,"w")
+                Pattern=requests.get(x.game_getPatternUrl(PID,EarphoneMode=False)).content
+                PF.write(Pattern)
+                PF.close()
+            if os.path.exists(PEMFPath)==False:
+                PatternEM=requests.get(x.game_getPatternUrl(PID)).content
+                PEMF=open(PEMFPath,"w")
+                PEMF.write(PatternEM)
+                PEMF.close()
