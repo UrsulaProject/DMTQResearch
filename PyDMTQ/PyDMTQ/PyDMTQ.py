@@ -105,6 +105,8 @@ class PyDMTQ(object):
         return json.loads(self.APIPost(33,[version,ClientOS]).content)[0]["result"]
     def game_getUserAsset(self):
         return json.loads(self.APIPost(35,[self.guid]).content)[0]["result"]
+    def game_getFirstResourceSongList(self):
+        return json.loads(self.APIPost(69,[]).content)[0]["result"]
     def game_getSongUrl(self,SongID,ClientOS,Version):
         '''
             ClientOS: IOS or ANDROID

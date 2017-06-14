@@ -1,21 +1,21 @@
 {
-		"result": {
-			"exp": 40217,
-			"mpoint": 12790,
-			"score": 46113156,
-			"slot_item1": 0,
-			"slot_item2": 0,
-			"slot_item3": 90002,
-			"slot_item4": 100001,
-			"in_game_item1": 10,
-			"in_game_item2": 10,
-			"in_game_item3": 10,
-			"lev": 73,
-			"amt_total": "20",
-			"amt_cash": "0",
-			"amt_point": "20",
-			"amt_mileage": "0"
-		},
-		"error": null,
-		"id": 35
-	}
+	"result": {
+		"lev": 73,
+		"amt_total": "20",
+		"score": 46113156,
+		"in_game_item1": 10,
+		"amt_mileage": "0",
+		"mpoint": 12790,
+		"amt_cash": "0",
+		"exp": 40217,
+		"slot_item1": 0,
+		"slot_item2": 0,
+		"slot_item3": 90002,
+		"slot_item4": 100001,
+		"amt_point": "20",
+		"in_game_item3": 10,
+		"in_game_item2": 10
+	},
+	"error": null,
+	"id": 35
+}

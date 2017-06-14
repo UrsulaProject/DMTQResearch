@@ -1,0 +1,13 @@
+[
+	{
+		"id": 9,
+		"method": "user.loginV2",
+		"params": [
+			"access_token",
+			"nickname",
+			"profileimageurl",
+			"1.0.11",
+			"iOS"
+		]
+	}
+]
