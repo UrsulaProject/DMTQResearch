@@ -1,11 +1,1 @@
-[
-	{
-		"result": {
-			"api_url": "https://dmqglb.mb.pmang.com/DMQ/rpc",
-			"service_type": "LIVE",
-			"coupon_yn": "Y"
-		},
-		"error": null,
-		"id": 0
-	}
-]
+[{"result":{"api_url":"https:\/\/dmqglb.mb.pmang.com\/DMQ\/rpc","service_type":"LIVE","coupon_yn":"Y"},"error":null,"id":0}]

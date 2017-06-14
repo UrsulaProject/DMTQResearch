@@ -28,7 +28,8 @@ class PyDMTQ(object):
                    33:"game.getResourceList",
                    39:"game.getSongList",
                    55:"game.getSongUrl",
-                   9:"user.loginV2"
+                   9:"user.loginV2",
+                   0:"service.getInfo"
 
     }
     #Functions are named as MethodName.replace(".","_") for dynamic method dispatching
@@ -88,6 +89,7 @@ class PyDMTQ(object):
         return ''.join(random.choice(chars) for _ in range(size))
     def user_loginV2(self):
         foo2=json.loads(self.APIPost(9,[self.access_token,self.nickname,self.profileimageurl,"1.0.11","iOS"]).content)
+        self.LoginInfo=foo2[0]
         self.apitoken=foo2[0]['result']['API_TOKEN']
         self.secretkey=str(foo2[0]['result']['SECRET_KEY'])
         self.secretkeyver=str(foo2[0]['result']['SECRET_VER'])
@@ -107,6 +109,8 @@ class PyDMTQ(object):
         return json.loads(self.APIPost(35,[self.guid]).content)[0]["result"]
     def game_getFirstResourceSongList(self):
         return json.loads(self.APIPost(69,[]).content)[0]["result"]
+    def service_getInfo(self,Version,ClientOS):
+        return json.loads(self.APIPost(0,[Version,ClientOS]).content)[0]["result"]
     def game_getSongUrl(self,SongID,ClientOS,Version):
         '''
             ClientOS: IOS or ANDROID
@@ -160,4 +164,5 @@ class PyDMTQ(object):
 if __name__ == '__main__':
     x=PyDMTQ("403799106@qq.com","zhs960919")
     x.user_loginV2()
+    x.service_getInfo("1.0.11","IOS")
     print x.game_getUserAsset()
