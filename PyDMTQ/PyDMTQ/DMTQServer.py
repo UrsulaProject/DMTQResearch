@@ -45,7 +45,9 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
                    39:"game.getSongList",
                    55:"game.getSongUrl",
                    9:"user.loginV2",
-                   0:"service.getInfo"
+                   0:"service.getInfo",
+                   53:"game.getLineScoreRange",
+                   48:"game.getPreviewPlayInfo"
 
     }
     def gzipencode(self, content):
@@ -54,16 +56,6 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
         f.write(content)
         f.close()
         return out.getvalue()
-    def BuildJSONString(self,InputList):
-        '''
-        DMTQ is using its very own stupid error-prone JSON Parser.
-        We have to built our own serializer to strictly follow its format
-        '''
-    	SubStringList=list()
-    	for item in InputList:
-            SS="{\"result\":"+json.dumps(item["result"],separators=(',', ':'))+",\"error\":"+json.dumps(item["error"],separators=(',', ':'))+",\"id\":"+str(item["id"])+"}"
-            SubStringList.append(SS)
-    	return ("["+",".join(SubStringList)+"]").replace("/","\/")
     def do_OPTIONS(self):
         print self.headers
         self.send_response(200, "OK")
@@ -94,12 +86,6 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
                 f=open("/Users/Naville/Development/DMTQResearch/APIs/Response/"+str(ID)+".json","r")
                 Response.append(json.loads(f.read()))
                 f.close()
-        '''
-        if 0 in ReqIDs:
-            f=open("/Users/Naville/Development/DMTQResearch/APIs/Response/0.json","r")
-            Data=self.gzipencode(f.read())
-            f.close()
-        '''
         self.send_response(200, "ok")
         self.send_header("Content-Type", "application/json")
         self.send_header("Vary", "Accept-Encoding")
@@ -109,7 +95,7 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
         self.send_header("Transfer-Encoding", "chunked")
         self.send_header("Connection", "Keep-alive")
         self.end_headers()
-        Data=self.gzipencode(self.BuildJSONString(Response))
+        Data=self.gzipencode(json.dumps(Response,separators=(',', ':')).replace("/","\/").replace(" ",""))
         self.wfile.write("%x\r\n%s\r\n" % (len(Data), Data))
         self.wfile.write("0\r\n\r\n" )
         self.wfile.flush()
@@ -118,20 +104,22 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
     def shop_getOwnItemList(self,Params,Headers):
         return {"result":[{"item_id":90001,"own_count":1,"repeat_count":999,"using_yn":"Y","reg_date":"20141113010808","end_date":""},{"item_id":90002,"own_count":1,"repeat_count":899,"using_yn":"Y","reg_date":"20141231151858","end_date":""},{"item_id":90003,"own_count":1,"repeat_count":999,"using_yn":"Y","reg_date":"20160228031209","end_date":""},{"item_id":90005,"own_count":1,"repeat_count":8,"using_yn":"Y","reg_date":"20141112213302","end_date":""},{"item_id":90006,"own_count":1,"repeat_count":14,"using_yn":"Y","reg_date":"20141113011210","end_date":""},{"item_id":90008,"own_count":1,"repeat_count":10,"using_yn":"Y","reg_date":"20150118121938","end_date":""},{"item_id":90009,"own_count":1,"repeat_count":10,"using_yn":"Y","reg_date":"20151007221159","end_date":""},{"item_id":100001,"own_count":1,"repeat_count":0,"using_yn":"N","reg_date":"20140801010031","end_date":""}],"error":None,"id":24}
     def game_getUserAsset(self,Params,Headers):
-        return {"result":{"lev":73,"amt_total":"20","score":46113156,"in_game_item1":100,"amt_mileage":"0","mpoint":99999,"amt_cash":"0","exp":40217,"slot_item1":0,"slot_item2":0,"slot_item3":90002,"slot_item4":100001,"amt_point":"9999","in_game_item3":100,"in_game_item2":100},"error":None,"id":35}
-    '''
-    def game_getResourceList(self,Params,Headers):
-        return {
-            "id":33,
-            "error":None,
-            "result":self.server.PyDMTQ.game_getResourceList(Params[0],Params[1])
-        }
-    def user_loginV2(self,Params,Headers):
-        return self.server.PyDMTQ.LoginInfo
-    '''
-
+        return {"result":{"lev":73,"amt_total":"999999","score":46113156,"in_game_item1":100,"amt_mileage":"0","mpoint":99999,"amt_cash":"0","exp":40217,"slot_item1":0,"slot_item2":0,"slot_item3":90002,"slot_item4":100001,"amt_point":"9999","in_game_item3":100,"in_game_item2":100},"error":None,"id":35}
+    def game_getSongUrl(self,Params,Headers):
+        return 	{
+        		"result": {
+        			"pmang": [
+        				"http://192.16.0.109:8899/"+"resource/phone/1/ios/song/raisemeup.fpk",
+        				"http://192.16.0.109:8899/"+"resource/phone/1/ios/song/raisemeup.webm"
+        			],
+        			"amazon": [
+        				"http://192.16.0.109:8899/"+"resource/phone/1/ios/song/raisemeup.fpk",
+        				"http://192.16.0.109:8899/"+"resource/phone/1/ios/song/raisemeup.webm"
+        			]
+        		},
+        		"error": None,
+        		"id": 55
+        	}
 if __name__ == '__main__':
     httpd = SocketServer.TCPServer(("127.0.0.1", 8899), DMTQServerHandler)
-    #httpd.PyDMTQ=PyDMTQ.PyDMTQ("403799106@qq.com","zhs960919")
-    #httpd.PyDMTQ.user_loginV2()
     httpd.serve_forever()

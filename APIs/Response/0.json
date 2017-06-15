@@ -1,1 +1,12 @@
-[{"result":{"api_url":"https:\/\/dmqglb.mb.pmang.com\/DMQ\/rpc","service_type":"LIVE","coupon_yn":"Y"},"error":null,"id":0}]
+[{
+	"result": {
+		"api_url": "https:\/\/dmqglb.mb.pmang.com\/DMQ\/rpc",
+		"file_server_url": "http:\/\/d15nk75x5a4zzz.cloudfront.net\/dmqglb\/patch",
+		"file_manage_ver": "1",
+		"service_type": "LIVE",
+		"coupon_yn": "Y",
+		"event_url": "http:\/\/mwe.dq.pmang.com\/:dmq_Event\/index"
+	},
+	"error": null,
+	"id": 0
+}]
