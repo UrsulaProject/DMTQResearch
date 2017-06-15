@@ -54,6 +54,16 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
         f.write(content)
         f.close()
         return out.getvalue()
+    def BuildJSONString(InputList):
+        '''
+        DMTQ is using its very own stupid error-prone JSON Parser.
+        We have to built our own serializer to strictly follow its format
+        '''
+    	SubStringList=list()
+    	for item in InputList:
+    		SS="{\"result\":"+json.dumps(item["result"],separators=(',', ':'))+",\"error\":"+json.dumps(item["error"],separators=(',', ':'))+",\"id\":"+str(item["id"])+"}"
+    		SubStringList.append(SS)
+    	return ("["+",".join(SubStringList)+"]").replace("/","\/")
     def do_OPTIONS(self):
         print self.headers
         self.send_response(200, "OK")
@@ -76,7 +86,6 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
         for Req in Info:
             ID=Req["id"]
             ReqIDs.append(ID)
-            '''
             try:
                 Handler=getattr(self,DMTQServerHandler.IDMethodTable[ID].replace(".","_"))
                 Response.append(Handler(Req["params"],self.headers))
@@ -85,11 +94,12 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
                 f=open("/Users/Naville/Development/DMTQResearch/APIs/Response/"+str(ID)+".json","r")
                 Response.append(json.loads(f.read()))
                 f.close()
-            '''
+        '''
         if 0 in ReqIDs:
             f=open("/Users/Naville/Development/DMTQResearch/APIs/Response/0.json","r")
             Data=self.gzipencode(f.read())
             f.close()
+        '''
         self.send_response(200, "ok")
         self.send_header("Content-Type", "application/json")
         self.send_header("Vary", "Accept-Encoding")
@@ -99,7 +109,7 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
         self.send_header("Transfer-Encoding", "chunked")
         self.send_header("Connection", "Keep-alive")
         self.end_headers()
-        #Data=self.gzipencode(json.dumps(Response,sort_keys=True,separators=(',', ':')).replace("/","\/"))
+        Data=self.gzipencode(DMTQServerHandler.BuildJSONString(Response))
         self.wfile.write("%x\r\n%s\r\n" % (len(Data), Data))
         self.wfile.write("0\r\n\r\n" )
         self.wfile.flush()
