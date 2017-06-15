@@ -29,7 +29,9 @@ class PyDMTQ(object):
                    39:"game.getSongList",
                    55:"game.getSongUrl",
                    9:"user.loginV2",
-                   0:"service.getInfo"
+                   0:"service.getInfo",
+                   53:"game.getLineScoreRange",
+                   48:"game.getPreviewPlayInfo"
 
     }
     #Functions are named as MethodName.replace(".","_") for dynamic method dispatching
@@ -111,12 +113,19 @@ class PyDMTQ(object):
         return json.loads(self.APIPost(69,[]).content)[0]["result"]
     def service_getInfo(self,Version,ClientOS):
         return json.loads(self.APIPost(0,[Version,ClientOS]).content)[0]["result"]
+    def game_getLineScoreRange(self,SongId,Line,FromRank,Range):
+        '''
+        Range is 20 in game
+        '''
+        return json.loads(self.APIPost(53,[SongId,Line,FromRank,Range]).content)[0]["result"]
     def game_getSongUrl(self,SongID,ClientOS,Version):
         '''
             ClientOS: IOS or ANDROID
             Version: 1.0.0
         '''
         return json.loads(self.APIPost(55,[self.guid,SongID,ClientOS,Version]).content)[0]["result"]
+    def game_getPreviewPlayInfo(self,PatternID):
+        return json.loads(self.APIPost(48,[self.guid,PatternID]).content)[0]["result"]
     def saveAllPatterns(self,RootPath=os.path.join(os.path.dirname(os.path.abspath(__file__)),"Patterns")):
         if not os.path.exists(RootPath):
             os.makedirs(RootPath)
@@ -165,4 +174,4 @@ if __name__ == '__main__':
     x=PyDMTQ("403799106@qq.com","zhs960919")
     x.user_loginV2()
     x.service_getInfo("1.0.11","IOS")
-    print x.game_getUserAsset()
+    x.game_getPreviewPlayInfo(3)

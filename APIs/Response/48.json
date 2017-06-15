@@ -1,0 +1,65 @@
+[
+	{
+		"result": {
+			"note_count": 3,
+			"slot_item_effect": {
+				"slot_item1": null,
+				"slot_item2": null,
+				"slot_item3": {
+					"item_id": "90008",
+					"effect_type": "N",
+					"effect_point": 1,
+					"effect_count": 1,
+					"effect_special": ""
+				}
+			},
+			"in_game_item": {
+				"in_game_item1": {
+					"item_type": "FP",
+					"item_level": 10,
+					"product_id": 70020,
+					"item_effects": [
+						{
+							"item_id": 70020,
+							"effect_type": "F",
+							"effect_point": 5,
+							"effect_count": 3,
+							"effect_special": ""
+						}
+					]
+				},
+				"in_game_item2": {
+					"item_type": "GR",
+					"item_level": 10,
+					"product_id": 70030,
+					"item_effects": [
+						{
+							"item_id": 70030,
+							"effect_type": "G",
+							"effect_point": 100,
+							"effect_count": 1,
+							"effect_special": ""
+						}
+					]
+				},
+				"in_game_item3": {
+					"item_type": "AB",
+					"item_level": 10,
+					"product_id": 70010,
+					"item_effects": [
+						{
+							"item_id": 70010,
+							"effect_type": "A",
+							"effect_point": 12,
+							"effect_count": 10,
+							"effect_special": "JUDGEMENT_MAX100"
+						}
+					]
+				}
+			},
+			"game_token": "b1a95cd158863f37fa267d6822d9ef31kfIg"
+		},
+		"error": null,
+		"id": 48
+	}
+]
