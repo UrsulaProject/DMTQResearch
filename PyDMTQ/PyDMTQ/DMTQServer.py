@@ -54,15 +54,15 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
         f.write(content)
         f.close()
         return out.getvalue()
-    def BuildJSONString(InputList):
+    def BuildJSONString(self,InputList):
         '''
         DMTQ is using its very own stupid error-prone JSON Parser.
         We have to built our own serializer to strictly follow its format
         '''
     	SubStringList=list()
     	for item in InputList:
-    		SS="{\"result\":"+json.dumps(item["result"],separators=(',', ':'))+",\"error\":"+json.dumps(item["error"],separators=(',', ':'))+",\"id\":"+str(item["id"])+"}"
-    		SubStringList.append(SS)
+            SS="{\"result\":"+json.dumps(item["result"],separators=(',', ':'))+",\"error\":"+json.dumps(item["error"],separators=(',', ':'))+",\"id\":"+str(item["id"])+"}"
+            SubStringList.append(SS)
     	return ("["+",".join(SubStringList)+"]").replace("/","\/")
     def do_OPTIONS(self):
         print self.headers
@@ -109,10 +109,16 @@ class DMTQServerHandler(BaseHTTPRequestHandler):
         self.send_header("Transfer-Encoding", "chunked")
         self.send_header("Connection", "Keep-alive")
         self.end_headers()
-        Data=self.gzipencode(DMTQServerHandler.BuildJSONString(Response))
+        Data=self.gzipencode(self.BuildJSONString(Response))
         self.wfile.write("%x\r\n%s\r\n" % (len(Data), Data))
         self.wfile.write("0\r\n\r\n" )
         self.wfile.flush()
+    def service_getInfo(self,Params,Headers):
+        return {'id': 0, 'result': {'service_type': 'LIVE', 'api_url': 'https://dmqglb.mb.pmang.com/DMQ/rpc', 'coupon_yn': 'Y'}, 'error': None}
+    def shop_getOwnItemList(self,Params,Headers):
+        return {"result":[{"item_id":90001,"own_count":1,"repeat_count":999,"using_yn":"Y","reg_date":"20141113010808","end_date":""},{"item_id":90002,"own_count":1,"repeat_count":899,"using_yn":"Y","reg_date":"20141231151858","end_date":""},{"item_id":90003,"own_count":1,"repeat_count":999,"using_yn":"Y","reg_date":"20160228031209","end_date":""},{"item_id":90005,"own_count":1,"repeat_count":8,"using_yn":"Y","reg_date":"20141112213302","end_date":""},{"item_id":90006,"own_count":1,"repeat_count":14,"using_yn":"Y","reg_date":"20141113011210","end_date":""},{"item_id":90008,"own_count":1,"repeat_count":10,"using_yn":"Y","reg_date":"20150118121938","end_date":""},{"item_id":90009,"own_count":1,"repeat_count":10,"using_yn":"Y","reg_date":"20151007221159","end_date":""},{"item_id":100001,"own_count":1,"repeat_count":0,"using_yn":"N","reg_date":"20140801010031","end_date":""}],"error":None,"id":24}
+    def game_getUserAsset(self,Params,Headers):
+        return {"result":{"lev":73,"amt_total":"20","score":46113156,"in_game_item1":100,"amt_mileage":"0","mpoint":99999,"amt_cash":"0","exp":40217,"slot_item1":0,"slot_item2":0,"slot_item3":90002,"slot_item4":100001,"amt_point":"9999","in_game_item3":100,"in_game_item2":100},"error":None,"id":35}
     '''
     def game_getResourceList(self,Params,Headers):
         return {
