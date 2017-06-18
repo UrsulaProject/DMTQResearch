@@ -1,0 +1,3 @@
+openssl genrsa -out myselfsigned.key 2048
+openssl req -new -x509 -sha256 -key myselfsigned.key -out myselfsigned.cer -days 365 -subj /CN=www.mysite.com
+openssl pkcs12 -export -out myselfsigned.pfx -inkey myselfsigned.key -in myselfsigned.cer
