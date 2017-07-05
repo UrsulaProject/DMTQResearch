@@ -1,0 +1,44 @@
+https://dmqglb.mb.pmang.com/DMQ/rpc
+rq
+POST /DMQ/rpc HTTP/1.1
+Host: dmqglb.mb.pmang.com
+Fp: 37396ed893af7ceadf6c229334cc65cc
+X-Unity-Version: 5.6.1p1
+Accept: */*
+Proxy-Connection: keep-alive
+Nce: 4c7b53735fac327861a679b6e5fcbf5a
+Api-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs
+Secret-Ver: 1
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+Content-Length: 75
+User-Agent: dmtq/171 CFNetwork/758.5.3 Darwin/15.6.0
+Connection: keep-alive
+Secret-Key: DMQGLBlive4
+
+[{
+    "id": 60,
+    "method": "game.getSongUrl",
+    "params": [3018783, 107, "IOS", "1.0.0"]
+}]
+re
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 04 Jul 2017 17:19:37 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Encoding: gzip
+
+[{
+    "result": {
+        "pmang": ["http:\/\/dlvynqr5glhj4.cloudfront.net\/resource\/phone\/1\/ios\/song\/playthefuture.fpk", "http:\/\/dlvynqr5glhj4.cloudfront.net\/resource\/phone\/1\/ios\/song\/playthefuture.webm"],
+        "amazon": ["http:\/\/dmqglb.mdl.pmang.com\/resource\/phone\/1\/ios\/song\/playthefuture.fpk", "http:\/\/dmqglb.mdl.pmang.com\/resource\/phone\/1\/ios\/song\/playthefuture.webm"]
+    },
+    "error": null,
+    "id": 60
+}]

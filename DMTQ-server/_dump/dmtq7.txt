@@ -1,0 +1,50 @@
+https://dmqglb.mb.pmang.com/DMQ/rpc
+rq
+POST /DMQ/rpc HTTP/1.1
+Host: dmqglb.mb.pmang.com
+Fp: 529d24c16c9451dc7eb6aca6b5283551
+X-Unity-Version: 5.6.1p1
+Accept: */*
+Proxy-Connection: keep-alive
+Nce: 509cb11c9527d90e6fbbe393482ebacb
+Api-Token: O7VuJJOWiOgWTF5zBey8T9LLpmP94LmQATjDjAex5kUS9p0BI9CKksBXej+OX8l4
+Secret-Ver: 1
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+Content-Length: 151
+User-Agent: dmtq/171 CFNetwork/758.5.3 Darwin/15.6.0
+Connection: keep-alive
+Secret-Key: DMQGLBlive2
+
+[{
+    "id": 9,
+    "method": "user.loginV2",
+    "params": ["198719325|576|IPAD|KR|fa69b862d171fec7c4c2cebeec348048282497ec|1499188349372", " ", "", "1.0.12", "iOS", "HK"]
+}]
+re
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 04 Jul 2017 17:13:34 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Encoding: gzip
+
+[{
+    "result": {
+        "API_TOKEN": "VHLgu\/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+        "SECRET_KEY": "DMQGLBlive4",
+        "SECRET_VER": "1",
+        "guid": "3018783",
+        "recom_code": "QbCx9Xe",
+        "displayName": " ",
+        "profileImg": "",
+        "INTRO_SERVER": "https:\/\/dmqglb.mb.pmang.com\/DMQ\/rpc"
+    },
+    "error": null,
+    "id": 9
+}]
