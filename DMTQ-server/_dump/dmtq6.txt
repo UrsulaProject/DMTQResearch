@@ -1,0 +1,65 @@
+https://dmqglb.mb.pmang.com/DMQ/rpc
+rq
+POST /DMQ/rpc HTTP/1.1
+Host: dmqglb.mb.pmang.com
+Fp: 562f4e890eb3039e5ad005fa17ba7fe1
+X-Unity-Version: 5.6.1p1
+Accept: */*
+Proxy-Connection: keep-alive
+Nce: a9e63241065401565e7e8087e98f70d3
+Api-Token: O7VuJJOWiOgWTF5zBey8T9LLpmP94LmQATjDjAex5kUS9p0BI9CKksBXej+OX8l4
+Secret-Ver: 1
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+Content-Length: 136
+User-Agent: dmtq/171 CFNetwork/758.5.3 Darwin/15.6.0
+Connection: keep-alive
+Secret-Key: DMQGLBlive2
+
+[{
+    "id": 85,
+    "method": "game.checkPmang2Global",
+    "params": ["198719325"]
+}, {
+    "id": 81,
+    "method": "game.getGameAssetByPuid",
+    "params": ["198719325"]
+}]
+re
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 04 Jul 2017 17:12:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Encoding: gzip
+
+[{
+    "result": false,
+    "error": null,
+    "id": 85
+}, {
+    "result": {
+        "status": "SUCCESS",
+        "code": 200,
+        "myAssetInfo": {
+            "puid": "198719325",
+            "guid": 3018783,
+            "exp": 0,
+            "mpoint": 0,
+            "score": 0,
+            "lev": 1,
+            "amt_total": 0,
+            "amt_cash": 0,
+            "amt_point": 0,
+            "song_count": 1,
+            "migrated_yn": "N"
+        }
+    },
+    "error": null,
+    "id": 81
+}]

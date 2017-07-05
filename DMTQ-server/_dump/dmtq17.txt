@@ -1,0 +1,37 @@
+http://static.pmangplus.com/inspection/status.json?local_cd=ENG
+rq
+GET /inspection/status.json?local_cd=ENG HTTP/1.1
+Host: static.pmangplus.com
+Accept: */*
+X-PmangPlus-Platform: iOS
+locale: zh_HK
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+fp: 1c672b5e45568fb931d29f233f8b8370b9638243
+ver: 5
+User-Agent: PmangPlus SDK 1.8 170613 (iPhone OS,9.3.3,iPad6,7,Apple,(null),(null))
+Connection: keep-alive
+ts: 1499188336784
+re
+HTTP/1.1 200 OK
+Via: STON/2.3.2
+Date: Tue, 04 Jul 2017 17:12:13 GMT
+Content-Length: 170
+Accept-Ranges: bytes
+ETag: "58fe59b8:aa"
+Last-Modified: Mon, 24 Apr 2017 20:02:00 GMT
+Content-Type: application/json
+Server: nginx/1.10.3
+Connection: Keep-Alive
+Keep-Alive: timeout=10
+
+{
+    "value": {
+        "open_yn": "N",
+        "disable_apps": [],
+        "non_kill_apps": [],
+        "noti_url": "http:\/\/static.pmangplus.com\/inspection\/noti.html"
+    },
+    "result_code": "000",
+    "resulr_msg": "API_OK"
+}

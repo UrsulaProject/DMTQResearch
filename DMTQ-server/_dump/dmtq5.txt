@@ -1,0 +1,44 @@
+https://dmqglb.mb.pmang.com/DMQ/rpc
+rq
+POST /DMQ/rpc HTTP/1.1
+Host: dmqglb.mb.pmang.com
+Fp: 8f62406a3b2cb1624314ed18f0b4cfc5
+X-Unity-Version: 5.6.1p1
+Accept: */*
+Proxy-Connection: keep-alive
+Nce: 5d22729c120b52870f1c2f02727ff784
+Api-Token: O7VuJJOWiOgWTF5zBey8T9LLpmP94LmQATjDjAex5kUS9p0BI9CKksBXej+OX8l4
+Secret-Ver: 1
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+Content-Length: 159
+User-Agent: dmtq/171 CFNetwork/758.5.3 Darwin/15.6.0
+Connection: keep-alive
+Secret-Key: DMQGLBlive2
+
+[{
+    "id": 79,
+    "method": "game.getGameAssetForMigByToken",
+    "params": [3018783, "file:///var/mobile/Documents/Dumped/jp.konami.jubeatplus-iOS9.0-(Clutch-2.0.4)-2.ipa"]
+}]
+re
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 04 Jul 2017 17:12:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Encoding: gzip
+
+[{
+    "result": null,
+    "error": {
+        "code": "SVC.05001",
+        "message": "Error (Invalid pmangplus(member_id) user id)"
+    },
+    "id": 79
+}]

@@ -1,0 +1,36 @@
+https://pmangplus.com/apps/576/banners?local_cd=ENG&udid=07517423-013C-48FD-A4F1-58470C751AE3
+rq
+GET /apps/576/banners?local_cd=ENG&udid=07517423-013C-48FD-A4F1-58470C751AE3 HTTP/1.1
+Host: pmangplus.com
+Accept: */*
+Proxy-Connection: keep-alive
+X-PmangPlus-Platform: iOS
+locale: zh_HK
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+fp: fe55432e952ee410e6ba3d183b24bae44cdb907c
+ver: 5
+User-Agent: PmangPlus SDK 1.8 170613 (iPhone OS,9.3.3,iPad6,7,Apple,(null),(null))
+Connection: keep-alive
+ts: 1499188337056
+
+
+re
+HTTP/1.1 200 OK
+Date: Tue, 04 Jul 2017 17:12:17 GMT
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Type: application/json;charset=UTF-8
+Vary: User-Agent,Accept-Encoding
+P3P: CP="NOI DSP DEVa TAIa OUR BUS ONL UNI", policyref="http://pmang.com/w3c/p3p.xml"
+Content-Encoding: gzip
+Connection: close
+Transfer-Encoding: chunked
+
+{
+    "value": [],
+    "result_code": "000",
+    "result_msg": "API_OK"
+}
