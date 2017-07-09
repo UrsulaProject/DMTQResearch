@@ -168,6 +168,7 @@ class PyDMTQ(object):
             SongID=item["song_id"]
             for P in item["song_patterns"]:
                 PID=P["pattern_id"]
+                print ("Downloading PatternID:"+str(PID))
                 ContainerPath=os.path.join(RootPath,str(SongID))
                 if not os.path.exists(ContainerPath):
                     os.makedirs(ContainerPath)
