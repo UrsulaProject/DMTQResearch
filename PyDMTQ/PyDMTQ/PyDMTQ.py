@@ -4,10 +4,11 @@ import string
 import random
 import sys
 import os
+import time
 from urlparse import urlparse
 from urllib import urlencode
 from Crypto.Hash import MD5
-
+import sha
 
 class PyDMTQ(object):
     #This is MethodID/MethodName Table
@@ -31,40 +32,66 @@ class PyDMTQ(object):
                    9:"user.loginV2",
                    0:"service.getInfo",
                    53:"game.getLineScoreRange",
-                   48:"game.getPreviewPlayInfo"
+                   48:"game.getPreviewPlayInfo",
+                   42:"game.savePlayResult",
+                   77:"game.getLineScoreRangeWithLevel"
 
     }
     #Functions are named as MethodName.replace(".","_") for dynamic method dispatching
-    def __init__(self, email, password):
+    app_key='c6a0fad2ef3ab45068ba95fdc059e2bf'
+    app_secret='ODY0NmM0ZjBjZTI5ZTQ2NzFkMTVmOTE2YjU1YzY3MmY'
+    def __init__(self, email=None, password=None,udid=None):
         #PMang Login
+        epoch=int(time.time())
         HTTPHeaders = {"User-Agent": "PmangPlus SDK 1.8 170414 (iPhone OS,9.3.3,iPad5,3,Apple,(null),(null))",
                        "X-PmangPlus-Platform": 'iOS',
-                       'fp': '7d76eec1ad9f17fd812e118a6cca0e6cfdfa8ea8',
+                       'fp': self.SHA1(str(epoch)+PyDMTQ.app_secret),
                        'locale': "en_US",
-                       'ts': '1497336612772',
+                       'ts': str(epoch),
                        'ver': '5'}
         Body = {'app_id': '576',
-                'app_key': 'c6a0fad2ef3ab45068ba95fdc059e2bf',
+                'app_key':PyDMTQ.app_key,
                 'locale': 'en_US',
                 'device_cd': 'IPAD',
-                'app_secret': 'ODY0NmM0ZjBjZTI5ZTQ2NzFkMTVmOTE2YjU1YzY3MmY',
+                'app_secret': PyDMTQ.app_secret,
                 'local_cd': 'ENG',
-                'passwd': password,
                 'os_ver': '9.3.3',
                 'app_ver': '1.0',
-                'jailbreak_yn': 'N',
-                'email': email,
-                'udid': 'BAA24753-294C-4529-9B1D-19730245E6A4'}
-        foo=json.loads(requests.post("https://pmangplus.com/accounts/3/login",params=Body, headers=HTTPHeaders).content)
+                "privacy_yn":"Y",
+                "ad_yn":"Y",
+                "provider":"",
+                "ad_night_yn":"N",
+                "jailbreak_yn": 'N',
+                "old_udid":"",
+                "mob_svc_yn":"Y",
+                'udid': udid}
+        if udid!=None:
+            Body["old_udid"]=udid
+            Body["udid"]=udid
+        else:
+            Body["old_udid"]=self.CalculateNce()
+            Body["udid"]=Body["old_udid"]
+        if email!=None and password!=None:
+            Body["passwd"]=password
+            Body["email"]=email
+        RawRequest=requests.post("https://pmangplus.com/accounts/v3/global/login_dmq",params=Body, headers=HTTPHeaders)
+        foo=json.loads(RawRequest.content)
         self.access_token=foo['value']['access_token']
-        self.nickname=foo['value']['member']['nickname']
-        self.profileimageurl=foo['value']['member']['profile_img_url']
-        self.guid=foo['value']['extra_infos']['result']['guid']
-        self.secretkey=foo['value']['extra_infos']['result']['SECRET_KEY']
-        self.secretkeyver=foo['value']['extra_infos']['result']['SECRET_VER']#This is temporary.
-        self.apitoken=""
+        self.member_id=foo['value']['member']['member_id']
         self.secretkey=""
         self.secretkeyver="1"
+        self.apitoken=""
+        if email==None and password==None:
+            self.nickname=" "
+            self.profileimageurl=""
+        else:
+            #Untested. Should be wrong
+            self.nickname=foo['value']['member']['nickname']
+            self.profileimageurl=foo['value']['member']['profile_img_url']
+    def SHA1(self,String):
+        x=sha.new()
+        x.update(String)
+        return x.hexdigest()
     def CalculateFp(self, PostData):
         h = MD5.new()
         h.update(bytearray(str(self.secretkey + PostData)))
@@ -90,7 +117,8 @@ class PyDMTQ(object):
     def CalculateNce(self, size=32, chars=string.ascii_lowercase + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))
     def user_loginV2(self):
-        foo2=json.loads(self.APIPost(9,[self.access_token,self.nickname,self.profileimageurl,"1.0.11","iOS"]).content)
+        foo2=json.loads(self.APIPost(9,[self.access_token,self.nickname,self.profileimageurl,"1.0.11","iOS","CN"]).content)
+
         self.LoginInfo=foo2[0]
         self.apitoken=foo2[0]['result']['API_TOKEN']
         self.secretkey=str(foo2[0]['result']['SECRET_KEY'])
@@ -113,6 +141,13 @@ class PyDMTQ(object):
         return json.loads(self.APIPost(69,[]).content)[0]["result"]
     def service_getInfo(self,Version,ClientOS):
         return json.loads(self.APIPost(0,[Version,ClientOS]).content)[0]["result"]
+    def game_savePlayResult(self,PatternId,JudgementStat,MaxCombo,LuckyBonus,Effector,IngameItem,GameToken):
+        '''
+        JudgementStat: list(none, breakCount, max1Count, max10Count, max20Count, max30Count, max40Count, max50Count, max60Count, max70Count, max80Count, max90Count, max100Count)
+        Effector: list(effectFade,effectTimeLine,effectBlink)
+        IngameItem: list(feverCount, gaugeRefillCount, breakShieldCount),
+        '''
+        return json.loads(self.APIPost(42,[self.guid,PatternId,JudgementStat,MaxCombo,LuckyBonus,Effector,IngameItem,GameToken]).content)[0]["result"]
     def game_getLineScoreRange(self,SongId,Line,FromRank,Range):
         '''
         Range is 20 in game
@@ -156,22 +191,26 @@ class PyDMTQ(object):
             SongID=SongInfo["song_id"]
             print ("Fetching SongURL of:"+str(SongID))
             URLList=list()
-            URLList.extend(self.game_getSongUrl(SongID,"ANDROID","1.0.0")["amazon"])
+            URLList.extend(self.game_getSongUrl(SongID,"ANDROID","1.0.0")["pmang"])
             URLList.extend(self.game_getSongUrl(SongID,"IOS","1.0.0")["pmang"])
             for url in URLList:
-                print ("Saving :"+url)
                 SavePath=RootPath+urlparse(url).path
+                print ("Saving :"+url+" To:"+SavePath)
                 if os.path.exists(SavePath)==False:
                     if not os.path.exists(os.path.dirname(os.path.abspath(SavePath))):
                         os.makedirs(os.path.dirname(os.path.abspath(SavePath)))
-                        Data=requests.get(url)
-                        f=open(SavePath,"w")
-                        f.write(Data)
-                        f.close
+                    Data=requests.get(url).content
+                    f=open(SavePath,"wb")
+                    f.write(Data)
+                    f.close
 
 
 if __name__ == '__main__':
-    x=PyDMTQ("403799106@qq.com","zhs960919")
+    #x=PyDMTQ("403799106@qq.com","zhs960919")
+    #x=PyDMTQ("mazetic@qq.com","3358411qq")
+    x=PyDMTQ(udid="062552A0-2C67-49F4-8CD7-649A325A7AD1")
     x.user_loginV2()
-    x.service_getInfo("1.0.11","IOS")
-    x.game_getPreviewPlayInfo(3)
+    for i in range(10):
+        GameToken=x.game_getPreviewPlayInfo(3)["game_token"]
+        print GameToken
+        print x.game_savePlayResult(3,[0,1,3,9,14,21,8,6,11,9,12,32,209],504,0,[1,0,0],[2,0,0],GameToken)
