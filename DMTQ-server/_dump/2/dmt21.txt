@@ -1,0 +1,70 @@
+https://pmangplus.com/accounts/v3/global/login_dmq
+rq
+POST /accounts/v3/global/login_dmq HTTP/1.1
+Host: pmangplus.com
+fp: 51a1267a1c68304971f31b8daa01a6b12327e7f8
+Accept: */*
+X-PmangPlus-Platform: iOS
+locale: ja_HK
+Accept-Language: ja-jp
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+ver: 5
+Content-Length: 334
+User-Agent: PmangPlus SDK 1.8 170613 (iOS,10.1.1,iPhone9,2,Apple,CSL,hk)
+Connection: keep-alive
+ts: 1499449585691
+
+app_id=576&provider_user_srl=G%3A414490637&app_key=c6a0fad2ef3ab45068ba95fdc059e2bf&provider=GAMECENTER&old_udid=03A3437B-D069-4957-B27F-69504E788F99-576&locale=ja_HK&device_cd=IPHONE&app_secret=ODY0NmM0ZjBjZTI5ZTQ2NzFkMTVmOTE2YjU1YzY3MmY&local_cd=JPN&os_ver=10.1.1&app_ver=1.0&jailbreak_yn=N&udid=03A3437B-D069-4957-B27F-69504E788F99
+re
+HTTP/1.1 200 OK
+Date: Fri, 07 Jul 2017 17:46:26 GMT
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Type: application/json;charset=UTF-8
+Vary: User-Agent,Accept-Encoding
+P3P: CP="NOI DSP DEVa TAIa OUR BUS ONL UNI", policyref="http://pmang.com/w3c/p3p.xml"
+Content-Encoding: gzip
+Connection: close
+Transfer-Encoding: chunked
+
+{
+    "value": {
+        "access_token": "199024429|576|IPHONE|KR|5ec8ad0741497eaf2874de3eddecf60d1bbc8956|1499449586602",
+        "member": {
+            "crt_dt": 1499449586000,
+            "upd_dt": 1499449586000,
+            "status_cd": "OK",
+            "member_id": 199024429,
+            "nickname": "User14069598",
+            "profile_img_url": "http://img.pmangplus.com/members/199024429/profile_img",
+            "feeling": null,
+            "adult_auth_yn": "N",
+            "adult_auth_dt": null,
+            "recent_login_dt": null,
+            "recent_app_id": null,
+            "email": null,
+            "anonymous_yn": "N",
+            "reg_path": "GAMECENTER",
+            "recent_app_title": null,
+            "last_msg_dt": null,
+            "new_msg_yn": null,
+            "friend_accept_cd": "MANUAL",
+            "achieve_detail_info_list": null,
+            "member_achievement_summary": null,
+            "conflict_member_id": null,
+            "reg_ip": "61.93.17.218",
+            "reg_nation": "HK",
+            "is_guest_login": false,
+            "sanction": false,
+            "profile_img_url_raw": "http://img.pmangplus.com/members/199024429/profile_img"
+        },
+        "conflict_member_id": null,
+        "is_guest_login": false,
+        "old_member_id": null
+    },
+    "result_code": "000",
+    "result_msg": "API_OK"
+}

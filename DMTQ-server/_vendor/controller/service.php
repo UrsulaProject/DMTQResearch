@@ -1,10 +1,9 @@
 <?php
 
-class service {
+class Service {
 
     function getInfo ($params) {
         global $config;
-
         return (object)[
             'result' => [
                 'api_url' => $config->API_PATH,
@@ -14,7 +13,7 @@ class service {
                 'coupon_yn' => 'Y',
                 'event_url' => $config->EVENT_PATH
             ],
-            'error' => false
+            'error' => NULL
         ];
     }
 }

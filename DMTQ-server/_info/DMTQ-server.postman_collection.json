@@ -58,7 +58,11 @@
 			"order": [
 				"812da285-8bab-cd89-e58b-38cd4d024981",
 				"47a2c6cb-e073-35bd-0a06-f37c15f18742",
-				"c25b775d-6498-82e0-7061-3d4354f656a2"
+				"c25b775d-6498-82e0-7061-3d4354f656a2",
+				"bdf272d1-1656-7328-9498-c4a2f42c0ea2",
+				"de0168f7-cb9e-2787-8865-fa0fac79f5b4",
+				"308abbb3-3c16-c592-5bbc-7afb5d4a0d01",
+				"2ca82ce8-330d-f0ac-ce33-28a409cb7bbe"
 			],
 			"owner": 0
 		},
@@ -163,7 +167,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -175,7 +179,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499274165358,
+			"time": 1499505155560,
 			"name": "getUsersByPuid",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -247,7 +251,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -259,7 +263,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273772936,
+			"time": 1499508545565,
 			"name": "checkKakao2Global",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -331,7 +335,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -343,7 +347,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273794166,
+			"time": 1499508570833,
 			"name": "getGameAssetForMigByToken",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -415,7 +419,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -427,7 +431,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499278609934,
+			"time": 1499508532833,
 			"name": "getInfo",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -499,7 +503,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -511,7 +515,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273605909,
+			"time": 1499508609716,
 			"name": "getOwnQuestList",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -583,7 +587,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -595,7 +599,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499274093436,
+			"time": 1499508590538,
 			"name": "getOwnAchievementList",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -667,7 +671,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -679,7 +683,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273591194,
+			"time": 1499508632204,
 			"name": "getUserAsset",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -751,7 +755,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -763,12 +767,180 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273575752,
+			"time": 1499508629911,
 			"name": "savePlayResult",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
 			"rawModeData": "[{\r\n    \"id\": 47,\r\n    \"method\": \"game.savePlayResult\",\r\n    \"params\": [3018783, 36, [0, 4, 2, 8, 14, 15, 0, 2, 8, 5, 7, 28, 257], 275, 1, [0, 0, 0],\r\n        [2, 0, 0], \"533373b43df5b9ce7ba31fc55690089dmTpu\"]\r\n}]"
+		},
+		{
+			"id": "2ca82ce8-330d-f0ac-ce33-28a409cb7bbe",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/pmangplus.com/product/vcash/576",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1499520995230,
+			"name": "product/vcash",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "308abbb3-3c16-c592-5bbc-7afb5d4a0d01",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/pmangplus.com/product/app/576",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1499520967074,
+			"name": "product/app",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": ""
 		},
 		{
 			"id": "47a2c6cb-e073-35bd-0a06-f37c15f18742",
@@ -928,7 +1100,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -940,7 +1112,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273932877,
+			"time": 1499508539619,
 			"name": "getNoticeList",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1012,7 +1184,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1024,7 +1196,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273560735,
+			"time": 1499508618871,
 			"name": "getPatternUrl",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1096,7 +1268,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1108,7 +1280,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273741641,
+			"time": 1499505185935,
 			"name": "loginV2",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1180,7 +1352,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1192,7 +1364,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499274151894,
+			"time": 1499508561245,
 			"name": "getFirstResourceSongList",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1264,7 +1436,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1276,7 +1448,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273664917,
+			"time": 1499508573920,
 			"name": "getLineScoreRange",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1434,7 +1606,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1446,7 +1618,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273814001,
+			"time": 1499508548483,
 			"name": "checkPmang2Global",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1518,25 +1690,23 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
+			"preRequestScript": "",
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": "",
 			"method": "POST",
-			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"data": [],
 			"dataMode": "raw",
-			"name": "getOwnItemList",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1499273314848,
 			"version": 2,
-			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "62ea7034-400a-7e59-7782-f8d015c2866b",
+			"time": 1499505175282,
+			"name": "getOwnItemList",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
 			"rawModeData": "[{\r\n    \"id\": 77,\r\n    \"method\": \"game.getLineScoreRangeWithLevel\",\r\n    \"params\": [6, 3, 1, 5]\r\n}]"
 		},
 		{
@@ -1604,7 +1774,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1616,7 +1786,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273862202,
+			"time": 1499508578770,
 			"name": "getLineScoreRangeWithLevel",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1688,7 +1858,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1700,7 +1870,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273905769,
+			"time": 1499508595650,
 			"name": "getLineTopRankWithLevel",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1772,7 +1942,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1784,7 +1954,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273920664,
+			"time": 1499508555838,
 			"name": "getAchievementCount",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1856,7 +2026,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1868,7 +2038,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273700755,
+			"time": 1499508537101,
 			"name": "getMemoList",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -1940,7 +2110,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -1952,12 +2122,181 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499274074951,
+			"time": 1499508600227,
 			"name": "getOwnItemList",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
 			"rawModeData": "[{\r\n    \"id\": 28,\r\n    \"method\": \"shop.getOwnItemList\",\r\n    \"params\": [3018783]\r\n}]"
+		},
+		{
+			"id": "bdf272d1-1656-7328-9498-c4a2f42c0ea2",
+			"headers": "Fp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/pmangplus.com/accounts/v3/global/login_dmq",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "app_id",
+					"value": "576",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "provider_user_srl",
+					"value": "G:414490637",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "app_key",
+					"value": "c6a0fad2ef3ab45068ba95fdc059e2bf",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "provider",
+					"value": "GAMECENTER",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "old_udid",
+					"value": "03A3437B-D069-4957-B27F-69504E788F99-576",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "ja_HK",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "device_cd",
+					"value": "IPHONE",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "app_secret",
+					"value": "ODY0NmM0ZjBjZTI5ZTQ2NzFkMTVmOTE2YjU1YzY3MmY",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "local_cd",
+					"value": "JPN",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "os_ver",
+					"value": "10.1.1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "app_ver",
+					"value": "1.0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "jailbreak_yn",
+					"value": "N",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "udid",
+					"value": "03A3437B-D069-4957-B27F-69504E788F99",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1499520697824,
+			"name": "login_dmq",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": []
 		},
 		{
 			"id": "c1f774a7-aad5-6ffc-c632-a97a60a80859",
@@ -2024,7 +2363,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -2036,7 +2375,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499278352135,
+			"time": 1499508565677,
 			"name": "getGameAssetByPuid",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -2228,7 +2567,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -2240,7 +2579,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273760918,
+			"time": 1499508550710,
 			"name": "checkOld2Global",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -2312,7 +2651,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -2324,7 +2663,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273845299,
+			"time": 1499505188639,
 			"name": "setNickname",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -2396,7 +2735,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -2408,7 +2747,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499274133159,
+			"time": 1499505177952,
 			"name": "getUnlockedProductList",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -2480,7 +2819,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -2492,12 +2831,96 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273960123,
+			"time": 1499505180421,
 			"name": "getConnectUuid",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
 			"rawModeData": "[{\r\n    \"id\": 18,\r\n    \"method\": \"user.getConnectUuid\",\r\n    \"params\": [3018783, \"iOS\"]\r\n}]"
+		},
+		{
+			"id": "de0168f7-cb9e-2787-8865-fa0fac79f5b4",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/pmangplus.com/members/analytics/IOS",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1499520951160,
+			"name": "members/analytics",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": ""
 		},
 		{
 			"id": "df5c09ba-aa82-1972-c6af-e97e5ca54d2c",
@@ -2564,7 +2987,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -2576,7 +2999,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273993866,
+			"time": 1499508626731,
 			"name": "getSongUrl",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -2648,7 +3071,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -2660,7 +3083,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273635719,
+			"time": 1499508606051,
 			"name": "getOwnPatternScore",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -2732,7 +3155,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -2744,7 +3167,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499273545773,
+			"time": 1499508621540,
 			"name": "getPreviewPlayInfo",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
@@ -2816,7 +3239,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{DMTQ_API}}/dmtq/DMQ/rpc.php",
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
 			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
@@ -2828,7 +3251,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1499274008914,
+			"time": 1499508614233,
 			"name": "getOwnSongList",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
