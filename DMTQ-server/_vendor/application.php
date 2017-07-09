@@ -1,54 +1,27 @@
 <?php
 
-$apiList = [
-    'service.getInfo',
-
-    'game.checkKakao2Global',
-    'game.checkPmang2Global',
-    'game.checkOld2Global',
-    'game.getAchievementCount',
-    'game.getFirstResourceSongList',
-    'game.getGameAssetByPuid',
-    'game.getGameAssetForMigByToken',
-    'game.getLineScoreRange',
-    'game.getLineScoreRangeWithLevel',
-    'game.getLineTopRankWithLevel',
-    'game.getOwnAchievementList',
-    'game.getOwnItemList',
-    'game.getOwnPatternScore',
-    'game.getOwnQuestList',
-    'game.getOwnSongList',
-    'game.getPatternUrl',
-    'game.getPreviewPlayInfo',
-    'game.getSongUrl',
-    'game.getUserAsset',
-    'game.savePlayResult',
-
-    'user.getConnectUuid',
-    'user.getUsersByPuid',
-    'user.loginV2',
-    'user.setNickname',
-
-    'shop.getOwnItemList',
-    'shop.getUnlockedProductList',
-
-    'memo.getMemoList',
-
-    'board.getNoticeList'
-];
 function runApi ($requestId, $method, $params) {
-    $controllerName = substr($method, 0, strpos($method, '.'));
+    $controllerName = ucfirst(substr($method, 0, strpos($method, '.')));
+    $convertName = $controllerName.'Converter';
     $actionName = substr($method, strpos($method, '.') + 1);
     if (class_exists($controllerName) && method_exists($controllerName, $actionName)) {
         $controller = new $controllerName();
-        return $controller->$actionName($params);
+        $convert = new $convertName();
+        return $controller->$actionName($convert->$actionName($params));
+    } else {
+        return (object)[
+            'result' => [],
+            'error' => NULL
+        ];
     }
     return (object)[];
 
 }
 function runSystem () {
+    global $config;
     header('Content-Type: application/json');
-    $data = json_decode(file_get_contents('php://input'), true);
+	$request = file_get_contents('php://input');
+    $data = json_decode($request, true);
     $result = [];
     if ($data) {
         for ($i = 0; $i < count($data); $i++) {

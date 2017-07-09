@@ -1,44 +1,65 @@
 <?php
 
-class user {
+class User {
 
     function getConnectUuid ($params) {
         return (object)[
-            'result' => [],
-            'error' => false
+            'result' => [
+                'status' => 'SUCCESS',
+                'code' => 200,
+                'uuid' => '1cbb551c25',
+                'result_msg' => 'OK'
+            ],
+            'error' => NULL
         ];
     }
 
     function getUsersByPuid ($params) {
+        global $config;
+        $handle = new SQLite3($config->DB_PATH);
+        $query = $handle->query("SELECT nickname FROM Member WHERE id = ".$params->puid);
+        if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
+            list($nickname) = $queryData;
+        } else {
+            $nickname = ' ';
+        }
+        $handle->close();
         return (object)[
-            'result' => [],
-            'error' => false
+            'result' => [
+				[
+					$params->requestData => $nickname
+				]
+			],
+            'error' => NULL
         ];
     }
 
     function loginV2 ($params) {
+        list($puid, $appId, $deviceCode, $serverCode, $token, $accessTime) = explode('|', $params->accessToken);
         global $config;
-        $isRegister = !!getHeader('Secret-Key', '');
-
         return (object)[
             'result' => [
-                'API_TOKEN' => 'O7VuJJOWiOgWTF5zBey8T9LLpmP94LmQATjDjAex5kUS9p0BI9CKksBXej+OX8l4',
-                'SECRET_KEY' => $isRegister ? $config->REGISTER_SECRET_KEY : $config->NOT_REGISTER_SECRET_KEY,
+                'API_TOKEN' => strtoupper(substr(md5($token).md5($accessTime), -58)),
+                'SECRET_KEY' => $config->SECRET_KEY,
                 'SECRET_VER' => '1',
-                'guid' => '3018783',
+                'guid' => (string)$puid,
                 'recom_code' => 'QbCx9Xe',
-                'displayName' => '',
-                'profileImg' => '',
+                'displayName' => $params->nickName,
+                'profileImg' => $params->profileImg,
                 'INTRO_SERVER' => $config->API_PATH
             ],
-            'error' => false
+            'error' => NULL
         ];
     }
 
     function setNickname ($params) {
+        global $config;
+        $handle = new SQLite3($config->DB_PATH);
+        $query = $handle->query("UPDATE Member SET nickname = '".$params->nickName."' WHERE id = '".$params->guid."'");
+        $handle->close();
         return (object)[
-            'result' => [],
-            'error' => false
+            'result' => true,
+            'error' => NULL
         ];
     }
 }

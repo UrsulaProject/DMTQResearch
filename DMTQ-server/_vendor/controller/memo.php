@@ -1,11 +1,11 @@
 <?php
 
-class memo {
+class Memo {
 
     function getMemoList ($params) {
         return (object)[
             'result' => [],
-            'error' => false
+            'error' => NULL
         ];
     }
 }
