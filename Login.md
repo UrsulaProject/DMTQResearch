@@ -4,122 +4,78 @@
 
 
 这步协议非常简单
-向 `https://pmangplus.com/accounts/3/login` POST包
+向 `https://pmangplus.com/accounts/v3/global/login_dmq` POST包
 HTTP头部:
 ```
 	                "User-Agent" = "PmangPlus SDK 1.8 170414 (iPhone OS,9.3.3,iPad5,3,Apple,(null),(null))";
 	                "X-PmangPlus-Platform" = iOS;
-	                fp = 7d76eec1ad9f17fd812e118a6cca0e6cfdfa8ea8;
+	                fp =  e30a26e6a6641b83631da5d039f4c62d5056c68b
 	                locale = "en_US";
-	                ts = 1497336612772;
+	                ts = 1499617513536;
 	                ver = 5;
 ```
-其中fp和ts的作用未知
+其中~~fp和ts的作用未知~~
+ts为unix时间戳
+fp为SHA1(UNIX时间戳+appSecret)
 HTTP正文:
 ```
-app_id=576
-app_key=c6a0fad2ef3ab45068ba95fdc059e2bf
-locale=en_US
-device_cd=IPAD
-app_secret=ODY0NmM0ZjBjZTI5ZTQ2NzFkMTVmOTE2YjU1YzY3MmY
-local_cd=ENG
-passwd=密码
-os_ver=9.3.3
-app_ver=1.0
-jailbreak_yn=N
-email=邮箱
-udid=BAA24753-294C-4529-9B1D-19730245E6A4
+"privacy_yn=Y",
+"app_id=576",
+"ad_yn=Y",
+"provider=",
+"ad_night_yn=N",
+"app_key=c6a0fad2ef3ab45068ba95fdc059e2bf",
+"mob_svc_yn=Y",
+"old_udid=062552A0-2C67-49F4-8CD7-649A325A7AD1-576",
+"locale=en_US",
+"device_cd=IPAD",
+"app_secret=ODY0NmM0ZjBjZTI5ZTQ2NzFkMTVmOTE2YjU1YzY3MmY",
+"local_cd=ENG",
+"os_ver=9.3.3",
+"app_ver=1.0",
+"jailbreak_yn=N",
+"udid=062552A0-2C67-49F4-8CD7-649A325A7AD1"
 ```
 
 注意所有的参数都为文本类型
-
-附带的PmangLogin.py执行后获得
+应答
 '''
-
 {
+	"result_code": "000",
 	"value": {
-		"access_token": "128280949|576|IPAD|KR|b26a4a3b04271c509d335aa778dac397aa25d4d6|1497336613173",
+		"access_token": "199131751|576|IPAD|KR|e4cdab493a8f4ea2e4ba7073716d0194cfe6dc00|1499622121157",
 		"member": {
-			"crt_dt": 1401168657000,
-			"upd_dt": 1497337470000,
-			"status_cd": "OK",
-			"member_id": 128280949,
-			"nickname": "Naville",
-			"profile_img_url": "http://img.pmangplus.com/members/128280949/profile_img",
-			"feeling": null,
-			"adult_auth_yn": "N",
-			"adult_auth_dt": null,
-			"recent_login_dt": 1401168656000,
-			"recent_app_id": 576,
-			"email": "403799106@qq.com",
-			"anonymous_yn": "N",
-			"reg_path": null,
+			"member_achievement_summary": null,
+			"sanction": false,
+			"new_msg_yn": null,
 			"recent_app_title": null,
 			"last_msg_dt": null,
-			"new_msg_yn": null,
 			"friend_accept_cd": "MANUAL",
+			"conflict_member_id": null,
 			"achieve_detail_info_list": null,
-			"member_achievement_summary": null,
-			"options": null,
-			"contact_require_phone_auth": false,
-			"contact_require_import": false,
-			"contact_friend_mapping": false,
-			"contact_require_phone_auth_confirm": false,
-			"contact": null,
-			"pmang_usn": "93884104",
-			"ci": null,
-			"cert_source": null,
-			"sns_user_srl": null,
-			"sanction": false,
-			"profile_img_url_raw": "http://img.pmangplus.com/members/128280949/profile_img"
+			"is_guest_login": true,
+			"crt_dt": 1499622121000,
+			"recent_login_dt": null,
+			"email": null,
+			"adult_auth_yn": "N",
+			"profile_img_url": "http://img.pmangplus.com/members/199131751/profile_img",
+			"adult_auth_dt": null,
+			"nickname": "User34353858",
+			"profile_img_url_raw": "http://img.pmangplus.com/members/199131751/profile_img",
+			"anonymous_yn": "Y",
+			"reg_path": null,
+			"status_cd": "OK",
+			"recent_app_id": null,
+			"reg_ip": "223.167.141.254",
+			"upd_dt": 1499622121000,
+			"reg_nation": "CN",
+			"member_id": 199131751,
+			"feeling": null
 		},
-		"require_adult_auth": false,
-		"expire_adult_auth": false,
-		"extra_infos": {
-			"result": {
-				"API_TOKEN": "NcUeOUhw3R1mibbZ44ZpGjOOipJYA3jw2zhGIy3fWzM0rQgLh/ZI4hNzbQnFB5oW",
-				"SECRET_KEY": "DMQGLBlive1",
-				"SECRET_VER": "1",
-				"guid": "103052",
-				"recom_code": "cBq2Td",
-				"displayName": "Naville",
-				"profileImg": "http://img.pmangplus.com/members/128280949/profile_img",
-				"INTRO_SERVER": "https://dmqglb.mb.pmang.com/DMQ/rpc"
-			}
-		},
-		"sns_infos": {},
-		"changed_register": false,
-		"apps": null,
-		"emoticons": {
-			"urlPrefix": "http://file.pmangplus.com/pmangplus/app/emoticons/v2/",
-			"start": 0,
-			"ext": "png",
-			"end": 40,
-			"version": 2
-		},
-		"current_version": null,
-		"transaction_infos": {},
-		"current_app_title": "DJMAX Technika Q (Global)",
-		"current_app_publisher": "GMS",
-		"current_app_extern_login": "PMANG",
-		"contact_require_phone_auth": false,
-		"contact_require_import": false,
-		"contact_friend_mapping": false,
-		"contact_require_phone_auth_confirm": false,
-		"contact": null,
-		"person_cert": {
-			"reg_yn": "N",
-			"reg_next_yn": "N",
-			"remain_day": 0,
-			"ci_yn": "N",
-			"gray_yn": "N"
-		},
-		"extern_unregister": false,
-		"require_profile_update": false,
-		"newbie": false,
-		"changed_profile": null
+		"conflict_member_id": null,
+		"is_guest_login": true,
+		"old_member_id": null
 	},
-	"result_code": "000",
 	"result_msg": "API_OK"
 }
 
