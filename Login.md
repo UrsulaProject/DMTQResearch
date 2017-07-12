@@ -37,6 +37,12 @@ HTTP正文:
 "udid=062552A0-2C67-49F4-8CD7-649A325A7AD1"
 ```
 
+GameCenter登录还有如下两条
+```
+provider = GAMECENTER;
+"provider_user_srl" = "G:1467614854";
+```
+
 注意所有的参数都为文本类型
 应答
 '''
