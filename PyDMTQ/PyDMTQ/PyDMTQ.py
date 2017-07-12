@@ -34,7 +34,8 @@ class PyDMTQ(object):
                    53:"game.getLineScoreRange",
                    48:"game.getPreviewPlayInfo",
                    42:"game.savePlayResult",
-                   77:"game.getLineScoreRangeWithLevel"
+                   77:"game.getLineScoreRangeWithLevel",
+                   37:"shop.buyMultiProductByQPoint"
 
     }
     #Functions are named as MethodName.replace(".","_") for dynamic method dispatching
@@ -161,6 +162,8 @@ class PyDMTQ(object):
         return json.loads(self.APIPost(55,[self.guid,SongID,ClientOS,Version]).content)[0]["result"]
     def game_getPreviewPlayInfo(self,PatternID):
         return json.loads(self.APIPost(48,[self.guid,PatternID]).content)[0]["result"]
+    def shop_buyMultiProductByQPoint(self):
+        return json.loads(self.APIPost(37,[self.guid,json.dumps({"product_id":ProductIDs})]).content)[0]["result"]
     def saveAllPatterns(self,RootPath=os.path.join(os.path.dirname(os.path.abspath(__file__)),"Patterns")):
         if not os.path.exists(RootPath):
             os.makedirs(RootPath)
@@ -207,11 +210,16 @@ class PyDMTQ(object):
 
 
 if __name__ == '__main__':
-    #x=PyDMTQ("403799106@qq.com","zhs960919")
-    #x=PyDMTQ("mazetic@qq.com","3358411qq")
     x=PyDMTQ(udid="062552A0-2C67-49F4-8CD7-649A325A7AD1")
     x.user_loginV2()
-    for i in range(10):
+    for i in range(1):
         GameToken=x.game_getPreviewPlayInfo(3)["game_token"]
-        print GameToken
         print x.game_savePlayResult(3,[0,1,3,9,14,21,8,6,11,9,12,32,209],504,0,[1,0,0],[2,0,0],GameToken)
+    #L10 Quest
+    for i in range(3):
+        GameToken=x.game_getPreviewPlayInfo(8)["game_token"]
+        print x.game_savePlayResult(8,[0,2,1,0,2,6,3,0,2,3,2,15,184],227,1,[1,0,0],[2,0,0],GameToken)
+    #L20
+    for i in range(5):
+        GameToken=x.game_getPreviewPlayInfo(2)["game_token"]
+        print x.game_savePlayResult(2,[0,1,2,1,3,4,2,2,4,1,4,16,168],316,3,[1,0,0],[2,0,0],GameToken)
