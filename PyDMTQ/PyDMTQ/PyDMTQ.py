@@ -162,7 +162,10 @@ class PyDMTQ(object):
         return json.loads(self.APIPost(55,[self.guid,SongID,ClientOS,Version]).content)[0]["result"]
     def game_getPreviewPlayInfo(self,PatternID):
         return json.loads(self.APIPost(48,[self.guid,PatternID]).content)[0]["result"]
-    def shop_buyMultiProductByQPoint(self):
+    def shop_buyMultiProductByQPoint(self,ProductIDs):
+        '''
+        ProductIDs: A list of ProductIDs
+        '''
         return json.loads(self.APIPost(37,[self.guid,json.dumps({"product_id":ProductIDs})]).content)[0]["result"]
     def saveAllPatterns(self,RootPath=os.path.join(os.path.dirname(os.path.abspath(__file__)),"Patterns")):
         if not os.path.exists(RootPath):
@@ -212,6 +215,25 @@ class PyDMTQ(object):
 if __name__ == '__main__':
     x=PyDMTQ(udid="062552A0-2C67-49F4-8CD7-649A325A7AD1")
     x.user_loginV2()
+    for SongID in [123,124]:
+        f=open(str(SongID)+"IOS.json","w")
+        f.write(json.dumps(x.game_getSongUrl(SongID,"IOS","1.0.0")))
+        f.close()
+        f=open(str(SongID)+"ANDROID.json","w")
+        f.write(json.dumps(x.game_getSongUrl(SongID,"ANDROID","1.0.0")))
+        f.close()
+    '''
+    for PID in [733,734,735,736,737,738,739,740,741,742,743,744]:
+        EMURL=x.game_getPatternUrl(PID,EarphoneMode=True)
+        URL=x.game_getPatternUrl(PID,EarphoneMode=False)
+        f=open(str(PID)+"_EARPHONE","w")
+        f.write(requests.get(EMURL).content)
+        f.close()
+        f=open(str(PID),"w")
+        f.write(requests.get(URL).content)
+        f.close()
+    '''
+    '''
     for i in range(1):
         GameToken=x.game_getPreviewPlayInfo(3)["game_token"]
         print x.game_savePlayResult(3,[0,1,3,9,14,21,8,6,11,9,12,32,209],504,0,[1,0,0],[2,0,0],GameToken)
@@ -223,3 +245,7 @@ if __name__ == '__main__':
     for i in range(5):
         GameToken=x.game_getPreviewPlayInfo(2)["game_token"]
         print x.game_savePlayResult(2,[0,1,2,1,3,4,2,2,4,1,4,16,168],316,3,[1,0,0],[2,0,0],GameToken)
+    for i in range(5):
+        GameToken=x.game_getPreviewPlayInfo(2)["game_token"]
+        print x.game_savePlayResult(2,[0,0,0,0,0,4,2,2,4,1,4,16,175],316,3,[0,0,1],[0,0,0],GameToken)
+    '''
