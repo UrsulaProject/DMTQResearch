@@ -3,11 +3,11 @@ $config = (object)[
     'DB_PATH' => dirname(__FILE__).'/../_info/dmtq.db3',
     'API_PATH' => 'https://dmqglb.mb.pmang.com/DMQ/rpc',
     'FILE_DOWNLOAD_PATH' => 'https://dmqglb.mb.pmang.com/patch',
-    'EVENT_PATH' => 'https://dmqglb.mb.pmang.com/',
+    'EVENT_PATH' => 'https://dmqglb.mb.pmang.com/event/',
     'SECRET_KEY' => 'DMQGLBlive1',
     'PATTERN_PATH' => 'https://dmqglb.mb.pmang.com/DMQ/Patterns/',
     'SONG_PATH' => 'https://dmqglb.mb.pmang.com/DMQ/Songs/',
-    'MAX_SONG_ID' => 120,
+    'MAX_SONG_ID' => 126,
     'SONG_LIST' => [
         [
             "http://dmqglb.mdl.pmang.com/resource/phone/1/android/song/oblivion.fpk",
