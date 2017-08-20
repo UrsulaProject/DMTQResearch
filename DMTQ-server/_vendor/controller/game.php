@@ -152,15 +152,15 @@ class Game {
         global $config;
         $result = [];
         $handle = new SQLite3($config->DB_PATH);
-        $query = $handle->query("SELECT DISTINCT(pattern_id) FROM Play WHERE user_id = ".$params->guid);
+        $query = $handle->query("SELECT pattern_id, score, grade, isAllCombo, isPerfectPlay FROM PLAY WHERE user_id = ".$params->guid);
         while (($queryData = $query->fetchArray(SQLITE3_NUM))) {
             array_push($result, [
                     'guid' => $params->guid,
                     'pattern_id' => $queryData[0],
-                    'score' => 9999999,
-                    'judgement_name' => 'S',
-                    'allcom_yn' => 'Y',
-                    'perfect_yn' => 'Y'
+                    'score' => $queryData[1],
+                    'judgement_name' => $queryData[2],
+                    'allcom_yn' => $queryData[3],
+                    'perfect_yn' => $queryData[4]
             ]);
             list($memberId) = $queryData;
         }
@@ -418,26 +418,69 @@ class Game {
     }
 
     function savePlayResult ($params) {
+        $score = 0;
+        $allComboScore = $params->judgementStat[1] === 0 ? 7000 : 0;
+        $perfectPlayScore = $params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 8000 : 0;
+        $luckyScore = $params->luckyBonus * 300;
+        $score += $params->judgementStat[2];
+        $score += $params->judgementStat[3] * 20;
+        $score += $params->judgementStat[4] * 40;
+        $score += $params->judgementStat[5] * 60;
+        $score += $params->judgementStat[6] * 80;
+        $score += $params->judgementStat[7] * 100;
+        $score += $params->judgementStat[8] * 120;
+        $score += $params->judgementStat[9] * 140;
+        $score += $params->judgementStat[10] * 160;
+        $score += $params->judgementStat[11] * 180;
+        $score += $params->judgementStat[12] * 200;
+        $totalScore = $score + $allComboScore + $perfectPlayScore + $luckyScore;
+        $grade = 'F';
+        $maxPoint = ($params->judgementStat[1] + $params->judgementStat[2] + $params->judgementStat[3] + $params->judgementStat[4] + $params->judgementStat[5] + $params->judgementStat[6] + $params->judgementStat[7] + $params->judgementStat[8] + $params->judgementStat[9] + $params->judgementStat[10] + $params->judgementStat[11] + $params->judgementStat[12]) * 100;
+        $nowPoint = ($score - $params->judgementStat[2]) / 2 + $params->judgementStat[2];
+        $pointRatio = floor($nowPoint / $maxPoint * 100);
+        if ($pointRatio >= 98) {
+            $grade = 'S';
+        } else if ($pointRatio >= 90) {
+            $grade = 'A';
+        } else if ($pointRatio >= 80) {
+            $grade = 'B';
+        } else if ($pointRatio >= 70) {
+            $grade = 'C';
+        } else if ($pointRatio >= 60) {
+            $grade = 'D';
+        } else if ($pointRatio >= 50) {
+            $grade = 'E';
+        }
         global $config;
         $handle = new SQLite3($config->DB_PATH);
-        $query = $handle->query("INSERT INTO PLAY (pattern_id, user_id) VALUES (".$params->patternId.", ".$params->guid.")");
+        $query = $handle->query("SELECT score FROM PLAY WHERE pattern_id = ".$params->patternId." AND user_id = ".$params->guid);
+        if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
+            list($lastScore) = $queryData;
+        } else {
+            list($lastScore) = [NULL];
+        }
+        if ($lastScore === NULL) {
+            $query = $handle->query("INSERT INTO PLAY (pattern_id, user_id, score, grade, isAllCombo, isPerfectPlay) VALUES (".$params->patternId.", ".$params->guid.", ".$totalScore.", '".$grade."', '".($params->judgementStat[1] === 0 ? 'Y': 'N')."', '".($params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 'Y': 'N')."')");
+        } else {
+            $query = $handle->query("UPDATE PLAY SET score = ".$totalScore.", grade = '".$grade."', isAllCombo = CASE WHEN isAllCombo = 'N' THEN '".($params->judgementStat[1] === 0 ? 'Y': 'N')."' ELSE isAllCombo END, isPerfectPlay = CASE WHEN isPerfectPlay = 'N' THEN '".($params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 'Y': 'N')."' ELSE isPerfectPlay END WHERE pattern_id = ".$params->patternId." AND user_id = ".$params->guid);
+        }
         $handle->close();
         return (object)[
             'result' => [
                 'is_success' => true,
-                'is_first_pattern' => true,
-                'is_new_record' => true,
-                'judgement_name' => 'S',
-                'allcom_yn' => 'Y',
-                'perfect_yn' => 'Y',
-                'bonus_score' => 99999,
-                'lucky_bonus_score' => 99999,
-                'score' => 9999999,
-                'total_score' => 9999999,
-                'exp' => 99999,
-                'total_exp' => 99999,
-                'mpoint' => 999999,
-                'total_mpoint' => 999999,
+                'is_first_pattern' => $lastScore === NULL,
+                'is_new_record' => $lastScore === NULL || $totalScore > $lastScore,
+                'judgement_name' => $grade,
+                'allcom_yn' => ($params->judgementStat[1] === 0 ? 'Y': 'N'),
+                'perfect_yn' => ($params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 'Y': 'N'),
+                'bonus_score' => $allComboScore + $perfectPlayScore,
+                'lucky_bonus_score' => $luckyScore,
+                'score' => $totalScore,
+                'total_score' => $totalScore,
+                'exp' => 10,
+                'total_exp' => 10,
+                'mpoint' => 150,
+                'total_mpoint' => 150,
                 'lev' => 99,
                 'new_achievements' => [],
                 'own_quests' => [
