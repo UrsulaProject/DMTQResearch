@@ -215,15 +215,17 @@ class PyDMTQ(object):
 if __name__ == '__main__':
     x=PyDMTQ(udid="062552A0-2C67-49F4-8CD7-649A325A7AD1")
     x.user_loginV2()
-    for SongID in [123,124]:
+    for SongID in [125,126]:
         f=open(str(SongID)+"IOS.json","w")
         f.write(json.dumps(x.game_getSongUrl(SongID,"IOS","1.0.0")))
         f.close()
         f=open(str(SongID)+"ANDROID.json","w")
         f.write(json.dumps(x.game_getSongUrl(SongID,"ANDROID","1.0.0")))
         f.close()
-    '''
-    for PID in [733,734,735,736,737,738,739,740,741,742,743,744]:
+    f=open("SongList.json","w")
+    f.write(json.dumps(x.game_getSongList()))
+    f.close()
+    for PID in range(745,756+1):
         EMURL=x.game_getPatternUrl(PID,EarphoneMode=True)
         URL=x.game_getPatternUrl(PID,EarphoneMode=False)
         f=open(str(PID)+"_EARPHONE","w")
@@ -232,7 +234,6 @@ if __name__ == '__main__':
         f=open(str(PID),"w")
         f.write(requests.get(URL).content)
         f.close()
-    '''
     '''
     for i in range(1):
         GameToken=x.game_getPreviewPlayInfo(3)["game_token"]
@@ -245,7 +246,14 @@ if __name__ == '__main__':
     for i in range(5):
         GameToken=x.game_getPreviewPlayInfo(2)["game_token"]
         print x.game_savePlayResult(2,[0,1,2,1,3,4,2,2,4,1,4,16,168],316,3,[1,0,0],[2,0,0],GameToken)
+    #L30
     for i in range(5):
         GameToken=x.game_getPreviewPlayInfo(2)["game_token"]
         print x.game_savePlayResult(2,[0,0,0,0,0,4,2,2,4,1,4,16,175],316,3,[0,0,1],[0,0,0],GameToken)
+    #L40
+    GameToken=x.game_getPreviewPlayInfo(717)["game_token"]
+    print x.game_savePlayResult(717, [0,0,0,0,0,0,0, 0,0,0,0, 43,387+57+19+15], 89, 4, [0, 0, 0],[2, 0, 0],GameToken)
+    for i in range(2):
+        GameToken=x.game_getPreviewPlayInfo(3)["game_token"]
+        print x.game_savePlayResult(3, [0, 0, 0, 3, 8, 12, 5, 3, 2, 6, 4, 20, 272], 570, 4, [0, 0, 0],[3, 0, 0],GameToken)
     '''
