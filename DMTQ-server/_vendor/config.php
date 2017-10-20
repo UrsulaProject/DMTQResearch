@@ -7,7 +7,7 @@ $config = (object)[
     'SECRET_KEY' => 'DMQGLBlive1',
     'PATTERN_PATH' => 'https://dmqglb.mb.pmang.com/DMQ/Patterns/',
     'SONG_PATH' => 'https://dmqglb.mb.pmang.com/DMQ/Songs/',
-    'MAX_SONG_ID' => 126,
+    'MAX_SONG_ID' => 134,
     'SONG_LIST' => [
         [
             "http://dmqglb.mdl.pmang.com/resource/phone/1/android/song/oblivion.fpk",
@@ -728,6 +728,80 @@ $config = (object)[
             "http://dmqglb.mdl.pmang.com/resource/phone/1/android/song/memoryofbeach.webm",
             "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/memoryofbeach.fpk",
             "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/memoryofbeach.webm"
+        ],
+        [],
+        [],
+        [
+            "http://dmqglb.mdl.pmang.com/resource/phone/1/ios/song/whiteblue.fpk",
+            "http://dmqglb.mdl.pmang.com/resource/phone/1/ios/song/whiteblue.webm",
+            "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/whiteblue.fpk",
+            "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/whiteblue.webm"
+        ],
+        [
+            "http://dmqglb.mdl.pmang.com/resource/phone/1/ios/song/honeymoon.fpk",
+            "http://dmqglb.mdl.pmang.com/resource/phone/1/ios/song/honeymoon.webm",
+            "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/honeymoon.fpk",
+            "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/honeymoon.webm"
+        ],
+        [
+            "http://dmqglb.mdl.pmang.com/resource/phone/1/ios/song/chemical.fpk",
+            "http://dmqglb.mdl.pmang.com/resource/phone/1/ios/song/chemical.webm",
+            "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/chemical.fpk",
+            "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/chemical.webm"
+        ],
+        [
+            "http://dmqglb.mdl.pmang.com/resource/phone/1/ios/song/putemup.fpk",
+            "http://dmqglb.mdl.pmang.com/resource/phone/1/ios/song/putemup.webm",
+            "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/putemup.fpk",
+            "http://dlvynqr5glhj4.cloudfront.net/resource/phone/1/ios/song/putemup.webm"
+        ],
+        [
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/cypher.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/cypher.webm",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/cypher.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/cypher.webm"
+        ],
+        [
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/luvflowrmx1.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/luvflowrmx1.webm",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/luvflowrmx1.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/luvflowrmx1.webm"
+        ],
+        [
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/xlasher.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/xlasher.webm",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/xlasher.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/xlasher.webm"
+        ],
+        [
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/sayitfrom.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/sayitfrom.webm",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/sayitfrom.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/sayitfrom.webm"
+        ],
+        [
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/bamboo.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/bamboo.webm",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/bamboo.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/bamboo.webm"
+        ],
+        [
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/falling.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/falling.webm",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/falling.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/falling.webm"
+        ],
+        [
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/coloursof.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/coloursof.webm",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/coloursof.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/coloursof.webm"
+        ],
+        [
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/area7.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/area7.webm",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/area7.fpk",
+            "http://d7oyvffymxdlz.cloudfront.net/resource/phone/1/ios/song/area7.webm"
         ]
     ],
     'PRODUCT_LIST' => [

@@ -33,6 +33,81 @@ class Game {
         ];
     }
 
+    function getAdSongList ($params) {
+        return (object)[
+            'result' => [
+                'status' => 200,
+                'message' => 'Ad song list',
+                'info' => [
+                    'songList' => []
+                ]
+            ],
+            'error' => NULL
+        ];
+    }
+
+    function getAdTicketChecked ($params) {
+        return (object)[
+            'result' => [
+                'status' => 200,
+                'message' => 'Check Ad ticket info',
+                'info' => [
+                    'ticket' => [
+                        'guid' => $params->guid,
+                        'song_id' => 0,
+                        'has_ticket' => 'N',
+                        'reg_date' => '20170101000000'
+                    ]
+                ]
+            ],
+            'error' => NULL
+        ];
+    }
+
+    function getAdTicketRequest ($params) {
+        return (object)[
+            'result' => [
+                'status' => 200,
+                'message' => 'I am watching ad movie',
+                'info' => [
+                    'has_ticket' => true,
+                    'state' => 'S'
+                ]
+            ],
+            'error' => NULL
+        ];
+    }
+
+    function getAdTicketReceived ($params) {
+        return (object)[
+            'result' => [
+                'status' => 200,
+                'message' => 'I got a ticket to play',
+                'info' => [
+                    'has_ticket' => true,
+                    'state' => 'Y'
+                ]
+            ],
+            'error' => NULL
+        ];
+    }
+
+    function getAdTicketUsed ($params) {
+        return (object)[
+            'result' => [
+                'status' => 200,
+                'message' => 'I used to play',
+                'info' => [
+                    'ticket' => [
+                        'use_ticket' => true,
+                        'state' => 'N'
+                    ]
+                ]
+            ],
+            'error' => NULL
+        ];
+    }
+
     function getFirstResourceSongList ($params) {
         global $config;
         return (object)[
@@ -152,7 +227,7 @@ class Game {
         global $config;
         $result = [];
         $handle = new SQLite3($config->DB_PATH);
-        $query = $handle->query("SELECT pattern_id, score, grade, isAllCombo, isPerfectPlay FROM PLAY WHERE user_id = ".$params->guid);
+        $query = $handle->query("SELECT pattern_id, score, grade, isAllCombo, isPerfectPlay, judgement FROM PLAY WHERE user_id = ".$params->guid);
         while (($queryData = $query->fetchArray(SQLITE3_NUM))) {
             array_push($result, [
                     'guid' => $params->guid,
@@ -160,7 +235,8 @@ class Game {
                     'score' => $queryData[1],
                     'judgement_name' => $queryData[2],
                     'allcom_yn' => $queryData[3],
-                    'perfect_yn' => $queryData[4]
+                    'perfect_yn' => $queryData[4],
+                    'judgement' => $queryData[5] / 10
             ]);
             list($memberId) = $queryData;
         }
@@ -293,8 +369,8 @@ class Game {
         }
         return (object)[
             'result' => [
-				'song_ids' => $songList
-			],
+                'song_ids' => $songList
+            ],
             'error' => NULL
         ];
     }
@@ -437,7 +513,8 @@ class Game {
         $grade = 'F';
         $maxPoint = ($params->judgementStat[1] + $params->judgementStat[2] + $params->judgementStat[3] + $params->judgementStat[4] + $params->judgementStat[5] + $params->judgementStat[6] + $params->judgementStat[7] + $params->judgementStat[8] + $params->judgementStat[9] + $params->judgementStat[10] + $params->judgementStat[11] + $params->judgementStat[12]) * 100;
         $nowPoint = ($score - $params->judgementStat[2]) / 2 + $params->judgementStat[2];
-        $pointRatio = floor($nowPoint / $maxPoint * 100);
+        $realPointRatio = (int)floor($nowPoint / $maxPoint * 1000);
+        $pointRatio = $realPointRatio / 10;
         if ($pointRatio >= 98) {
             $grade = 'S';
         } else if ($pointRatio >= 90) {
@@ -453,16 +530,16 @@ class Game {
         }
         global $config;
         $handle = new SQLite3($config->DB_PATH);
-        $query = $handle->query("SELECT score FROM PLAY WHERE pattern_id = ".$params->patternId." AND user_id = ".$params->guid);
+        $query = $handle->query("SELECT score, grade, judgement FROM PLAY WHERE pattern_id = ".$params->patternId." AND user_id = ".$params->guid);
         if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
             list($lastScore) = $queryData;
         } else {
             list($lastScore) = [NULL];
         }
         if ($lastScore === NULL) {
-            $query = $handle->query("INSERT INTO PLAY (pattern_id, user_id, score, grade, isAllCombo, isPerfectPlay) VALUES (".$params->patternId.", ".$params->guid.", ".$totalScore.", '".$grade."', '".($params->judgementStat[1] === 0 ? 'Y': 'N')."', '".($params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 'Y': 'N')."')");
+            $query = $handle->query("INSERT INTO PLAY (pattern_id, user_id, score, grade, isAllCombo, isPerfectPlay, judgement) VALUES (".$params->patternId.", ".$params->guid.", ".$totalScore.", '".$grade."', '".($params->judgementStat[1] === 0 ? 'Y': 'N')."', '".($params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 'Y': 'N')."', ".$realPointRatio.")");
         } else {
-            $query = $handle->query("UPDATE PLAY SET score = ".$totalScore.", grade = '".$grade."', isAllCombo = CASE WHEN isAllCombo = 'N' THEN '".($params->judgementStat[1] === 0 ? 'Y': 'N')."' ELSE isAllCombo END, isPerfectPlay = CASE WHEN isPerfectPlay = 'N' THEN '".($params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 'Y': 'N')."' ELSE isPerfectPlay END WHERE pattern_id = ".$params->patternId." AND user_id = ".$params->guid);
+            $query = $handle->query("UPDATE PLAY SET score = CASE WHEN ".$totalScore." > score THEN ".$totalScore." ELSE score END, judgement = CASE WHEN ".$realPointRatio." > judgement THEN ".$realPointRatio." ELSE judgement END, grade = CASE WHEN ".$realPointRatio." > judgement THEN '".$grade."' ELSE grade END, isAllCombo = CASE WHEN isAllCombo = 'N' THEN '".($params->judgementStat[1] === 0 ? 'Y': 'N')."' ELSE isAllCombo END, isPerfectPlay = CASE WHEN isPerfectPlay = 'N' THEN '".($params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 'Y': 'N')."' ELSE isPerfectPlay END WHERE pattern_id = ".$params->patternId." AND user_id = ".$params->guid);
         }
         $handle->close();
         return (object)[

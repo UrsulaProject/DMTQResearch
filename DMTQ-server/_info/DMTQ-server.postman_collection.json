@@ -37,7 +37,13 @@
 				"f23eb258-8e34-7527-441e-63b6298e0c07",
 				"df5c09ba-aa82-1972-c6af-e97e5ca54d2c",
 				"1ba819c1-0b29-12ed-f377-89e3f42d095d",
-				"25b70c81-2e72-5e86-a81e-8fdd9f6e55e4"
+				"25b70c81-2e72-5e86-a81e-8fdd9f6e55e4",
+				"c10d1bd5-a0db-f0a4-465c-e5e2ba5922e1",
+				"c432abeb-25b8-200e-87ba-3b5f14b93d82",
+				"6436bf64-b8c3-1fda-a318-9ba46fca4c65",
+				"fb952624-e273-dd40-7a64-c62486d88fff",
+				"2b2705d0-ff6b-e1a7-902e-8320b1a2b3e8",
+				"150c0c7f-ddab-3e54-733e-e5b4d28a62f1"
 			],
 			"owner": 0,
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598"
@@ -97,6 +103,15 @@
 			],
 			"owner": 0
 		}
+	],
+	"folders_order": [
+		"7c2adb5b-5aa6-2a83-17d8-3118de129eef",
+		"54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
+		"e92f2fb0-1986-21d2-6c78-85d6dfc739c2",
+		"9a7787ea-f063-1ba7-ad32-f9f4171604fd",
+		"54014fae-839b-0e4e-34c1-f72e000c03c8",
+		"62ea7034-400a-7e59-7782-f8d015c2866b",
+		"62846670-2fc4-5a69-e6e1-a2d49b767ec0"
 	],
 	"timestamp": 1497807996465,
 	"owner": 0,
@@ -184,6 +199,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "62846670-2fc4-5a69-e6e1-a2d49b767ec0",
 			"rawModeData": "[{\r\n    \"id\": 13,\r\n    \"method\": \"user.getUsersByPuid\",\r\n    \"params\": [\r\n        [\"198719325\"],\r\n        [\"display_name\"]\r\n    ]\r\n}]"
 		},
 		{
@@ -268,6 +284,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 88,\r\n    \"method\": \"game.checkKakao2Global\",\r\n    \"params\": [\"198719325\"]\r\n}]"
 		},
 		{
@@ -352,6 +369,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 79,\r\n    \"method\": \"game.getGameAssetForMigByToken\",\r\n    \"params\": [3018783, \"file:///var/mobile/Documents/Dumped/jp.konami.jubeatplus-iOS9.0-(Clutch-2.0.4)-2.ipa\"]\r\n}]"
 		},
 		{
@@ -436,6 +454,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54014fae-839b-0e4e-34c1-f72e000c03c8",
 			"rawModeData": "[{\r\n    \"id\": 0,\r\n    \"method\": \"service.getInfo\",\r\n    \"params\": [\"1.0.12\", \"IOS\"]\r\n}]"
 		},
 		{
@@ -520,7 +539,93 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 54,\r\n    \"method\": \"game.getOwnQuestList\",\r\n    \"params\": [3018783]\r\n}]"
+		},
+		{
+			"id": "150c0c7f-ddab-3e54-733e-e5b4d28a62f1",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508477352148,
+			"name": "getAdTicketChecked",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": "[{\r\n    \"id\": 93,\r\n    \"method\": \"game.getAdTicketChecked\",\r\n    \"params\": [3021036]\r\n}]"
 		},
 		{
 			"id": "17fe7792-db9d-84eb-28f4-edd66bee6908",
@@ -604,6 +709,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 51,\r\n    \"method\": \"game.getOwnAchievementList\",\r\n    \"params\": [3018783]\r\n}]"
 		},
 		{
@@ -688,6 +794,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 40,\r\n    \"method\": \"game.getUserAsset\",\r\n    \"params\": [3018783]\r\n}]"
 		},
 		{
@@ -772,7 +879,93 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 47,\r\n    \"method\": \"game.savePlayResult\",\r\n    \"params\": [3018783, 36, [0, 4, 2, 8, 14, 15, 0, 2, 8, 5, 7, 28, 257], 275, 1, [0, 0, 0],\r\n        [2, 0, 0], \"533373b43df5b9ce7ba31fc55690089dmTpu\"]\r\n}]"
+		},
+		{
+			"id": "2b2705d0-ff6b-e1a7-902e-8320b1a2b3e8",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508477344222,
+			"name": "getAdSongList",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": "[{\r\n    \"id\": 92,\r\n    \"method\": \"game.getAdSongList\",\r\n    \"params\": [3021036]\r\n}]"
 		},
 		{
 			"id": "2ca82ce8-330d-f0ac-ce33-28a409cb7bbe",
@@ -856,6 +1049,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "9a7787ea-f063-1ba7-ad32-f9f4171604fd",
 			"rawModeData": ""
 		},
 		{
@@ -940,6 +1134,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "9a7787ea-f063-1ba7-ad32-f9f4171604fd",
 			"rawModeData": ""
 		},
 		{
@@ -1033,6 +1228,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "9a7787ea-f063-1ba7-ad32-f9f4171604fd",
 			"rawModeData": "[{\r\n    \"id\": 0,\r\n    \"method\": \"service.getInfo\",\r\n    \"params\": [\"1.0.12\", \"IOS\"]\r\n}]"
 		},
 		{
@@ -1117,6 +1313,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "7c2adb5b-5aa6-2a83-17d8-3118de129eef",
 			"rawModeData": "[{\r\n    \"id\": 2,\r\n    \"method\": \"board.getNoticeList\",\r\n    \"params\": [\"US\", 0, 4]\r\n}]"
 		},
 		{
@@ -1201,7 +1398,93 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 61,\r\n    \"method\": \"game.getPatternUrl\",\r\n    \"params\": [3018783, 36, \"\", \"P\"]\r\n}]"
+		},
+		{
+			"id": "6436bf64-b8c3-1fda-a318-9ba46fca4c65",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508477333610,
+			"name": "getAdTicketReceived",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": "[{\r\n    \"id\": 95,\r\n    \"method\": \"game.getAdTicketReceived\",\r\n    \"params\": [3021036, 77]\r\n}]"
 		},
 		{
 			"id": "6c8ab201-d8df-b8f4-eea5-2b82c69752e4",
@@ -1285,6 +1568,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "62846670-2fc4-5a69-e6e1-a2d49b767ec0",
 			"rawModeData": "[{\r\n    \"id\": 9,\r\n    \"method\": \"user.loginV2\",\r\n    \"params\": [\"198719325|576|IPAD|KR|fa69b862d171fec7c4c2cebeec348048282497ec|1499188349372\", \" \", \"\", \"1.0.12\", \"iOS\", \"HK\"]\r\n}]"
 		},
 		{
@@ -1369,6 +1653,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 74,\r\n    \"method\": \"game.getFirstResourceSongList\",\r\n    \"params\": []\r\n}]"
 		},
 		{
@@ -1453,6 +1738,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 58,\r\n    \"method\": \"game.getLineScoreRange\",\r\n    \"params\": [6, 4, 0, 20]\r\n}]"
 		},
 		{
@@ -1539,6 +1825,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "9a7787ea-f063-1ba7-ad32-f9f4171604fd",
 			"rawModeData": ""
 		},
 		{
@@ -1623,6 +1910,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 85,\r\n    \"method\": \"game.checkPmang2Global\",\r\n    \"params\": [\"198719325\"]\r\n}]"
 		},
 		{
@@ -1707,6 +1995,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "62ea7034-400a-7e59-7782-f8d015c2866b",
 			"rawModeData": "[{\r\n    \"id\": 77,\r\n    \"method\": \"game.getLineScoreRangeWithLevel\",\r\n    \"params\": [6, 3, 1, 5]\r\n}]"
 		},
 		{
@@ -1791,6 +2080,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 77,\r\n    \"method\": \"game.getLineScoreRangeWithLevel\",\r\n    \"params\": [6, 3, 1, 5]\r\n}]"
 		},
 		{
@@ -1875,6 +2165,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 76,\r\n    \"method\": \"game.getLineTopRankWithLevel\",\r\n    \"params\": [0, 1, 20, [3018783]]\r\n}]"
 		},
 		{
@@ -1959,6 +2250,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 50,\r\n    \"method\": \"game.getAchievementCount\",\r\n    \"params\": []\r\n}]"
 		},
 		{
@@ -2043,6 +2335,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "e92f2fb0-1986-21d2-6c78-85d6dfc739c2",
 			"rawModeData": "[{\r\n    \"id\": 6,\r\n    \"method\": \"memo.getMemoList\",\r\n    \"params\": [3018783, 0, 50]\r\n}]"
 		},
 		{
@@ -2127,6 +2420,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 28,\r\n    \"method\": \"shop.getOwnItemList\",\r\n    \"params\": [3018783]\r\n}]"
 		},
 		{
@@ -2296,7 +2590,93 @@
 			"name": "login_dmq",
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
-			"responses": []
+			"responses": [],
+			"folder": "9a7787ea-f063-1ba7-ad32-f9f4171604fd"
+		},
+		{
+			"id": "c10d1bd5-a0db-f0a4-465c-e5e2ba5922e1",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508477239451,
+			"name": "savePlayResultFailLog",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": "[{\r\n    \"id\": 73,\r\n    \"method\": \"game.savePlayResultFailLog\",\r\n    \"params\": [3021036, 462, \"658cc634f259864fb6279f781d325c579quX\", \"GO\"]\r\n}]"
 		},
 		{
 			"id": "c1f774a7-aad5-6ffc-c632-a97a60a80859",
@@ -2380,6 +2760,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 81,\r\n    \"method\": \"game.getGameAssetByPuid\",\r\n    \"params\": [\"198719325\"]\r\n}]"
 		},
 		{
@@ -2500,7 +2881,93 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "9a7787ea-f063-1ba7-ad32-f9f4171604fd",
 			"rawModeData": ""
+		},
+		{
+			"id": "c432abeb-25b8-200e-87ba-3b5f14b93d82",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508477328942,
+			"name": "getAdTicketUsed",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": "[{\r\n    \"id\": 96,\r\n    \"method\": \"game.getAdTicketUsed\",\r\n    \"params\": [3021036, 77]\r\n}]"
 		},
 		{
 			"id": "ca8c8435-c917-8cd0-3059-a212a96ff1bd",
@@ -2584,6 +3051,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 83,\r\n    \"method\": \"game.checkOld2Global\",\r\n    \"params\": [\"198719325\"]\r\n}]"
 		},
 		{
@@ -2668,6 +3136,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "62846670-2fc4-5a69-e6e1-a2d49b767ec0",
 			"rawModeData": "[{\r\n    \"id\": 91,\r\n    \"method\": \"user.setNickname\",\r\n    \"params\": [3018783, \"User67230695\"]\r\n}]"
 		},
 		{
@@ -2752,6 +3221,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "62ea7034-400a-7e59-7782-f8d015c2866b",
 			"rawModeData": "[{\r\n    \"id\": 32,\r\n    \"method\": \"shop.getUnlockedProductList\",\r\n    \"params\": [3018783]\r\n}]"
 		},
 		{
@@ -2836,6 +3306,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "62846670-2fc4-5a69-e6e1-a2d49b767ec0",
 			"rawModeData": "[{\r\n    \"id\": 18,\r\n    \"method\": \"user.getConnectUuid\",\r\n    \"params\": [3018783, \"iOS\"]\r\n}]"
 		},
 		{
@@ -2920,6 +3391,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "9a7787ea-f063-1ba7-ad32-f9f4171604fd",
 			"rawModeData": ""
 		},
 		{
@@ -3004,6 +3476,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 60,\r\n    \"method\": \"game.getSongUrl\",\r\n    \"params\": [3018783, 107, \"IOS\", \"1.0.0\"]\r\n}]"
 		},
 		{
@@ -3088,6 +3561,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 39,\r\n    \"method\": \"game.getOwnPatternScore\",\r\n    \"params\": [3018783]\r\n}]"
 		},
 		{
@@ -3172,7 +3646,93 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 53,\r\n    \"method\": \"game.getPreviewPlayInfo\",\r\n    \"params\": [3018783, 36]\r\n}]"
+		},
+		{
+			"id": "fb952624-e273-dd40-7a64-c62486d88fff",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508477338196,
+			"name": "getAdTicketRequest",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": "[{\r\n    \"id\": 94,\r\n    \"method\": \"game.getAdTicketRequest\",\r\n    \"params\": [3021036, 77]\r\n}]"
 		},
 		{
 			"id": "fff5ca32-0e43-14c4-4b78-ebefaa731f63",
@@ -3256,6 +3816,7 @@
 			"description": "",
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
 			"responses": [],
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 46,\r\n    \"method\": \"game.getOwnSongList\",\r\n    \"params\": [3018783]\r\n}]"
 		}
 	]
