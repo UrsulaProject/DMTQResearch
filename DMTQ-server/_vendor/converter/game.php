@@ -25,6 +25,40 @@ class GameConverter {
         ];
     }
 
+    function getAdSongList ($params) {
+        return (object)[
+          'guid' => $params[0]
+        ];
+    }
+
+    function getAdTicketChecked ($params) {
+        return (object)[
+          'guid' => $params[0]
+        ];
+    }
+
+
+    function getAdTicketRequest ($params) {
+        return (object)[
+          'guid' => $params[0],
+          'songId' => $params[1]
+        ];
+    }
+
+    function getAdTicketReceived ($params) {
+        return (object)[
+          'guid' => $params[0],
+          'songId' => $params[1]
+        ];
+    }
+
+    function getAdTicketUsed ($params) {
+        return (object)[
+          'guid' => $params[0],
+          'songId' => $params[1]
+        ];
+    }
+
     function getFirstResourceSongList ($params) {
         return (object)[
         ];
