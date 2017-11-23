@@ -158,6 +158,22 @@ class Game {
         ];
     }
 
+    function getGameSettingInfo ($params) {
+        global $config;
+        return (object)[
+            'result' => [
+                'status' => 200,
+                'code' => 200,
+                'message' => 'FOUND THE KEY',
+                'info' => [
+                    'key' => 'HARDEXPERT_ALERT_LEVEL',
+                    'value' => 4
+                ]
+            ],
+            'error' => NULL
+        ];
+    }
+
     function getLineScoreRange ($params) {
         return (object)[
             'result' => [
