@@ -43,7 +43,8 @@
 				"6436bf64-b8c3-1fda-a318-9ba46fca4c65",
 				"fb952624-e273-dd40-7a64-c62486d88fff",
 				"2b2705d0-ff6b-e1a7-902e-8320b1a2b3e8",
-				"150c0c7f-ddab-3e54-733e-e5b4d28a62f1"
+				"150c0c7f-ddab-3e54-733e-e5b4d28a62f1",
+				"ba8f81e5-3645-be7a-93cf-3f414d78a657"
 			],
 			"owner": 0,
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598"
@@ -2422,6 +2423,91 @@
 			"responses": [],
 			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 28,\r\n    \"method\": \"shop.getOwnItemList\",\r\n    \"params\": [3018783]\r\n}]"
+		},
+		{
+			"id": "ba8f81e5-3645-be7a-93cf-3f414d78a657",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511450134762,
+			"name": "getGameSettingInfo",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": "[{\r\n    \"id\": 93,\r\n    \"method\": \"game.getGameSettingInfo\",\r\n    \"params\": [\"HARDEXPERT_ALERT_LEVEL\"]\r\n}]"
 		},
 		{
 			"id": "bdf272d1-1656-7328-9498-c4a2f42c0ea2",

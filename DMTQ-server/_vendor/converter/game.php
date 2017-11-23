@@ -78,6 +78,12 @@ class GameConverter {
         ];
     }
 
+    function getGameSettingInfo ($params) {
+        return (object)[
+            'key' => $params[0]
+        ];
+    }
+
     function getLineScoreRange ($params) {
         return (object)[
             'songId' => $params[0],
