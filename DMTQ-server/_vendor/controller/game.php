@@ -393,8 +393,16 @@ class Game {
 
     function getPatternUrl ($params) {
         global $config;
+        $newIdMatching = [
+            'ID141' => 137,
+            'ID142' => 138
+        ];
+        $songId = ceil($params->patternId / 6);
+        if (isset($newIdMatching['ID'.$songId])) {
+            $songId = $newIdMatching['ID'.$songId];
+        }
         return (object)[
-            'result' => $config->PATTERN_PATH.ceil($params->patternId / 6).'/'.$params->patternId.($params->earphoneMode === 'e' ? '_EARPHONE' : ''),
+            'result' => $config->PATTERN_PATH.$songId.'/'.$params->patternId.($params->earphoneMode === 'e' ? '_EARPHONE' : ''),
             'error' => NULL
         ];
     }
