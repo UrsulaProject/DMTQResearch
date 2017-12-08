@@ -395,7 +395,9 @@ class Game {
         global $config;
         $newIdMatching = [
             'ID141' => 137,
-            'ID142' => 138
+            'ID142' => 138,
+            'ID143' => 139,
+            'ID144' => 140
         ];
         $songId = ceil($params->patternId / 6);
         if (isset($newIdMatching['ID'.$songId])) {
