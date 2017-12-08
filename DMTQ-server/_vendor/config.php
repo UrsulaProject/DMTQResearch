@@ -8,7 +8,7 @@ $config = (object)[
     'SECRET_KEY' => 'DMQGLBlive1',
     'PATTERN_PATH' => 'https://dmqglb.mb.pmang.com/DMQ/Patterns/',
     'SONG_PATH' => 'https://dmqglb.mb.pmang.com/DMQ/Songs/',
-    'MAX_SONG_ID' => 138,
+    'MAX_SONG_ID' => 140,
     'SONG_LIST' => [
         [
             "http://dmqglb.mdl.pmang.com/resource/phone/1/android/song/oblivion.fpk",
