@@ -1,0 +1,65 @@
+https://dmqglb.mb.pmang.com/DMQ/rpc
+rq
+POST /DMQ/rpc HTTP/1.1
+Host: dmqglb.mb.pmang.com
+Fp: 1a12fd915321aa1946cd27d5e78a1599
+X-Unity-Version: 5.6.1p1
+Accept: */*
+Proxy-Connection: keep-alive
+Nce: 9b00adcd1396aaab77323fd8ef2781a7
+Api-Token: JTeupnoryflNJSzFw25eu+fnUqr3V5FoM2yfZGqymQWT8fb+xLEGcoe0QG7GS0AP
+Secret-Ver: 1
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+Content-Length: 72
+User-Agent: dmtq/171 CFNetwork/758.5.3 Darwin/15.6.0
+Connection: keep-alive
+Secret-Key: DMQGLBlive0
+
+[{
+    "id": 31,
+    "method": "shop.getProductForUnlock",
+    "params": [3018783, 90001]
+}]
+re
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 08 Jul 2017 17:17:59 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Encoding: gzip
+
+[{
+    "result": {
+        "product_id": 80002,
+        "platform_product_id": 909,
+        "store_product_id": "com.neowizInternet.game.dmtq.unlock2",
+        "product_type": "I",
+        "cost_game_point": 0,
+        "cost_game_cash": 7,
+        "item_id": 80002,
+        "item_name": "\ub808\ubca8 \uc5b8\ub77d 2",
+        "img_url_1": "",
+        "img_url_2": "",
+        "summary": "\ub808\ubca8 \uc5b8\ub77d 2",
+        "description": "",
+        "repeat_count": 0,
+        "item_type": "L",
+        "limit_minute": 0,
+        "status": "N",
+        "buy_level": 0,
+        "buy_limit_count": 0,
+        "buy_limit_type": "",
+        "reg_date": "20130704152633",
+        "sale_start_date": "",
+        "sale_end_date": "",
+        "display_order": 0
+    },
+    "error": null,
+    "id": 31
+}]

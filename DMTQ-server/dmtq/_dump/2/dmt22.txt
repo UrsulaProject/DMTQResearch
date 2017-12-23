@@ -1,0 +1,37 @@
+https://pmangplus.com/members/analytics/IOS
+rq
+POST /members/analytics/IOS HTTP/1.1
+Host: pmangplus.com
+fp: 2ec84611a56f385267f6f2b9c8b8f14e8ca8c9e7
+Accept: */*
+X-PmangPlus-Platform: iOS
+locale: ja_HK
+Accept-Language: ja-jp
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+ver: 5
+Content-Length: 204
+User-Agent: PmangPlus SDK 1.8 170613 (iOS,10.1.1,iPhone9,2,Apple,CSL,hk)
+Connection: keep-alive
+ts: 1499449586851
+
+option1=03A3437B-D069-4957-B27F-69504E788F99&option2=A5CFFA0E-0CCE-4CF2-84F0-A68AEB4D5C41&access_token=199024429%7C576%7CIPHONE%7CKR%7C5ec8ad0741497eaf2874de3eddecf60d1bbc8956%7C1499449586602&local_cd=JPN
+re
+HTTP/1.1 200 OK
+Date: Fri, 07 Jul 2017 17:46:27 GMT
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Type: application/json;charset=UTF-8
+Vary: User-Agent,Accept-Encoding
+P3P: CP="NOI DSP DEVa TAIa OUR BUS ONL UNI", policyref="http://pmang.com/w3c/p3p.xml"
+Content-Encoding: gzip
+Connection: close
+Transfer-Encoding: chunked
+
+{
+    "value": true,
+    "result_code": "000",
+    "result_msg": "API_OK"
+}

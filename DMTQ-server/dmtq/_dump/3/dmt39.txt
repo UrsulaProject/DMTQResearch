@@ -1,0 +1,43 @@
+https://dmqglb.mb.pmang.com/DMQ/rpc
+rq
+POST /DMQ/rpc HTTP/1.1
+Host: dmqglb.mb.pmang.com
+Fp: d1f3330437967153a77ce7bc1568379a
+X-Unity-Version: 5.6.1p1
+Accept: */*
+Proxy-Connection: keep-alive
+Nce: 4c9b087cae039e65d1071f16bdda4221
+Api-Token: JTeupnoryflNJSzFw25eu+fnUqr3V5FoM2yfZGqymQWT8fb+xLEGcoe0QG7GS0AP
+Secret-Ver: 1
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+Content-Length: 116
+User-Agent: dmtq/171 CFNetwork/758.5.3 Darwin/15.6.0
+Connection: keep-alive
+Secret-Key: DMQGLBlive0
+
+[{
+    "id": 73,
+    "method": "game.savePlayResultFailLog",
+    "params": [3018783, 715, "33537e6809e730e8d090cfd098e353c12wF2", "GO"]
+}]
+re
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 08 Jul 2017 18:11:34 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Encoding: gzip
+
+[{
+    "result": {
+        "status": true
+    },
+    "error": null,
+    "id": 73
+}]

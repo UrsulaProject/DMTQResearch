@@ -1,0 +1,32 @@
+<VirtualHost *:80>
+    ServerName dmqglb.mb.pmang.com
+    DocumentRoot "C:/WebRoot/dmtq/dmqglb.mb.pmang.com"
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName dmqglb.mb.pmang.com
+    DocumentRoot "C:/WebRoot/dmtq/dmqglb.mb.pmang.com"
+    SSLEngine on
+    SSLCertificateChainFile ssl/dmqglb.mb.pmang.com.cer
+    SSLCertificateFile ssl/dmqglb.mb.pmang.com.cer
+    SSLCertificateKeyFile ssl/dmqglb.mb.pmang.com.key
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName static.pmangplus.com
+    DocumentRoot "C:/WebRoot/dmtq/static.pmangplus.com"
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName pmangplus.com
+    DocumentRoot "C:/WebRoot/dmtq/pmangplus.com"
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName pmangplus.com
+    DocumentRoot "C:/WebRoot/dmtq/pmangplus.com"
+    SSLEngine on
+    SSLCertificateChainFile ssl/pmangplus.com.cer
+    SSLCertificateFile ssl/pmangplus.com.cer
+    SSLCertificateKeyFile ssl/pmangplus.com.key
+</VirtualHost>

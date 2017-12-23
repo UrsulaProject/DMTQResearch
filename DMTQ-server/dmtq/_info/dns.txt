@@ -1,0 +1,3 @@
+dmqglb.mb.pmang.com	139.162.88.145
+static.pmangplus.com	139.162.88.145
+pmangplus.com		139.162.88.145

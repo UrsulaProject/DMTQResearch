@@ -1,0 +1,10 @@
+{
+    "value": {
+        "open_yn": "N",
+        "disable_apps": [],
+        "non_kill_apps": [],
+        "noti_url": "http:\/\/static.pmangplus.com\/inspection\/noti.html"
+    },
+    "result_code": "000",
+    "resulr_msg": "API_OK"
+}
