@@ -129,3 +129,6 @@ ENV/
 /site
 
 # End of https://www.gitignore.io/api/macos,python
+
+DMTQ-server/dmtq/dmqglb.mb.pmang.com/DMQ/Songs/**
+DMTQ-server/dmtq/_info/*.rar
