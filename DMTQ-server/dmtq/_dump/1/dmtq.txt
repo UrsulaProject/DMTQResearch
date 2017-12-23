@@ -1,0 +1,48 @@
+https://dmqglb.mb.pmang.com/DMQ/rpc
+rq
+POST /DMQ/rpc HTTP/1.1
+Host: dmqglb.mb.pmang.com
+Fp: d4e778b6d042bc68c709fad5a68b3772
+X-Unity-Version: 5.6.1p1
+Accept: */*
+Proxy-Connection: keep-alive
+Nce: 760384bd05d12fc0e749947e94276ebb
+Api-Token: 
+Secret-Ver: 1
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+Content-Length: 63
+User-Agent: dmtq/171 CFNetwork/758.5.3 Darwin/15.6.0
+Connection: keep-alive
+Secret-Key: 
+
+[{
+    "id": 0,
+    "method": "service.getInfo",
+    "params": ["1.0.12", "IOS"]
+}]
+re
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 04 Jul 2017 17:12:16 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Encoding: gzip
+
+[{
+    "result": {
+        "api_url": "https:\/\/dmqglb.mb.pmang.com\/DMQ\/rpc",
+        "file_server_url": "http:\/\/d15nk75x5a4zzz.cloudfront.net\/dmqglb\/patch",
+        "file_manage_ver": "1",
+        "service_type": "LIVE",
+        "coupon_yn": "Y",
+        "event_url": "http:\/\/mwe.pmang.com\/:dmq_Event\/index"
+    },
+    "error": null,
+    "id": 0
+}]

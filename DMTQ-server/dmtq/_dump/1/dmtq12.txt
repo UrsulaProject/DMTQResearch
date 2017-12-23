@@ -1,0 +1,41 @@
+https://dmqglb.mb.pmang.com/DMQ/rpc
+rq
+POST /DMQ/rpc HTTP/1.1
+Host: dmqglb.mb.pmang.com
+Fp: 3c359315e58a063c3b71ff497496df88
+X-Unity-Version: 5.6.1p1
+Accept: */*
+Proxy-Connection: keep-alive
+Nce: aaea2312e3f730025684e0521e025064
+Api-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs
+Secret-Ver: 1
+Accept-Language: zh-tw
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+Content-Length: 70
+User-Agent: dmtq/171 CFNetwork/758.5.3 Darwin/15.6.0
+Connection: keep-alive
+Secret-Key: DMQGLBlive4
+
+[{
+    "id": 61,
+    "method": "game.getPatternUrl",
+    "params": [3018783, 36, "", "P"]
+}]
+re
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 04 Jul 2017 17:14:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Encoding: gzip
+
+[{
+    "result": "http:\/\/dmqglb.smdl.pmang.com\/dmqglb_ott\/d1000f6904e748b7925f70a593ac30a4\/595bccf9\/resource\/phone\/pt\/etnalftsyvox\/etnalftsyvox_3_3.bytes",
+    "error": null,
+    "id": 61
+}]
