@@ -84,6 +84,14 @@ class GameConverter {
         ];
     }
 
+    function getLineScoreMyRank ($params) {
+        return (object)[
+            'guid' => $params[0],
+            'songId' => $params[1],
+            'line' => $params[2]
+        ];
+    }
+
     function getLineScoreRange ($params) {
         return (object)[
             'songId' => $params[0],
