@@ -181,6 +181,15 @@ class Game {
         ];
     }
 
+    function getLineScoreMyRank ($params) {
+        return (object)[
+            'result' => [
+                'rank' => 0
+            ],
+            'error' => NULL
+        ];
+    }
+
     function getLineScoreRange ($params) {
         return (object)[
             'result' => [
