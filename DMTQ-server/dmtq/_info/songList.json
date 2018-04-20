@@ -9468,5 +9468,179 @@
                 "signature":3
             }
         ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":159,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"glorydaykr",
+        "loop_bga_yn":"N",
+        "visualized_by":"SHIHYUN, DumpingLIFE, BJLee",
+        "free_yn":"N",
+        "composed_by":"BEXTER x Mycin.T",
+        "singer":"DyoN Joo",
+        "artist_name":"BEXTER x Mycin.T",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"Mycin.T",
+        "full_name":"glory day",
+        "original_bga_yn":"Y",
+        "genre":"J-Rock",
+        "song_patterns":[  
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1000,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1001,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":3,
+                "pattern_id":1002,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1003,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1004,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":4,
+                "pattern_id":1005,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":160,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"glorydayjp",
+        "loop_bga_yn":"N",
+        "visualized_by":"SHIHYUN, DumpingLIFE, BJLee",
+        "free_yn":"N",
+        "composed_by":"BEXTER x Mycin.T",
+        "singer":"DyoN Joo",
+        "artist_name":"BEXTER x Mycin.T",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"Mycin.T",
+        "full_name":"glory day (Japanese Version)",
+        "original_bga_yn":"Y",
+        "genre":"J-Rock",
+        "song_patterns":[  
+            {  
+                "difficulty":2,
+                "line":3,
+                "pattern_id":1006,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":3,
+                "pattern_id":1007,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":3,
+                "pattern_id":1008,
+                "signature":3
+            },
+            {  
+                "difficulty":2,
+                "line":4,
+                "pattern_id":1009,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":4,
+                "pattern_id":1010,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":4,
+                "pattern_id":1011,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":161,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"overyourdream",
+        "loop_bga_yn":"N",
+        "visualized_by":"MUCA with Fans",
+        "free_yn":"N",
+        "composed_by":"xxdbxx",
+        "singer":"Sin So Hee",
+        "artist_name":"xxdbxx",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"xxdbxx",
+        "full_name":"Over Your Dream",
+        "original_bga_yn":"Y",
+        "genre":"Pop Rock",
+        "song_patterns":[  
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1012,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1013,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":3,
+                "pattern_id":1014,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1015,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":4,
+                "pattern_id":1016,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":4,
+                "pattern_id":1017,
+                "signature":3
+            }
+        ]
     }
 ]
