@@ -9642,5 +9642,121 @@
                 "signature":3
             }
         ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":162,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"mindcontrol",
+        "loop_bga_yn":"N",
+        "visualized_by":"BraveNine",
+        "free_yn":"N",
+        "composed_by":"NieN",
+        "singer":"NieN & Yayoo(Band 'Guyz')",
+        "artist_name":"NieN",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"NieN",
+        "full_name":"Mind Control",
+        "original_bga_yn":"Y",
+        "genre":"Modern hard Rock",
+        "song_patterns":[  
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1018,
+                "signature":1
+            },
+            {  
+                "difficulty":7,
+                "line":3,
+                "pattern_id":1019,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":3,
+                "pattern_id":1020,
+                "signature":3
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1021,
+                "signature":1
+            },
+            {  
+                "difficulty":8,
+                "line":4,
+                "pattern_id":1022,
+                "signature":2
+            },
+            {  
+                "difficulty":9,
+                "line":4,
+                "pattern_id":1023,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":163,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"theone",
+        "loop_bga_yn":"N",
+        "visualized_by":"Dookong",
+        "free_yn":"N",
+        "composed_by":"Paul Bazooka",
+        "singer":"",
+        "artist_name":"Paul Bazooka",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"Paul Bazooka",
+        "full_name":"The One",
+        "original_bga_yn":"Y",
+        "genre":"Happy 2step",
+        "song_patterns":[  
+            {  
+                "difficulty":2,
+                "line":3,
+                "pattern_id":1024,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1025,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":3,
+                "pattern_id":1026,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1027,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1028,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":4,
+                "pattern_id":1029,
+                "signature":3
+            }
+        ]
     }
 ]

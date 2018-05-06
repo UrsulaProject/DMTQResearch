@@ -562,9 +562,10 @@ class Game {
 
     function savePlayResult ($params) {
         $score = 0;
-        $allComboScore = $params->judgementStat[1] === 0 ? 7000 : 0;
-        $perfectPlayScore = $params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 8000 : 0;
-        $luckyScore = $params->luckyBonus * 300;
+        $allComboScore = $params->judgementStat[1] === 0 ? 15000 : 0;
+        $perfectPlayScore = $params->judgementStat[1] === 0 && $params->judgementStat[2] === 0 && $params->judgementStat[3] === 0 && $params->judgementStat[4] === 0 && $params->judgementStat[5] === 0 && $params->judgementStat[6] === 0 && $params->judgementStat[7] === 0 && $params->judgementStat[8] === 0 && $params->judgementStat[9] === 0 && $params->judgementStat[10] === 0  && $params->judgementStat[11] === 0 ? 30000 : 0;
+        //$luckyScore = $params->luckyBonus * 300;
+        $luckyScore = 0;
         $score += $params->judgementStat[2];
         $score += $params->judgementStat[3] * 20;
         $score += $params->judgementStat[4] * 40;
