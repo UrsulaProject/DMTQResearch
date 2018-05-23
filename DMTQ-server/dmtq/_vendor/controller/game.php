@@ -239,8 +239,16 @@ class Game {
         ];
     }
 
-
     function getLineScoreMyRankWithNext ($params) {
+        return (object)[
+            'result' => [
+                'scores' => []
+            ],
+            'error' => NULL
+        ];
+    }
+
+    function getLineScoreMyRankWithLevel ($params) {
         return (object)[
             'result' => [
                 'scores' => []
