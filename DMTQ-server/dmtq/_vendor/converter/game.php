@@ -127,6 +127,14 @@ class GameConverter {
         ];
     }
 
+     function getLineScoreMyRankWithLevel ($params) {
+        return (object)[
+            'guid' => $params[0],
+            'unknown1' => $params[1],
+            'unknown2' => $params[2]
+        ];
+    }
+
     function getOwnAchievementList ($params) {
         return (object)[
            'guid' => $params[0]
