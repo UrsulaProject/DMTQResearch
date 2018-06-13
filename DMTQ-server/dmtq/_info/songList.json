@@ -9874,5 +9874,121 @@
                 "signature":3
             }
         ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":166,
+        "feat_by":"Planetboom(on Guitar)",
+        "cost_game_cash":0,
+        "name":"novarmx",
+        "loop_bga_yn":"N",
+        "visualized_by":"SAREE, D",
+        "free_yn":"N",
+        "composed_by":"BEXTER",
+        "singer":"Michael Blunck",
+        "artist_name":"Mr.Funky",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"Mr.Funky",
+        "full_name":"Nova (Mr.Funky Remix)",
+        "original_bga_yn":"Y",
+        "genre":"Nu Skool Breakz",
+        "song_patterns":[  
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1042,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1043,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":3,
+                "pattern_id":1044,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1045,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1046,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":4,
+                "pattern_id":1047,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":167,
+        "feat_by":"Planetboom(on Guitar)",
+        "cost_game_cash":0,
+        "name":"zetrmx1",
+        "loop_bga_yn":"N",
+        "visualized_by":"KIMYS",
+        "free_yn":"N",
+        "composed_by":"BEXTER",
+        "singer":"Bloom",
+        "artist_name":"Mr.Funky",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"Mr.Funky",
+        "full_name":"Zet (Mr.Funky Remix) ",
+        "original_bga_yn":"Y",
+        "genre":"Indie Dance",
+        "song_patterns":[  
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1048,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1049,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":3,
+                "pattern_id":1050,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1051,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1052,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":4,
+                "pattern_id":1053,
+                "signature":3
+            }
+        ]
     }
 ]
