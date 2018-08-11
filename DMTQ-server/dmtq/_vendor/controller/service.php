@@ -11,6 +11,8 @@ class Service {
                 'file_manage_ver' => $config->PATCH_ID,
                 'service_type' => 'LIVE',
                 'coupon_yn' => 'Y',
+                'terms_yn' => 'Y',
+                'pp_live_status' => 'Y',
                 'inspection_notice_yn' => 'N',
                 // 'inspection_notice' => [
                 //     'inspection_notice_id' => '1002',
