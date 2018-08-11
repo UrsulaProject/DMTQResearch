@@ -108,6 +108,45 @@ class Game {
         ];
     }
 
+    function getDefaultSetting ($params) {
+        global $config;
+        return (object)[
+            'result' => [
+                'defaultKeyValue' => [
+                    [
+                        'key' => '1',
+                        'value' => '1'
+                    ],
+                    [
+                        'key' => 'gamesuggest_popup',
+                        'value' => $config->GAME_SUGGEST_POPUP
+                    ],
+                    [
+                        'key' => 'howtoplay_page1',
+                        'value' => $config->HOW_TO_PLAY_PAGE1
+                    ],
+                    [
+                        'key' => 'howtoplay_page2',
+                        'value' => $config->HOW_TO_PLAY_PAGE2
+                    ],
+                    [
+                        'key' => 'howtoplay_popup',
+                        'value' => $config->HOW_TO_PLAY_POPUP
+                    ],
+                    [
+                        'key' => 'tstop_url',
+                        'value' => $config->TSTOP_URL
+                    ],
+                    [
+                        'key' => 'twc_url',
+                        'value' => $config->TWC_URL
+                    ],
+                ]
+            ],
+            'error' => NULL
+        ];
+    }
+
     function getFirstResourceSongList ($params) {
         global $config;
         return (object)[

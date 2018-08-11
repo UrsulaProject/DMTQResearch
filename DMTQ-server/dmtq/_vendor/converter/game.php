@@ -59,6 +59,10 @@ class GameConverter {
         ];
     }
 
+    function getDefaultSetting ($params) {
+        return (object)[];
+    }
+
     function getFirstResourceSongList ($params) {
         return (object)[
         ];

@@ -9,6 +9,12 @@ $config = (object)[
     'SECRET_KEY' => 'DMQGLBlive1',
     'PATTERN_PATH' => 'https://dmqglb.mb.pmang.com/DMQ/Patterns/',
     'SONG_PATH' => 'https://dmqglb.mb.pmang.com/DMQ/Songs/',
+    'HOW_TO_PLAY_POPUP' => 'Y',
+    'HOW_TO_PLAY_PAGE1' => 'https://dmqglb.mb.pmang.com/static/dmq/banner/180802_tuto2_package/howtoplay_play.png',
+    'HOW_TO_PLAY_PAGE2' => 'https://dmqglb.mb.pmang.com/static/dmq/banner/180802_tuto2_package/howtoplay_note.png',
+    'TSTOP_URL' => 'https://dmqglb.mb.pmang.com/static/dmq/banner/180716_mucasummer/180716_tstop_summer.png',
+    'TWC_URL' => 'https://dmqglb.mb.pmang.com/static/dmq/banner/180716_mucasummer/180716_twc_summer.png',
+    'GAME_SUGGEST_POPUP' => 'N',
     'PRODUCT_LIST' => [
         30001,
         30002,
