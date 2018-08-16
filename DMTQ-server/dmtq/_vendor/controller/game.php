@@ -562,6 +562,17 @@ class Game {
         ];
     }
 
+    function getSongList ($params) {
+        global $config;
+        $songList = json_decode(file_get_contents($config->SONG_LIST));
+        return (object)[
+            'result' => [
+                'songs' => $songList
+            ],
+            'error' => NULL
+        ];
+    }
+
     function getSongUrl ($params) {
         global $config;
         $fpk = $config->SONG_PATH.$params->songId.'/'.$params->songId.'.fpk';
