@@ -185,6 +185,11 @@ class GameConverter {
         ];
     }
 
+    function getSongList ($params) {
+        return (object)[
+        ];
+    }
+
     function getSongUrl ($params) {
         return (object)[
             'guid' => $params[0],
