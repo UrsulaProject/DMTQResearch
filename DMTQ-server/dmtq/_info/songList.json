@@ -10570,5 +10570,121 @@
                 "signature":3
             }
         ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":178,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"dontdie",
+        "loop_bga_yn":"N",
+        "visualized_by":"S.in, RK",
+        "free_yn":"N",
+        "composed_by":"Paul Bazooka",
+        "singer":"Paul Bazooka",
+        "artist_name":"Paul Bazooka",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"",
+        "full_name":"Don't Die",
+        "original_bga_yn":"Y",
+        "genre":"Drum'n Bass",
+        "song_patterns":[  
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1114,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":3,
+                "pattern_id":1115,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":3,
+                "pattern_id":1116,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1117,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":4,
+                "pattern_id":1118,
+                "signature":2
+            },
+            {  
+                "difficulty":9,
+                "line":4,
+                "pattern_id":1119,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":179,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"remain",
+        "loop_bga_yn":"N",
+        "visualized_by":"Gunzo",
+        "free_yn":"N",
+        "composed_by":"NieN",
+        "singer":"NieN",
+        "artist_name":"NieN",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"NieN",
+        "full_name":"Remains Of Doom",
+        "original_bga_yn":"Y",
+        "genre":"Industrial Rock",
+        "song_patterns":[  
+            {  
+                "difficulty":4,
+                "line":3,
+                "pattern_id":1120,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":3,
+                "pattern_id":1121,
+                "signature":2
+            },
+            {  
+                "difficulty":9,
+                "line":3,
+                "pattern_id":1122,
+                "signature":3
+            },
+            {  
+                "difficulty":4,
+                "line":4,
+                "pattern_id":1123,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":4,
+                "pattern_id":1124,
+                "signature":2
+            },
+            {  
+                "difficulty":10,
+                "line":4,
+                "pattern_id":1125,
+                "signature":3
+            }
+        ]
     }
 ]
