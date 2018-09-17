@@ -131,6 +131,10 @@ class GameConverter {
         ];
     }
 
+    function getPatternUsePointData ($params) {
+        return (object)[];
+    }
+
      function getLineScoreMyRankWithLevel ($params) {
         return (object)[
             'guid' => $params[0],

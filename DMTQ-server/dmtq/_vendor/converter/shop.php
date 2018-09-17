@@ -17,6 +17,12 @@ class ShopConverter {
         ];
     }
 
+    function getPackageInfoByGuid ($params) {
+        return (object)[
+            'guid' => $params[0]
+        ];
+    }
+
     function getProductForUnlock ($params) {
         return (object)[
             'guid' => $params[0],
