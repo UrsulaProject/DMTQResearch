@@ -46,7 +46,8 @@
 				"150c0c7f-ddab-3e54-733e-e5b4d28a62f1",
 				"ba8f81e5-3645-be7a-93cf-3f414d78a657",
 				"ac53cf3c-2117-3946-725f-f66b3c184e1d",
-				"ef2d2d77-a824-3bc9-9e31-6631f638b210"
+				"ef2d2d77-a824-3bc9-9e31-6631f638b210",
+				"edec7fe4-0169-144d-7f05-e3fc4708f285"
 			],
 			"owner": 0,
 			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598"
@@ -90,7 +91,8 @@
 			"description": "",
 			"order": [
 				"a16d099d-6a48-a392-9cfe-ecfa1979f39f",
-				"d2e4fab6-a342-66bc-d6a7-f488738732b0"
+				"d2e4fab6-a342-66bc-d6a7-f488738732b0",
+				"d26f7688-3ca6-df3d-679f-7547778e9d2f"
 			],
 			"owner": 0
 		},
@@ -3313,6 +3315,91 @@
 			"rawModeData": "[{\r\n    \"id\": 91,\r\n    \"method\": \"user.setNickname\",\r\n    \"params\": [3018783, \"User67230695\"]\r\n}]"
 		},
 		{
+			"id": "d26f7688-3ca6-df3d-679f-7547778e9d2f",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
+			"folder": "62ea7034-400a-7e59-7782-f8d015c2866b",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1537153153952,
+			"name": "getPackageInfoByGuid",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": "[{\r\n    \"id\": 32,\r\n    \"method\": \"shop.getPackageInfoByGuid\",\r\n    \"params\": [3018783]\r\n}]"
+		},
+		{
 			"id": "d2e4fab6-a342-66bc-d6a7-f488738732b0",
 			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
 			"headerData": [
@@ -3736,6 +3823,91 @@
 			"responses": [],
 			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
 			"rawModeData": "[{\r\n    \"id\": 39,\r\n    \"method\": \"game.getOwnPatternScore\",\r\n    \"params\": [3018783]\r\n}]"
+		},
+		{
+			"id": "edec7fe4-0169-144d-7f05-e3fc4708f285",
+			"headers": "Content-Type: application/json\nFp: 1c8702153bdcf93e736614e1c6b4cecf\nX-Unity-Version: 5.6.1p1\nAccept: */*\nProxy-Connection: keep-alive\nNce: 1c4ebde26c8fe12c712ba359862e422b\nApi-Token: VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs\nSecret-Ver: 1\nAccept-Language: zh-tw\nSecret-Key: DMQGLBlive4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fp",
+					"value": "1c8702153bdcf93e736614e1c6b4cecf",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Unity-Version",
+					"value": "5.6.1p1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "*/*",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Proxy-Connection",
+					"value": "keep-alive",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Nce",
+					"value": "1c4ebde26c8fe12c712ba359862e422b",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Api-Token",
+					"value": "VHLgu/NDdNk2X+HwhRUdmwoFdW3R0jOTbsfYFg33SIRGgxvf9Y9hOIpEVQ5K8XKs",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Ver",
+					"value": "1",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept-Language",
+					"value": "zh-tw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Secret-Key",
+					"value": "DMQGLBlive4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{DMTQ_API}}/dmtq/dmqglb.mb.pmang.com/DMQ/rpc.php",
+			"folder": "54e21c88-9d8b-3ddd-d646-c4b67b2b6eee",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1537154063200,
+			"name": "getPatternUsePointData",
+			"description": "",
+			"collectionId": "725aefa4-0c74-be31-612a-12bdf814e598",
+			"responses": [],
+			"rawModeData": "[{\r\n    \"id\": 60,\r\n    \"method\": \"game.getPatternUsePointData\",\r\n    \"params\": []\r\n}]"
 		},
 		{
 			"id": "ef2d2d77-a824-3bc9-9e31-6631f638b210",

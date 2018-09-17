@@ -287,6 +287,430 @@ class Game {
         ];
     }
 
+    function getPatternUsePointData ($params) {
+        return (object)[
+            'result' => [  
+                'getPatternUsePointData' => [
+                    [  
+                        'pattern_id' => 868,
+                        'song_id' => 17,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 869,
+                        'song_id' => 17,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 870,
+                        'song_id' => 17,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 874,
+                        'song_id' => 107,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 875,
+                        'song_id' => 107,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 876,
+                        'song_id' => 107,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 877,
+                        'song_id' => 114,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 878,
+                        'song_id' => 114,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 879,
+                        'song_id' => 114,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1126,
+                        'song_id' => 5,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1127,
+                        'song_id' => 5,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1128,
+                        'song_id' => 5,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1129,
+                        'song_id' => 26,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1130,
+                        'song_id' => 26,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1131,
+                        'song_id' => 26,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1132,
+                        'song_id' => 36,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1133,
+                        'song_id' => 36,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1134,
+                        'song_id' => 36,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1135,
+                        'song_id' => 71,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1136,
+                        'song_id' => 71,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1137,
+                        'song_id' => 71,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1138,
+                        'song_id' => 72,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1139,
+                        'song_id' => 72,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1140,
+                        'song_id' => 72,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1141,
+                        'song_id' => 73,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1142,
+                        'song_id' => 73,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1143,
+                        'song_id' => 73,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1147,
+                        'song_id' => 133,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1148,
+                        'song_id' => 133,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1149,
+                        'song_id' => 133,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1150,
+                        'song_id' => 145,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1151,
+                        'song_id' => 145,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1152,
+                        'song_id' => 145,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1153,
+                        'song_id' => 146,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1154,
+                        'song_id' => 146,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1155,
+                        'song_id' => 146,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1156,
+                        'song_id' => 1,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1157,
+                        'song_id' => 1,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1158,
+                        'song_id' => 1,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1159,
+                        'song_id' => 27,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1160,
+                        'song_id' => 27,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1161,
+                        'song_id' => 27,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1162,
+                        'song_id' => 31,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1163,
+                        'song_id' => 31,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1164,
+                        'song_id' => 31,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1165,
+                        'song_id' => 34,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1166,
+                        'song_id' => 34,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1167,
+                        'song_id' => 34,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1168,
+                        'song_id' => 49,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1169,
+                        'song_id' => 49,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1170,
+                        'song_id' => 49,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1171,
+                        'song_id' => 52,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1172,
+                        'song_id' => 52,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1173,
+                        'song_id' => 52,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1174,
+                        'song_id' => 54,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1175,
+                        'song_id' => 54,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1176,
+                        'song_id' => 54,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1177,
+                        'song_id' => 63,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1178,
+                        'song_id' => 63,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1179,
+                        'song_id' => 63,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1180,
+                        'song_id' => 77,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1181,
+                        'song_id' => 77,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1182,
+                        'song_id' => 77,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1183,
+                        'song_id' => 100,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1184,
+                        'song_id' => 100,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1185,
+                        'song_id' => 100,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ],
+                    [  
+                        'pattern_id' => 1186,
+                        'song_id' => 142,
+                        'point_type' => 1,
+                        'point_value' => 200
+                    ],
+                    [  
+                        'pattern_id' => 1187,
+                        'song_id' => 142,
+                        'point_type' => 1,
+                        'point_value' => 350
+                    ],
+                    [  
+                        'pattern_id' => 1188,
+                        'song_id' => 142,
+                        'point_type' => 1,
+                        'point_value' => 500
+                    ]
+                ]
+            ],
+            'error' => NULL
+        ];
+    }
+
     function getLineScoreMyRankWithLevel ($params) {
         return (object)[
             'result' => [
@@ -482,17 +906,8 @@ class Game {
 
     function getPatternUrl ($params) {
         global $config;
-        $songList = json_decode(file_get_contents($config->SONG_LIST));
-        $songPath = '';
-        for ($i = 0; $i < count($songList); $i++) {
-            for ($j = 0; $j < count($songList[$i]->song_patterns); $j++) {
-                if ($songList[$i]->song_patterns[$j]->pattern_id === $params->patternId) {
-                    $songPath = $songList[$i]->song_id.'/';
-                }
-            }
-        }
         return (object)[
-            'result' => $config->PATTERN_PATH.$songPath.$params->patternId.($params->earphoneMode === 'e' ? '_EARPHONE' : ''),
+            'result' => $config->PATTERN_PATH.$params->patternId.($params->earphoneMode === 'e' ? '_EARPHONE' : ''),
             'error' => NULL
         ];
     }
