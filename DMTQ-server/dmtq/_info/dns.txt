@@ -1,3 +1,2 @@
 dmqglb.mb.pmang.com	139.162.88.145
-static.pmangplus.com	139.162.88.145
-pmangplus.com		139.162.88.145
+www.neonapi.com 122.152.100.144

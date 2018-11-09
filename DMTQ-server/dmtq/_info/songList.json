@@ -1312,6 +1312,24 @@
                 "line":4,
                 "pattern_id":120,
                 "signature":3
+            },
+            {  
+                "difficulty":1,
+                "line":5,
+                "pattern_id":1189,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":5,
+                "pattern_id":1190,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":5,
+                "pattern_id":1191,
+                "signature":3
             }
         ]
     },
@@ -2253,6 +2271,24 @@
                 "difficulty":7,
                 "line":4,
                 "pattern_id":210,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":5,
+                "pattern_id":1198,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":5,
+                "pattern_id":1199,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":5,
+                "pattern_id":1200,
                 "signature":3
             }
         ]
@@ -4928,6 +4964,24 @@
                 "line":4,
                 "pattern_id":468,
                 "signature":3
+            },
+            {  
+                "difficulty":4,
+                "line":5,
+                "pattern_id":1201,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":5,
+                "pattern_id":1202,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":5,
+                "pattern_id":1203,
+                "signature":3
             }
         ]
     },
@@ -5989,6 +6043,24 @@
                 "difficulty":7,
                 "line":4,
                 "pattern_id":576,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":5,
+                "pattern_id":1192,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":5,
+                "pattern_id":1193,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":5,
+                "pattern_id":1194,
                 "signature":3
             }
         ]
@@ -7708,7 +7780,7 @@
                 "signature":3
             },
             {  
-                "difficulty":6,
+                "difficulty":5,
                 "line":5,
                 "pattern_id":889,
                 "signature":1
@@ -7720,7 +7792,7 @@
                 "signature":2
             },
             {  
-                "difficulty":8,
+                "difficulty":9,
                 "line":5,
                 "pattern_id":891,
                 "signature":3
@@ -8553,6 +8625,24 @@
                 "difficulty":8,
                 "line":4,
                 "pattern_id":846,
+                "signature":3
+            },
+            {  
+                "difficulty":6,
+                "line":5,
+                "pattern_id":1195,
+                "signature":1
+            },
+            {  
+                "difficulty":8,
+                "line":5,
+                "pattern_id":1196,
+                "signature":2
+            },
+            {
+                "difficulty":10,
+                "line":5,
+                "pattern_id":1197,
                 "signature":3
             }
         ]
@@ -11043,6 +11133,614 @@
                 "difficulty":10,
                 "line":4,
                 "pattern_id":1125,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":180,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"closer",
+        "loop_bga_yn":"N",
+        "visualized_by":"GiggSan",
+        "free_yn":"N",
+        "composed_by":"3rd Coast",
+        "singer":"3rd Coast",
+        "artist_name":"3rd Coast",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"3rd Coast",
+        "full_name":"CLOSER",
+        "original_bga_yn":"Y",
+        "genre":"Industrial House",
+        "song_patterns":[  
+            {  
+                "difficulty":2,
+                "line":3,
+                "pattern_id":1204,
+                "signature":1
+            },
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1205,
+                "signature":2
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1206,
+                "signature":3
+            },
+            {  
+                "difficulty":2,
+                "line":4,
+                "pattern_id":1207,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1208,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":4,
+                "pattern_id":1209,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":5,
+                "pattern_id":1210,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":5,
+                "pattern_id":1211,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":5,
+                "pattern_id":1212,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":181,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"lifewithu",
+        "loop_bga_yn":"N",
+        "visualized_by":"MandRill, Rhoon",
+        "free_yn":"N",
+        "composed_by":"makou",
+        "singer":"Fumi",
+        "artist_name":"makou",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"makou",
+        "full_name":"A Life With You",
+        "original_bga_yn":"Y",
+        "genre":"Broken Beat",
+        "song_patterns":[  
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1213,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1214,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":3,
+                "pattern_id":1215,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1216,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":4,
+                "pattern_id":1217,
+                "signature":2
+            },
+            {  
+                "difficulty":9,
+                "line":4,
+                "pattern_id":1218,
+                "signature":3
+            },
+            {  
+                "difficulty":5,
+                "line":5,
+                "pattern_id":1219,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":5,
+                "pattern_id":1220,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":5,
+                "pattern_id":1221,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":182,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"nevermind",
+        "loop_bga_yn":"N",
+        "visualized_by":"Gunzo",
+        "free_yn":"N",
+        "composed_by":"Paul BazooKa",
+        "singer":"Paul BazooKa",
+        "artist_name":"Paul BazooKa",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"Paul BazooKa",
+        "full_name":"Nevermind",
+        "original_bga_yn":"Y",
+        "genre":"Broken Beat",
+        "song_patterns":[  
+            {  
+                "difficulty":4,
+                "line":3,
+                "pattern_id":1222,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1223,
+                "signature":2
+            },
+            {  
+                "difficulty":9,
+                "line":3,
+                "pattern_id":1224,
+                "signature":3
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1225,
+                "signature":1
+            },
+            {  
+                "difficulty":8,
+                "line":4,
+                "pattern_id":1226,
+                "signature":2
+            },
+            {  
+                "difficulty":10,
+                "line":4,
+                "pattern_id":1227,
+                "signature":3
+            },
+            {  
+                "difficulty":8,
+                "line":5,
+                "pattern_id":1228,
+                "signature":1
+            },
+            {  
+                "difficulty":10,
+                "line":5,
+                "pattern_id":1229,
+                "signature":2
+            },
+            {  
+                "difficulty":10,
+                "line":5,
+                "pattern_id":1230,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":183,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"binaryworld",
+        "loop_bga_yn":"N",
+        "visualized_by":"Raconna / DumpingLIFE",
+        "free_yn":"N",
+        "composed_by":"Tsukasa",
+        "singer":"Aki misawa",
+        "artist_name":"Tsukasa",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"Tsukasa",
+        "full_name":"Binary World",
+        "original_bga_yn":"Y",
+        "genre":"Broken Beat",
+        "song_patterns":[  
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1231,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1232,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":3,
+                "pattern_id":1233,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1234,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1235,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":4,
+                "pattern_id":1236,
+                "signature":3
+            },
+            {  
+                "difficulty":6,
+                "line":5,
+                "pattern_id":1237,
+                "signature":1
+            },
+            {  
+                "difficulty":7,
+                "line":5,
+                "pattern_id":1238,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":5,
+                "pattern_id":1239,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":184,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"jbg",
+        "loop_bga_yn":"N",
+        "visualized_by":"Eyehead",
+        "free_yn":"N",
+        "composed_by":"CROOVE",
+        "singer":"CROOVE",
+        "artist_name":"CROOVE",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"CROOVE",
+        "full_name":"JBG",
+        "original_bga_yn":"Y",
+        "genre":"Broken Beat",
+        "song_patterns":[  
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1240,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":3,
+                "pattern_id":1241,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":3,
+                "pattern_id":1242,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1243,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":4,
+                "pattern_id":1244,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":4,
+                "pattern_id":1245,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":5,
+                "pattern_id":1246,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":5,
+                "pattern_id":1247,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":5,
+                "pattern_id":1248,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":185,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"getout",
+        "loop_bga_yn":"N",
+        "visualized_by":"4.5",
+        "free_yn":"N",
+        "composed_by":"ND Lee",
+        "singer":"ND Lee",
+        "artist_name":"ND Lee",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"ND Lee",
+        "full_name":"GET OUT",
+        "original_bga_yn":"Y",
+        "genre":"R&B Hiphop",
+        "song_patterns":[  
+            {  
+                "difficulty":2,
+                "line":3,
+                "pattern_id":1249,
+                "signature":1
+            },
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1250,
+                "signature":2
+            },
+            {  
+                "difficulty":4,
+                "line":3,
+                "pattern_id":1251,
+                "signature":3
+            },
+            {  
+                "difficulty":2,
+                "line":4,
+                "pattern_id":1252,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":4,
+                "pattern_id":1253,
+                "signature":2
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1254,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":5,
+                "pattern_id":1255,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":5,
+                "pattern_id":1256,
+                "signature":2
+            },
+            {  
+                "difficulty":5,
+                "line":5,
+                "pattern_id":1257,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":186,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"canwetalk",
+        "loop_bga_yn":"N",
+        "visualized_by":"Aqualix",
+        "free_yn":"N",
+        "composed_by":"Forte Escape",
+        "singer":"Forte Escape",
+        "artist_name":"Forte Escape",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"Forte Escape",
+        "full_name":"Can We Talk",
+        "original_bga_yn":"Y",
+        "genre":"Acid Jazz",
+        "song_patterns":[  
+            {  
+                "difficulty":2,
+                "line":3,
+                "pattern_id":1258,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":3,
+                "pattern_id":1259,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":3,
+                "pattern_id":1260,
+                "signature":3
+            },
+            {  
+                "difficulty":5,
+                "line":4,
+                "pattern_id":1261,
+                "signature":1
+            },
+            {  
+                "difficulty":7,
+                "line":4,
+                "pattern_id":1262,
+                "signature":2
+            },
+            {  
+                "difficulty":9,
+                "line":4,
+                "pattern_id":1263,
+                "signature":3
+            },
+            {  
+                "difficulty":5,
+                "line":5,
+                "pattern_id":1264,
+                "signature":1
+            },
+            {  
+                "difficulty":7,
+                "line":5,
+                "pattern_id":1265,
+                "signature":2
+            },
+            {  
+                "difficulty":9,
+                "line":5,
+                "pattern_id":1266,
+                "signature":3
+            }
+        ]
+    },
+    {  
+        "cost_game_point":0,
+        "status":"",
+        "song_id":187,
+        "feat_by":"",
+        "cost_game_cash":0,
+        "name":"net",
+        "loop_bga_yn":"N",
+        "visualized_by":"Studio LAY-BACK",
+        "free_yn":"N",
+        "composed_by":"Studio LAY-BACK",
+        "singer":"Studio LAY-BACK",
+        "artist_name":"Studio LAY-BACK",
+        "hidden_yn":"N",
+        "flag":0,
+        "arranged_by":"Studio LAY-BACK",
+        "full_name":"Never Ending TECHNIKA",
+        "original_bga_yn":"Y",
+        "genre":"Acid Jazz",
+        "song_patterns":[  
+            {  
+                "difficulty":3,
+                "line":3,
+                "pattern_id":1267,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":3,
+                "pattern_id":1268,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":3,
+                "pattern_id":1269,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":4,
+                "pattern_id":1270,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":4,
+                "pattern_id":1271,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":4,
+                "pattern_id":1272,
+                "signature":3
+            },
+            {  
+                "difficulty":3,
+                "line":5,
+                "pattern_id":1273,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":5,
+                "pattern_id":1274,
+                "signature":2
+            },
+            {  
+                "difficulty":6,
+                "line":5,
+                "pattern_id":1275,
                 "signature":3
             }
         ]
