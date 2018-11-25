@@ -1,5 +1,10 @@
 window.app.controller('ScoreController', ['$scope', '$http', '$location', '$filter', '$window', function($scope, $http, $location, $filter, $window) {
-    getParameterByName = function (name, url) {
+	var currentDomain = function () {
+		var url = window.location.href
+		var arr = url.split('/');
+		return arr[0] + '//' + arr[2]
+	};
+    var getParameterByName = function (name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, '\\$&');
         var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -7,13 +12,13 @@ window.app.controller('ScoreController', ['$scope', '$http', '$location', '$filt
         if (!results) return null;
         if (!results[2]) return '';
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
+    };
 	$window.document.getElementById('myUrl').value = 'https://icentral.konmai.co/djmaxQ?userId=' + getParameterByName('userId');
     $scope.levelList = ['easy', 'normal', 'hard', 'expert'];
-    $http({url: 'https://icentral.konmai.co/djmaxQ/songList.php?t=' + Math.floor(Date.now() / 1000), method: 'POST'}).then(function (response) {
+    $http({url: currentDomain() + '/djmaxQ/songList.php?t=' + Math.floor(Date.now() / 1000), method: 'POST'}).then(function (response) {
         window.songList = $scope.songList = response.data;
     });
-    $http({url: 'https://icentral.konmai.co/djmaxQ/userScore.php?t=' + Math.floor(Date.now() / 1000), method: 'POST', data: $.param({userId: getParameterByName('userId')})}).then(function (response) {
+    $http({url: currentDomain() + '/djmaxQ/userScore.php?t=' + Math.floor(Date.now() / 1000), method: 'POST', data: $.param({userId: getParameterByName('userId')})}).then(function (response) {
         window.scoreList = $scope.scoreList = response.data;
     });
     $scope.showLevelOn = function (level, index) {
