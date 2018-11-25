@@ -250,7 +250,7 @@ class Game {
     function getLineTopRankWithLevel ($params) {
         global $config;
         $handle = new SQLite3($config->DB_PATH);
-        $query = $handle->query("SELECT slot_item1, slot_item2, nickname FROM Member WHERE id = ".$params->guid);
+        $query = $handle->query("SELECT slot_item1, slot_item2, nickname FROM Member WHERE guid = ".$params->guid." AND puid = ".$params->guid);
         if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
             list($slotItem1, $slotItem2, $nickname) = $queryData;
         } else {
@@ -1004,7 +1004,7 @@ class Game {
     function getUserAsset ($params) {
         global $config;
         $handle = new SQLite3($config->DB_PATH);
-        $query = $handle->query("SELECT slot_item1, slot_item2, slot_item3, slot_item4 FROM Member WHERE id = ".$params->guid);
+        $query = $handle->query("SELECT slot_item1, slot_item2, slot_item3, slot_item4 FROM Member WHERE guid = ".$params->guid." AND puid = ".$params->guid);
         if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
             list($slotItem1, $slotItem2, $slotItem3, $slotItem4) = $queryData;
         } else {
@@ -1130,7 +1130,7 @@ class Game {
     function setSlotItem ($params) {
         global $config;
         $handle = new SQLite3($config->DB_PATH);
-        $query = $handle->query("UPDATE Member SET slot_item1 = ".(!!$params->slotItem1 ? $params->slotItem1 : 'NULL').", slot_item2 = ".(!!$params->slotItem2 ? $params->slotItem2 : 'NULL').", slot_item3 = ".(!!$params->slotItem3 ? $params->slotItem3 : 'NULL').", slot_item4 = ".(!!$params->slotItem4 ? $params->slotItem4 : 'NULL')." WHERE id = ".$params->guid);
+        $query = $handle->query("UPDATE Member SET slot_item1 = ".(!!$params->slotItem1 ? $params->slotItem1 : 'NULL').", slot_item2 = ".(!!$params->slotItem2 ? $params->slotItem2 : 'NULL').", slot_item3 = ".(!!$params->slotItem3 ? $params->slotItem3 : 'NULL').", slot_item4 = ".(!!$params->slotItem4 ? $params->slotItem4 : 'NULL')." WHERE guid = ".$params->guid." AND puid = ".$params->guid);
         $handle->close();
         return (object)[
             'result' => [

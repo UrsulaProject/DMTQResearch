@@ -211,7 +211,7 @@ class GameConverter {
 
     function savePlayResult ($params) {
         return (object)[
-            'guid' => $params[0],
+            'guid' => $params[0] !== 239238323 ? $params[0] : 221403175,
             'patternId' => $params[1],
             'judgementStat' => $params[2],
             'maxCombo' => $params[3],
