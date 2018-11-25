@@ -1,0 +1,66 @@
+<li class="data" ng-if="!!songData.lineList[currentLine + 'lines']" ng-repeat="songData in songList">
+    <div class="top">{{ songData.musicName }} - {{ songData.artistName }}</div>
+    <div class="middle">
+        <div class="left">
+            <img class="jk" bn-lazy-src="image/jk2/{{ songData.fileName }}.png" />
+        </div>
+        <div class="right">
+            <div class="score" ng-if="!!songData.lineList[currentLine + 'lines'][levelData]" ng-repeat="levelData in levelList">
+                <div>
+                    <img class="line" ng-src="image/{{ currentLine }}lines.png" />
+                    <img class="type" ng-src="image/{{ levelData }}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 1) ? 'on' : 'off'}}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 2) ? 'on' : 'off'}}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 3) ? 'on' : 'off'}}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 4) ? 'on' : 'off'}}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 5) ? 'on' : 'off'}}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 6) ? 'on' : 'off'}}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 7) ? 'on' : 'off'}}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 8) ? 'on' : 'off'}}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 9) ? 'on' : 'off'}}.png" />
+                    <img class="star" ng-src="image/star_{{ showLevelOn(songData.lineList[currentLine + 'lines'][levelData].difficulty, 10) ? 'on' : 'off'}}.png" />
+                </div>
+                <div ng-if="!scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId]">
+                    <img class="no-record" src="image/no-record.png" />
+                </div>
+                <div ng-if="scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId]">
+                    <div class="big-item">
+                        <div class="each-item-inline">
+                            <img class="accuracy" src="image/accuracy.png" />
+                        </div>
+                        <div class="each-item-inline">
+                            <img class="accuracy-value" ng-src="image/accuracy-{{ showRate(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].rate, 1) }}.png" />
+                            <img class="accuracy-value" ng-src="image/accuracy-{{ showRate(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].rate, 2) }}.png" />
+                            <img class="accuracy-value" ng-src="image/accuracy-d.png" />
+                            <img class="accuracy-value accuracy-dot" ng-src="image/accuracy-{{ showRate(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].rate, 3) }}.png" />
+                            <img class="accuracy-value accuracy-per" ng-src="image/accuracy-p.png" />
+                        </div>
+                    </div>
+                    <div class="big-item">
+                        <div class="each-item-inline">
+                            <img class="totalscore" src="image/total_score.png" />
+                        </div>
+                        <div class="each-item-inline">
+                            <img class="score-value" ng-src="image/score-{{ showScore(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].score, 1) }}.png" />
+                            <img class="score-value" ng-src="image/score-{{ showScore(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].score, 2) }}.png" />
+                            <img class="score-value" ng-src="image/score-{{ showScore(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].score, 3) }}.png" />
+                            <img class="score-value" ng-src="image/score-{{ showScore(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].score, 4) }}.png" />
+                            <img class="score-value" ng-src="image/score-{{ showScore(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].score, 5) }}.png" />
+                            <img class="score-value" ng-src="image/score-{{ showScore(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].score, 6) }}.png" />
+                            <img class="score-value" ng-src="image/score-{{ showScore(scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].score, 7) }}.png" />
+                        </div>
+                    </div>
+                    <div class="small-item inline-center">
+                        <img class="grade" ng-src="image/grade_{{ scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].judgement.toLowerCase() }}.png" />
+                    </div>
+                    <div class="small-item inline-center" ng-if="scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].isFullCombo">
+                        <img class="all-combo" ng-src="image/all-combo.png" />
+                    </div>
+                    <div class="small-item inline-center" ng-if="scoreList[songData.lineList[currentLine + 'lines'][levelData].patternId].isExc">
+                        <img class="all-perfect" ng-src="image/all-perfect.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<li>
