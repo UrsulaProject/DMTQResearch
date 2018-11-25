@@ -17,7 +17,7 @@ class User {
     function getUsersByPuid ($params) {
         global $config;
         $handle = new SQLite3($config->DB_PATH);
-        $query = $handle->query("SELECT nickname FROM Member WHERE id = ".$params->puid);
+        $query = $handle->query("SELECT nickname FROM Member WHERE guid = ".$params->puid);
         if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
             list($nickname) = $queryData;
         } else {
@@ -26,10 +26,10 @@ class User {
         $handle->close();
         return (object)[
             'result' => [
-				[
-					$params->requestData => $nickname
-				]
-			],
+                [
+                    $params->requestData => $nickname
+                ]
+            ],
             'error' => NULL
         ];
     }
@@ -37,13 +37,30 @@ class User {
     function loginV2 ($params) {
         list($puid, $appId, $deviceCode, $serverCode, $token, $accessTime) = explode('|', $params->accessToken);
         global $config;
+        $handle = new SQLite3($config->DB_PATH);
+        $query = $handle->query("SELECT guid FROM Member WHERE puid = '".$puid."'");
+        if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
+            list($guid) = $queryData;
+        } else {
+            $query = $handle->query("SELECT MAX(id) + 1 FROM Member");
+            if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
+                list($memberId) = $queryData;
+                if (!$memberId) {
+                    $memberId = 1;
+                }
+            } else {
+                $memberId = 1;
+            }
+            $handle->query("INSERT INTO Member (id, nickname, guid, puid) VALUES (".$memberId.", ' ', '".$puid."', '".$puid."')");
+        }
+        $handle->close();
         return (object)[
             'result' => [
                 'API_TOKEN' => strtoupper(substr(md5($token).md5($accessTime), -58)),
                 'SECRET_KEY' => $config->SECRET_KEY,
                 'SECRET_VER' => '1',
-                'guid' => (string)$puid,
-                'recom_code' => 'QbCx9Xe',
+                'guid' => (string)$guid,
+                'recom_code' => 'AAAAAA',
                 'displayName' => $params->nickName,
                 'profileImg' => $params->profileImg,
                 'INTRO_SERVER' => $config->API_PATH
@@ -55,7 +72,7 @@ class User {
     function setNickname ($params) {
         global $config;
         $handle = new SQLite3($config->DB_PATH);
-        $query = $handle->query("UPDATE Member SET nickname = '".$params->nickName."' WHERE id = '".$params->guid."'");
+        $query = $handle->query("UPDATE Member SET nickname = '".$params->nickName."' WHERE guid = '".$params->guid."'");
         $handle->close();
         return (object)[
             'result' => true,

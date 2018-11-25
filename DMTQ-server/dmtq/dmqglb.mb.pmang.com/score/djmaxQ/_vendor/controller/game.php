@@ -11,7 +11,7 @@ class Game {
 		}
 		$code = 0x135798642;
 		$guid = hexdec(strrev($$params['userId'])) ^ $code;
-        $query = $handle->query("SELECT nickname FROM Member WHERE guid = ".$guid);
+        $query = $handle->query("SELECT nickname FROM Member WHERE guid = ".$guid." AND puid = ".$guid);
         while (($queryData = $query->fetchArray(SQLITE3_NUM))) {
             $result = [
                 'nickname' => $queryData[0]
