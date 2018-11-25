@@ -20,7 +20,7 @@ if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
     list($guid) = $queryData;
 	$code = 0x135798642;
 	$userId = strrev(strtoupper(dechex($guid ^ $code)));
-	header('Location: djmaxQ/index?userId='.$userId);
+	header('Location: ../djmaxQ/index?userId='.$userId);
 	exit();
 ?>
 <!DOCTYPE html>
