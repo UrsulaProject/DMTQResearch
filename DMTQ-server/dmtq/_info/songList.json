@@ -781,7 +781,7 @@
         "song_id":12,
         "feat_by":"STi (on Rap), \uc548\uc9c0\uc5f0 (on Chorus) ",
         "cost_game_cash":0,
-        "name":"ghost",
+        "name":"Ghost",
         "loop_bga_yn":"N",
         "visualized_by":"Tari, NOVA",
         "free_yn":"N",
@@ -829,6 +829,24 @@
                 "difficulty":7,
                 "line":4,
                 "pattern_id":72,
+                "signature":3
+            },
+            {  
+                "difficulty":4,
+                "line":5,
+                "pattern_id":1276,
+                "signature":1
+            },
+            {  
+                "difficulty":6,
+                "line":5,
+                "pattern_id":1277,
+                "signature":2
+            },
+            {  
+                "difficulty":8,
+                "line":5,
+                "pattern_id":1278,
                 "signature":3
             }
         ]
@@ -2830,6 +2848,24 @@
                 "line":4,
                 "pattern_id":264,
                 "signature":3
+            },
+            {  
+                "difficulty":1,
+                "line":5,
+                "pattern_id":1279,
+                "signature":1
+            },
+            {  
+                "difficulty":4,
+                "line":5,
+                "pattern_id":1280,
+                "signature":2
+            },
+            {  
+                "difficulty":5,
+                "line":5,
+                "pattern_id":1281,
+                "signature":3
             }
         ]
     },
@@ -2945,6 +2981,24 @@
                 "difficulty":6,
                 "line":4,
                 "pattern_id":276,
+                "signature":3
+            },
+            {  
+                "difficulty":2,
+                "line":5,
+                "pattern_id":1282,
+                "signature":1
+            },
+            {  
+                "difficulty":5,
+                "line":5,
+                "pattern_id":1283,
+                "signature":2
+            },
+            {  
+                "difficulty":7,
+                "line":5,
+                "pattern_id":1284,
                 "signature":3
             }
         ]
