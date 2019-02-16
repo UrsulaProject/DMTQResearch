@@ -18,7 +18,7 @@ function runApi ($requestId, $method, $params) {
 
 }
 function runSystem () {
-    global $config;
+    //global $config;-----
     header('Content-Type: application/json');
 	$request = file_get_contents('php://input');
     $data = json_decode($request, true);

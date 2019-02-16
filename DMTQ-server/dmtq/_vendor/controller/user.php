@@ -42,6 +42,9 @@ class User {
         if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
             list($guid) = $queryData;
         } else {
+			//return (object)[
+			//	'result' => []
+			//];
             $query = $handle->query("SELECT MAX(id) + 1 FROM Member");
             if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
                 list($memberId) = $queryData;
