@@ -1,0 +1,151 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+.header {
+    text-align: center;
+}
+ul.list {
+    list-style-type: none;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+li.data {
+    clear: both;
+    overflow: auto;
+    margin-top: 40px;
+    /*
+    border-radius: 10px;
+    border: 1px #AAAAAA solid;
+    */
+}
+li.data div.top {
+    border-bottom: 1px #AAAAAA dashed;
+    height: 30px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-size: 23px;
+    font-family: fantasy;
+    padding-bottom: 5px;
+    text-align: center;
+}
+li.data .middle, li.data .bottom {
+    clear: both;
+    height: 300px;
+}
+li.data div.left {
+    width: 50%;
+    float: left;
+}
+li.data div.right {
+    padding-top: 5px;
+    width: 50%;
+    float: right;
+}
+li.data div.left .jk {
+    width: 80%;
+    padding: 10px;
+}
+li.data .line {
+    height: 23px;
+    margin-bottom: -4px;
+    margin-left: -2px;
+}
+li.data .type {
+    height: 23px;
+    margin-left: -16px;
+}
+li.data .star {
+    height: 15px;
+    margin-left: -5px;
+}
+li.data .score {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+li.data .big-item {
+    width: 30%;
+    display: inline-block;
+}
+li.data .small-item {
+    width: 10%;
+    display: inline-block;
+}
+li.data .each-item-inline {
+    text-align: center;
+}
+li.data .accuracy {
+    height: 12px;
+    margin-bottom: 2px;
+}
+li.data .totalscore {
+    height: 12px;
+    margin-bottom: 2px;
+}
+li.data .accuracy-value {
+    height: 18px;
+    margin-left: -6px;
+}
+li.data .accuracy-dot {
+    margin-left: -10px;
+    margin-right: -3px;
+}
+li.data .accuracy-per {
+    margin-left: -2px;
+}
+li.data .accuracy-value:first-child {
+    margin-left: 0 !important;
+}
+li.data .score-value {
+    height: 18px;
+    margin-left: -6px;
+}
+li.data .score-value:first-child {
+    margin-left: 0 !important;
+}
+li.data .grade, li.data .all-combo, li.data .all-perfect {
+    height: 45px;
+}
+li.data .no-record {
+    zoom: 0.4;
+    padding: 20px;
+}
+.inline-center {
+    text-align: center;
+}
+#myUrl {
+	width: 300px;
+}
+#copy {
+	margin-right: -6px;
+}
+@media only screen and (max-width: 640px) {
+    .header img {
+        width: 100%;
+    }
+    li.data div.left {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        text-align: center;
+    }
+    li.data div.right {
+        padding-top: 5px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    li.data .middle, li.data .bottom {
+        height: inherit;
+    }
+}

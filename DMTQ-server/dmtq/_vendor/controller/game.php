@@ -971,7 +971,8 @@ class Game {
                         ]
                     ]
                 ],
-                'game_token' => md5(time()).substr(md5(time() + 1), -4)
+                'game_token' => md5(time()).substr(md5(time() + 1), -4),
+				'freepass' => false
             ],
             'error' => NULL
         ];
