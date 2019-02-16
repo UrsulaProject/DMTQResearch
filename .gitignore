@@ -131,4 +131,6 @@ ENV/
 # End of https://www.gitignore.io/api/macos,python
 
 DMTQ-server/dmtq/dmqglb.mb.pmang.com/DMQ/Songs/**
+DMTQ-server/dmtq/dmqglb.mb.pmang.com/patch/phone_new/old/**
+DMTQ-server/dmtq/_info/*.rar
 DMTQ-server/dmtq/_info/*.rar
