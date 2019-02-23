@@ -8,7 +8,7 @@ class Service {
             'result' => [
                 'api_url' => $config->API_PATH,
                 'file_server_url' => $config->FILE_DOWNLOAD_PATH,
-                'file_manage_ver' => $config->PATCH_ID,
+                'file_manage_ver' => $params->version === '1.0.17' ? $config->OLD_PATCH_ID : $config->PATCH_ID,
                 'service_type' => 'LIVE',
                 'coupon_yn' => 'Y',
                 'terms_yn' => 'Y',
