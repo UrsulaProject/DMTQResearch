@@ -54,6 +54,7 @@ class User {
             } else {
                 $memberId = 1;
             }
+			$guid = $puid;
             $handle->query("INSERT INTO Member (id, nickname, guid, puid) VALUES (".$memberId.", ' ', '".$puid."', '".$puid."')");
         }
         $handle->close();

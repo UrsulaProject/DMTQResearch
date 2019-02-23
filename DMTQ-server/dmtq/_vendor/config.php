@@ -4,8 +4,15 @@ $config = (object)[
     'DB_PATH' => dirname(__FILE__).'/../_info/dmtq.db3',
     'API_PATH' => 'http://dmqglb.mb.pmang.com/DMQ/rpc',
     'FILE_DOWNLOAD_PATH' => 'http://dmqglb.mb.pmang.com/patch',
-	//'PATCH_ID' => '1.000.017',//1.0.17
-	'PATCH_ID' => '1.003.005',//lastest
+	'OLD_PATCH_ID' => '1.000.030',//1.0.17
+	'PATCH_ID' => '1.003.005',
+	
+	
+	
+	//'FILE_DOWNLOAD_PATH' => 'http://d7oyvffymxdlz.cloudfront.net/dmqglb/patch',
+	//'OLD_PATCH_ID' => '5',
+	//'PATCH_ID' => '5',
+	
 	
     'EVENT_PATH' => 'http://dmqglb.mb.pmang.com/score/',
     'SECRET_KEY' => 'DMQGLBlive1',
