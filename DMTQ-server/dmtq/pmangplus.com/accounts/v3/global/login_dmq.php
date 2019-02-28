@@ -30,7 +30,7 @@ if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
     } else {
         $puid = 1;
     }
-    $handle->query("INSERT INTO Member (id, nickname, guid, puid, udid) VALUES (".$puid.", ' ', '".$puid."', '".$puid."', '".$postData['udid']."')");
+    $handle->query("INSERT INTO Member (id, nickname, guid, puid, udid, code) VALUES (".$puid.", ' ', '".$puid."', '".$puid."', '".$postData['udid']."', '".substr(md5('CODE'.$puid), -10)."')");
 }
 $handle->close();
 echo '{"value":{"access_token":"'.$puid.'|576|IPHONE|KR|'.generateRandomString(40).'|'.time().'000","member":{"crt_dt":'.time().'000,"upd_dt":'.time().'000,"status_cd":"OK","member_id":'.$puid.',"nickname":"NewUser","profile_img_url":"","feeling":null,"adult_auth_yn":"N","adult_auth_dt":null,"recent_login_dt":'.time().'000,"recent_app_id":null,"email":null,"anonymous_yn":"N","reg_path":"GAMECENTER","recent_app_title":null,"last_msg_dt":null,"new_msg_yn":null,"friend_accept_cd":"MANUAL","achieve_detail_info_list":null,"member_achievement_summary":null,"conflict_member_id":null,"reg_ip":"130.245.192.14","reg_nation":"US","is_guest_login":true,"provider_display_name":"","pushgroup":null,"locale":null,"sanction":false,"profile_img_url_raw":"http://img.pmangplus.com/members/245568744/profile_img"},"conflict_member_id":null,"is_guest_login":true,"old_member_id":null,"jailbreak_yn":"N","unreg_status":"NO","callTime":0},"result_code":"000","result_msg":"API_OK"}';

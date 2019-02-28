@@ -3,14 +3,29 @@
 class User {
 
     function getConnectUuid ($params) {
-        return (object)[
-            'result' => [
+        global $config;
+        $handle = new SQLite3($config->DB_PATH);
+        $query = $handle->query("SELECT code FROM Member WHERE guid = ".$params->guid);
+		$error = NULL;
+		$result = NULL;
+        if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
+            list($code) = $queryData;
+			$result = [
                 'status' => 'SUCCESS',
                 'code' => 200,
-                'uuid' => '1cbb551c25',
+                'uuid' => $code,
                 'result_msg' => 'OK'
-            ],
-            'error' => NULL
+            ];
+        } else {
+			$error = [
+				'code' => 'SVC.05001',
+				'message' => 'Error (Invalid pmangplus(member_id) user id)'
+			];
+        }
+        $handle->close();
+        return (object)[
+            'result' => $result,
+            'error' => $error
         ];
     }
 
@@ -55,7 +70,7 @@ class User {
                 $memberId = 1;
             }
 			$guid = $puid;
-            $handle->query("INSERT INTO Member (id, nickname, guid, puid) VALUES (".$memberId.", ' ', '".$puid."', '".$puid."')");
+            $handle->query("INSERT INTO Member (id, nickname, guid, puid, code) VALUES (".$memberId.", ' ', '".$puid."', '".$puid."', '".substr(md5('CODE_'.$memberId), -10)."')");
         }
         $handle->close();
         return (object)[
@@ -81,6 +96,34 @@ class User {
         return (object)[
             'result' => true,
             'error' => NULL
+        ];
+    }
+	
+    function setConnectUuid ($params) {
+        global $config;
+        $handle = new SQLite3($config->DB_PATH);
+        $query = $handle->query("SELECT guid FROM Member WHERE code = '".$params->code."'");
+		$error = NULL;
+		$result = NULL;
+        if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
+            list($newGuid) = $queryData;
+			$query = $handle->query("UPDATE Member SET guid = '".$newGuid."' WHERE guid = '".$params->guid."'");
+			$handle->close();
+			$result = [
+                'status' => 'SUCCESS',
+                'code' => 200,
+                'result_msg' => 'OK'
+            ];
+        } else {
+			$error = [
+				'code' => 'SVC.05001',
+				'message' => 'Error (Invalid pmangplus(member_id) user id)'
+			];
+        }
+        $handle->close();
+        return (object)[
+            'result' => $result,
+            'error' => $error
         ];
     }
 }
