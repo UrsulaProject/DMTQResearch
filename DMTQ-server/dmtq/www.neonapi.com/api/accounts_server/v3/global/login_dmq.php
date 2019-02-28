@@ -30,7 +30,7 @@ if (($queryData = $query->fetchArray(SQLITE3_NUM))) {
     } else {
         $puid = 1;
     }
-    $handle->query("INSERT INTO Member (id, nickname, guid, puid, udid) VALUES (".$puid.", ' ', '".$puid."', '".$puid."', '".$postData['udid']."')");
+    $handle->query("INSERT INTO Member (id, nickname, guid, puid, udid, code) VALUES (".$puid.", ' ', '".$puid."', '".$puid."', '".$postData['udid']."', '".substr(md5('CODE_'.$puid), -10)."')");
 }
 $handle->close();
 echo '{"value":{"access_token":"'.$puid.'|576|IPHONE|KR|'.generateRandomString(40).'|'.time().'000","member":{"crt_dt":'.time().'000,"upd_dt":'.time().'000,"status_cd":"OK","member_id":'.$puid.',"nickname":"NewUser","profile_img_url":"","feeling":null,"adult_auth_yn":"N","adult_auth_dt":null,"recent_login_dt":'.time().'000,"recent_app_id":null,"email":null,"anonymous_yn":"N","reg_path":"GAMECENTER","recent_app_title":null,"last_msg_dt":null,"new_msg_yn":null,"friend_accept_cd":"MANUAL","conflict_member_id":null,"reg_ip":"127.0.0.1","reg_nation":"HK","is_guest_login":false,"provider_display_name":"","pushgroup":null,"locale":null,"sanction":false,"profile_img_url_raw":""},"conflict_member_id":null,"is_guest_login":false,"old_member_id":null,"jailbreak_yn":"N","unreg_status":"NO","callTime":0},"result_msg":"API_OK","result_code":"000"}';

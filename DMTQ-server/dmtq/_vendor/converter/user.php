@@ -33,4 +33,12 @@ class UserConverter {
             'nickName' => $params[1]
         ];
     }
+	
+    function setConnectUuid ($params) {
+        return (object)[
+            'guid' => $params[0],
+			'code' => $params[1],
+            'os' => $params[2]
+        ];
+    }
 }
