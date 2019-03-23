@@ -1,8 +1,37 @@
 <?php
-
+include_once('config.php');
+$global = (object)[];
+DEFINE('BASE_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
+$casePath = BASE_PATH.'{{SEARCH}}'.DIRECTORY_SEPARATOR.'{{CLASS_NAME}}.php';
+spl_autoload_register(function ($className) {
+    global $casePath;
+    $path = str_replace('{{CLASS_NAME}}', $className, $casePath);
+    $searchList = ['controller', 'model', 'converter'];
+    for ($i = 0; $i < count($searchList); $i++) {
+        if (file_exists(str_replace('{{SEARCH}}', $searchList[$i], $path))) {
+            include_once(str_replace('{{SEARCH}}', $searchList[$i], $path));
+        }
+    }
+});
+register_shutdown_function(function () {
+    global $global;
+    if (isset($global->db)) {
+		$global->db->close();
+        $global->db = NULL;
+        unset($global->db);
+    }
+});
+function connectDB() {
+    global $config, $global;
+    if (!isset($global->db)) {
+        $global->db = new SQLite3($config->DB_PATH);
+    }
+    return $global->db;
+}
 function runApi ($requestId, $method, $params) {
     $controllerName = ucfirst(substr($method, 0, strpos($method, '.')));
     $convertName = $controllerName.'Converter';
+	$controllerName .= 'Controller';
     $actionName = substr($method, strpos($method, '.') + 1);
     if (class_exists($controllerName) && method_exists($controllerName, $actionName)) {
         $controller = new $controllerName();
@@ -15,7 +44,6 @@ function runApi ($requestId, $method, $params) {
         ];
     }
     return (object)[];
-
 }
 function runSystem () {
     //global $config;-----
