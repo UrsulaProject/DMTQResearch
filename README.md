@@ -10,3 +10,6 @@ Naville
 Patterns are stored in Patterns/
 With path structure being Patterns/SONGID/PatternID
 If the pattern is for EarphoneMode, then filename has `_EARPHONE` as suffix
+
+# Full Package
+Song data and BGAs are missing from this repo due to copyright reasons. You should be able to find a full release with the last known working private server implementation on that PT which name begins with a B and ends with an S. From there you can port/fix it to the final version. This repo is only for archiving purposes
